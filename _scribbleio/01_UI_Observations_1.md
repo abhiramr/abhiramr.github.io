@@ -15,9 +15,9 @@ subtitle: demo.scribbledata.io as it currently stands
 	- <b>Log In</b> : Title: Sign In (?). Username, password. Standard stuff.
 	- <b>Continue</b> : Takes you to the Log In page and redirects to the Signed in page.
 - 3 columns : 
-	- Ingest Data :  Should we say "Any Volume" or provide realistic SLAs?
-	- Run Models : Sounds fine. (Preset instead of BuiltIn)
-	- Deliver : - 
+	- <b>Ingest Data</b> :  Should we say "Any Volume" or provide realistic SLAs?
+	- <b>Run Models</b> : Sounds fine. (Preset instead of BuiltIn?)
+	- <b>Deliver</b> : - 
 
 <p align="center">
 <img src="../../img/scribble/1.png"></p>
