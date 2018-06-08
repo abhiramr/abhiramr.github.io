@@ -102,7 +102,7 @@ It also offers easier navigation and dropdown support, but a slightly more cumbe
 
 For now, I'm leaning more towards using Bootstrap 4. There's no doubt that it offers more than Bootstrap 3 even if Just the speed of compilation is to be considered.
 
-### Misc Thoughts -
+### Misc Thoughts and Links -
 
 - For the FAQ / Whitepapers / Docs section, some sites have a "Was this helpful?" box so users can let us know if they needed more information over and above what was provided.
 <p align="center">
@@ -111,3 +111,4 @@ For now, I'm leaning more towards using Bootstrap 4. There's no doubt that it of
 - Will we need to add a "Cookie agreement" box upfront when the page loads for the first time?
 <p align="center">
 <img src="../../img/scribble/16.png"></p>
+- This is a really good link for everything on Typography - [http://thinkingwithtype.com/](http://thinkingwithtype.com/)
