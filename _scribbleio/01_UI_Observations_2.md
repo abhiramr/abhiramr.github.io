@@ -54,7 +54,7 @@ The parameters every website with a good UX element set is measured by are :
 - spacing
 - flow
 
-This elemental set is what a pattern library in every company should define so that any future designs will always defer to this library. 
+This elemental set is what a pattern library in every company should define so that any future designs will always use this library as reference.
 
 #### Size : 
 Headers, content and footers should have set sizes. These values differ across implementations but Bootstrap 4 has a pretty solid lineup with values that seem to be agreed upon in most websites that use it. 
@@ -75,7 +75,7 @@ Like I mentioned in the earlier article, a company's thematic colors are key. Fo
 
 If, for each customer, the idea is to retain Scribble's underlying identity, then we will also need to maintain consistent color themes across each offering. The Logo is another mark of consistency to be followed. We currently have the entire text "scribbleData" on the logo on our [main page](https://www.scribbledata.io/). This should be reflected in the Admin page as well, in addition to the minified icon version, perhaps in the extended form of the sidebar.
 
-If however, we intend for the customer to embed his assets as a part of the service we offer him (as is the case sometimes), then we will have to defer to their ..colors, so to speak. 
+If however, we intend for the customer to embed his assets as a part of the service we offer him (as is the case sometimes), then we will have to fall back to their ..colors, so to speak. 
 
 Most websites have a hint of blue in them. And [this article](https://uxplanet.org/the-most-important-color-in-ui-design-d4f23aefffdf) makes a good case for why that is. There is also the [60-30-10 rule](https://blog.prototypr.io/how-to-use-colors-in-ui-design-16406ec06753) to be accounted for where 60% is the dominant hue, 30% is the secondary color and 10% is for the accent color. This rule originated in interior designing initially but it apparently makes sense for the web as well and is followed widely. 
 
