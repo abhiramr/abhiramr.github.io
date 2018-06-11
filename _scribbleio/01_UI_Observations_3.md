@@ -87,10 +87,12 @@ Fonts: Tofino,Helvetica,Arial,sans-serif
 
 #### Xero 
 ```
-Colors : linear-gradient(#048abb,#048abb) , white
+Colors : 
+ - Banner : linear-gradient(#048abb,#048abb) , 
+ - Background : #f1f4f5 , white
+ - Text : Black
 Fonts: arial,helvetica,sans-serif
 ```
-
 
 <p align="center">
 <img src="../../img/scribble/48.png"></p>
@@ -104,3 +106,40 @@ Fonts: Rubik,Avenir Next,Helvetica Neue,sans-serif
 ```
 <p align="center">
 <img src="../../img/scribble/52.png"></p> 
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+
+#### Helpscout 
+```
+Colors: 
+ - Banners : #1f5e89, white, black. 
+ - Menus : black text on a white background. 
+ - #194c6e for all other text.
+Fonts: "Aktiv Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif
+```
+<p align="center">
+<img src="../../img/scribble/53.png"></p> 
+
+<p align="center">
+<img src="../../img/scribble/55.png"></p> 
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+
+
+And you've already seen 
+
+#### Asana 
+```
+Colors:
+ - Sidebar background : #151b26
+ - Text : Black on white, White on darker backgrounds
+ Fonts: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif
+ ```
+<p align="center">
+<img src="../../img/scribble/56.png"></p> 
+
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+
+
+I really liked Status Cake and PingoMeter. The former slightly resembles Sentry as well.
