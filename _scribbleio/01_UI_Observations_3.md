@@ -40,8 +40,26 @@ Fonts : proxima-nova,Helvetica,Arial,sans-serif]
 <p align="center">
 <img src="../../img/scribble/35.png"></p> 
 
-<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+<p align="center">
+<img src="../../img/scribble/54.png"></p> 
 
+<p align="center">
+<img src="../../img/scribble/57.png"></p> 
+
+<p align="center">
+<img src="../../img/scribble/58.png"></p> 
+
+<b> Profile icon clicked ⤵ </b>
+
+<p align="center">
+<img src="../../img/scribble/59.png"></p> 
+
+<b> Help button clicked ⤵ </b>
+<p align="center">
+<img src="../../img/scribble/60.png"></p> 
+
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
 ### Monitis  
 <p/>
 
