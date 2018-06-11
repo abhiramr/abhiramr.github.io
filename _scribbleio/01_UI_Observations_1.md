@@ -1,6 +1,7 @@
 ---
 title: UI Current State and Thoughts - 1
 subtitle: demo.scribbledata.io as it currently stands
+comments: true
 ---
 
 <p>The following are the various screens we have so far for our reference. I don't have a private repo to host this on but this is relatively inconspicious, no proprietary information and won't be found as a page so I'm fine hosting it here for now. </p>
