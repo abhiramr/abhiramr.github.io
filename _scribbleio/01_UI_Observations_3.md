@@ -5,8 +5,8 @@ comments: true
 ---
 
 
-#### Status Cake 
-
+### Status Cake 
+<p/>
 ``` 
 Colors :  Purple (#3e1336) and Gray
 Fonts: Arial, Helvetica, sans-serif 
@@ -17,7 +17,9 @@ Fonts: Arial, Helvetica, sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Elastic Cloud  
+### Elastic Cloud  
+<p/>
+
 ```
 Colors : #3F3F3F, white 
 Fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif
@@ -28,7 +30,9 @@ Fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### PingoMeter  
+### PingoMeter  
+<p/>
+
 ```
 Colors : #4c5964, #18252d, white  ] 
 Fonts : proxima-nova,Helvetica,Arial,sans-serif]
@@ -38,7 +42,9 @@ Fonts : proxima-nova,Helvetica,Arial,sans-serif]
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Monitis  
+### Monitis  
+<p/>
+
 ```
 Colors : #141414 , #c5c5c5
 Fonts: arial, tahoma, helvetica, sans serif
@@ -51,7 +57,9 @@ Fonts: arial, tahoma, helvetica, sans serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### DataDog  
+### DataDog 
+<p/>
+
 ```
 Colors : #332d39, white 
 Fonts: OpenSans,Lucida Grande,Lucida Sans Unicode,sans-serif
@@ -66,14 +74,18 @@ Fonts: OpenSans,Lucida Grande,Lucida Sans Unicode,sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Netflow Analyser 
+### Netflow Analyser 
+<p/>
+
 
 <p align="center">
 <img src="../../img/scribble/43.png"></p> 
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Flow 
+### Flow 
+<p/>
+
 ```
 Colors : #49a9f9, white
 Fonts: Tofino,Helvetica,Arial,sans-serif
@@ -84,7 +96,9 @@ Fonts: Tofino,Helvetica,Arial,sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Xero 
+### Xero 
+<p/>
+
 ```
 Colors : 
  - Banner : linear-gradient(#048abb,#048abb) , 
@@ -98,7 +112,9 @@ Fonts: arial,helvetica,sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Sentry 
+### Sentry 
+<p/>
+
 ```
 Colors: #2f2936, white
 Fonts: Rubik,Avenir Next,Helvetica Neue,sans-serif
@@ -108,7 +124,9 @@ Fonts: Rubik,Avenir Next,Helvetica Neue,sans-serif
 
 <hr style="height:2px;border:none;color:#333;background-color:#333;" />
 
-#### Helpscout 
+### Helpscout 
+<p/>
+
 ```
 Colors: 
  - Banners : #1f5e89, white, black. 
@@ -127,7 +145,9 @@ Fonts: "Aktiv Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif
 
 And you've already seen 
 
-#### Asana 
+### Asana 
+<p/>
+
 ```
 Colors:
  - Sidebar background : #151b26
