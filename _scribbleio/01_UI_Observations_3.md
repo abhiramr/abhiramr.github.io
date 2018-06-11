@@ -9,7 +9,6 @@ comments: true
 
 ``` 
 Colors :  Purple (#3e1336) and Gray
-
 Fonts: Arial, Helvetica, sans-serif 
 ```
 
