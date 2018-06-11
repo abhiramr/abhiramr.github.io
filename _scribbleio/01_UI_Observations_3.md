@@ -34,8 +34,8 @@ Fonts: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif
 <p/>
 
 ```
-Colors : #4c5964, #18252d, white  ] 
-Fonts : proxima-nova,Helvetica,Arial,sans-serif]
+Colors : #4c5964, #18252d, white
+Fonts : proxima-nova,Helvetica,Arial,sans-serif
 ```
 <p align="center">
 <img src="../../img/scribble/35.png"></p> 
