@@ -1,5 +1,10 @@
+---
+layout: post
+title: Django Filter snippet to Shorten naturaltime format
+tags: [django, python, code]
+---
 
-- This is a filter to shorten the natural time value obtained using naturaltime function from humanize.
+- This is a filter snippet to shorten the natural time value obtained using naturaltime function from humanize.
 
 
 {% raw %}

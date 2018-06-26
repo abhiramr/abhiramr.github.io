@@ -1,3 +1,8 @@
+---
+layout: post
+title: Memory Monitor Widget using Python
+tags: [gtk, python, code]
+---
 I use Ubuntu 16.04 and I've been searching for a good memory monitoring desktop widget to no avail. I found a couple of taskbar widgets but none that would tell me the free memory left in addition to the used/swap/cache memories. 
 
 So I decided to write my own (with loads of help from the Internet of course).
