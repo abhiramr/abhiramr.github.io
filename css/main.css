@@ -5,7 +5,19 @@ layout: null
 @import url("pygment_highlights.css");
 
 /* --- General --- */
-
+.book {
+    height: 205px;
+    width: 150px;
+    padding: 15px 0 0 0;
+    /*margin: auto;*/
+}
+.shelf {
+    border-bottom: 30px solid #A1A194;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: -15px;
+    z-index: -1;
+}
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
