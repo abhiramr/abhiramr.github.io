@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://abhiramr.github.io"
+url: "http://abhiramr.com"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -70,7 +70,7 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "abhi.darkness@gmail.com"
+  email: "me@abhiramr.com"
   facebook: abhidotr
   github: abhiramr
   twitter: abhi5459
