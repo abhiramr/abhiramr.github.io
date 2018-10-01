@@ -3,7 +3,7 @@ layout: post
 title: Links I looked up while learning how to configure Nginx and Gunicorn for my Flask application
 tags: [flask, python, code]
 ---
-So, I looked up a lot of links while learning how to configure Gunicorn and Nginx for a Flask app I'm building -
+So, I looked up a lot of links while learning how to configure Gunicorn and Nginx for a Flask app I'm building. An article on the specifics of what I learnt will follow this one. This one focuses on the links and resources themselves -
 
 ### First of all, you're probably asking - Why do I need Gunicorn and Nginx? That's what I looked up first as well.
 
