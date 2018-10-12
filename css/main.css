@@ -19,7 +19,7 @@ layout: null
     z-index: -1;
 }
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Courier New', 'Lora', 'Times New Roman', serif;
   font-size: 18px;
   color: #404040;
   position: relative;
