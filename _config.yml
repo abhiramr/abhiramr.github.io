@@ -22,7 +22,7 @@ description: Quis Custodiet Ipsos Custodes?
 # List of links in the navigation bar
 navbar-links:
 
-  My Writing:
+  My Posts:
    - Tech : "tech/"
    - Non-Tech: "http://abhiwrites.com"
   Books I've Read: "books/"
