@@ -26,6 +26,6 @@ I was trying to find which repos in my set of folders have a setup.py file. So, 
 
 `git push origin --delete <your_branch>`
 
-- for deleting the local branch, you have three ways:
+- for deleting the local branch:
 
 `git branch -D <branch_name>`
