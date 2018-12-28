@@ -13,6 +13,19 @@ I was trying to find which repos in my set of folders have a setup.py file. So, 
 `find . -maxdepth 2 -iname setup.py`
 
 
+
+### Github - 
+
 #### To change your git remote-url -
 
 `git remote set-url origin <url_name>`
+
+#### Steps for deleting a branch:
+
+- for deleting the remote branch:
+
+`git push origin --delete <your_branch>`
+
+- for deleting the local branch:
+
+`git branch -D <branch_name>`
