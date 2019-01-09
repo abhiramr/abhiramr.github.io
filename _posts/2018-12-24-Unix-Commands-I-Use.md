@@ -29,3 +29,13 @@ I was trying to find which repos in my set of folders have a setup.py file. So, 
 - for deleting the local branch:
 
 `git branch -D <branch_name>`
+
+#### To delete a file from remote while retaining your local copy -
+
+- For single file:
+
+`git rm --cached mylogfile.log`
+
+- For single directory:
+
+`git rm --cached -r mydirectory`
