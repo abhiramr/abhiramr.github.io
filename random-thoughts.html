@@ -2,81 +2,38 @@
 layout: page
 title: Random Thoughts
 ---
-<head>
+<meta charset="UTF-8">
 <style>
-
 pre {
   white-space: pre-wrap;
   word-break: keep-all
-}</style>
-</head>
-<div style="word-wrap: break-word;">
-I've been posting my observations and thoughts I deem shareworthy (all original content), sometimes mistakenly, on Facebook for the past 4-5 years and I think now it's time I collated them all in one space that is not Facebook. So this is it.
-
-<hr/>
-
-<b>Friday - 28 Dec 2018</b>
-<br/><br/>
-<blockquote>
-<pre>
-90s song remade for the current generation -
-Aaj mai Uber
-Brake hai neeche
-Traffic hai aage
-Aur police mere peeche.
-
-#KavitaKizzo</pre></blockquote>
-
-<hr/>
-
-<b>Thursday - 27 Dec 2018</b>
-<br/><br/>
-<blockquote>
-<pre>
-Persuasive shayars starting their Shayari be like -
-Urge kiya hai 
+}
+</style>
+<div class="posts-list">
+  {% for post in site.data.statuses.status %}
+  <b>{{post.date}}</b>
+  <br/>
+  <blockquote>
+    <pre>
+{{post.data}}
 </pre>
-<br/>
-<pre>
-You don't hurt the people you love.
-Intentionally you don't.
-But you can't hurt the people that you..
-(Skip ad)
-
-#jiskoSamajhMeAayaUskoSamajhMeAaya
-</pre>
-</blockquote>
-<hr/>
-
-<b>Wednesday - 26 Dec 2018</b>
-<br/><br/>
-<blockquote>
-<pre>
-Facebook has increased my productivity by 50% by introducing ads in its videos midway. 
-Thank you Facebook.
-
-<br>#goodGuySuckerberg
-</pre>
-</blockquote>
-<hr/>
-
-<b>Friday - 21 Dec 2018</b>
-<br/><br/>
-<blockquote>
-<pre>
-Who called it Australia and not Koala Lump-ur?
-</pre>
-</blockquote>
-<hr/>
-
-<b>Thursday - 20 Dec 2018</b>
-<br/><br/>
-<blockquote>
-<pre>
-My aaj ka uber driver for some reason thinks I'm a tourist and is pointing out the different malls in Bangalore as we pass it. He even pointed out a McD.
-
-Dei, I know I'm from Puttenahalli, but bro I've seen McDisney da  :/
-</blockquote>
-<hr/>
-
+  </blockquote>
+  {% endfor %}
 </div>
+
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.pages | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.pages | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
