@@ -1,18 +1,25 @@
 ---
 layout: page
 title: Books I've read
-subtitle: 2018  [ 33 of 35 targeted books ]
+subtitle: 
 ---
+
+
 
 <div class="container">
     {% for book in  site.data.books %}
+    <div class="row">
+
+    <h3>{{book.year}} ({{book.book_list.size}} {% if book.book_list.size == 1 %}book{% else %}books{% endif %})</h3> 
+    {% for b in book.book_list %}
+
         {% assign loopindex = forloop.index | modulo: 4 %}
 
         {% if loopindex == 0 %}
             <div class="row">
         {% endif %}
 
-        <div class="col-xs-4 col-md-2"><img src="{{ book.title}}" class="img-responsive book"/></div>
+        <div class="col-xs-4 col-md-2"><img src="{{ b.title}}" class="img-responsive book"/></div>
 
         {% if loopindex == 4 %}
             <div class="col-xs-8 shelf"></div>
@@ -21,6 +28,10 @@ subtitle: 2018  [ 33 of 35 targeted books ]
         {% if loopindex == 0 %}
             </div>
         {% endif %}
+        {% endfor %}
+</div>
+<hr/>
+
     {% endfor %}
 </div>
 
