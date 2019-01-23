@@ -1,26 +1,21 @@
 ---
 layout: page
-title: Random Thoughts
+title: FB Statuses Compilation
 ---
 <meta charset="UTF-8">
-<style>
-pre {
-  white-space: pre-wrap;
-  word-break: keep-all
-}
-</style>
+This is a log of all the text puns/jokes/thoughts/observations I've made or intended to make on my Facebook timeline over the years. 
+<hr/>
 <div class="posts-list">
-  {% for post in site.data.statuses.status %}
+  {% for post in site.data.statuses.status reversed %}
   <b>{{post.date}}</b>
   <br/>
   <blockquote>
-    <pre>
+    <pre class="status">
 {{post.data}}
 </pre>
   </blockquote>
   {% endfor %}
 </div>
-
 
 {% if paginator.total_pages > 1 %}
 <ul class="pager main-pager">

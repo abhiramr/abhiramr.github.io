@@ -5,6 +5,11 @@ layout: null
 @import url("pygment_highlights.css");
 
 /* --- General --- */
+pre.status{
+  white-space: pre-wrap;
+  word-break: keep-all
+}
+
 .book {
     height: 205px;
     width: 150px;
