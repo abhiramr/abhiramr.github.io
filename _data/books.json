@@ -1,5 +1,9 @@
 [    
 {"year":"2019","book_list":[
+    {"title":"../img/books/a_man_called_ove.jpg"},
+    {"title":"../img/books/newcomer.jpg"},
+    {"title":"../img/books/deep_work.jpg"},
+    {"title":"../img/books/emperors_soul.jpg"},
     {"title":"../img/books/predictablyirrational.jpg"}]},
 
     {"year":"2018","book_list":[
