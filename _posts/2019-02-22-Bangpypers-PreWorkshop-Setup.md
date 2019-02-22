@@ -18,7 +18,7 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 -  Open terminal using `Ctrl+Alt+T` or searching for “Terminal” from app launcher. Once it opens, run the following command to add the  Personal Package Archive (PPA):
 
 ~~~~
- $sudo add-apt-repository ppa:jonathonf/python-3.5
+ $sudo add-apt-repository ppa:jonathonf/python-3.6
 ~~~~
 <p/>
 
@@ -26,8 +26,9 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 
 ~~~~
  $sudo apt-get update
- $sudo apt-get install python3.5
- sudo apt-get install python3-pip
+ $sudo apt-get install python3.6
+ $sudo apt-get install python3-pip
+ $sudo apt-get install python3.6-dev
 ~~~~
 <p/>
 - Install virtualenv:
@@ -42,7 +43,7 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
  $cd ~
  $mkdir twisted_workshop
  $cd twisted_wokshop
- $virtualenv -p python3.5 venv
+ $virtualenv -p python3.6 venv
  $source venv/bin/activate
  $pip install twisted (For the Twisted Workshop)
 ~~~~
@@ -50,7 +51,7 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 ### Windows
 <p/>
 
-- Download and install the binary from [https://www.python.org/ftp/python/3.5.4/python-3.5.4-amd64.exe](https://www.python.org/ftp/python/3.5.4/python-3.5.4-amd64.exe)
+- Download and install the binary from [https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe](https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe)
 <p/>
 - Save the file from here [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py) and run it using :
 
@@ -69,7 +70,7 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 - Create a new virtual environment and install Twisted in it :
 
 ~~~~
- C:\Users\abhiram\Desktop>virtualenv -p python3.5 venv
+ C:\Users\abhiram\Desktop>virtualenv -p python3.6 venv
  C:\Users\abhiram\Desktop>source venv/bin/activate
  C:\Users\abhiram\Desktop>pip install twisted (For the Twisted Workshop)
 ~~~~
