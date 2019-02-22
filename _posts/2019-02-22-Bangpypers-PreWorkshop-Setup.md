@@ -4,7 +4,7 @@ title: Bangpypers Pre-Workshop Setup
 tags: [python, unix, code, commands]
 ---
 
-This post is a guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.
+We at Bangpypers conduct a lot of workshops and some steps are common for all of them. To that end, this post is meant to serve as guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.
 <hr/>
 ### Ubuntu 
 <p/>
