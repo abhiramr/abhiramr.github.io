@@ -53,6 +53,8 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 
 - Download and install the binary from [https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe](https://www.python.org/ftp/python/3.6.8/python-3.6.8-amd64.exe)
 <p/>
+- Add the location of the Python folder at the point of installation to the $PATH environment variable.
+<p/>
 - Save the file from here [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py) and run it using :
 
 ~~~~
@@ -71,7 +73,7 @@ We at Bangpypers conduct a lot of workshops and some steps are common for all of
 
 ~~~~
  C:\Users\abhiram\Desktop>virtualenv -p python3.6 venv
- C:\Users\abhiram\Desktop>source venv/bin/activate
+ C:\Users\abhiram\Desktop>venv/Scripts/activate
  C:\Users\abhiram\Desktop>pip install twisted (For the Twisted Workshop)
 ~~~~
 
