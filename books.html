@@ -18,8 +18,12 @@ subtitle:
         {% if loopindex == 0 %}
             <div class="row">
         {% endif %}
-
-        <div class="col-xs-4 col-md-2"><a href="{{ b.link }}"><img src="{{ b.title}}" class="img-responsive book"/></a></div>
+        
+        {% if b.link %}
+        <div class="col-xs-4 col-md-2"><a href="{{ b.link }}"><img src="{{ b.title}}" title="Review present!" class="img-responsive book"/></a></div>
+        {% else %}
+        <div class="col-xs-4 col-md-2"><img src="{{ b.title}}" class="img-responsive book"/></div>
+        {% endif %}
 
         {% if loopindex == 4 %}
             <div class="col-xs-8 shelf"></div>
