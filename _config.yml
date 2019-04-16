@@ -241,12 +241,15 @@ plugins:
 
 collections:
   - scribbleio
+  - bookreviews
   
 collections:
   scribbleio:
     output: true
     permalink: /scribbleio/:path/
-
+  bookreviews:
+    output: true
+    permalink: /bookreviews/:path/
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
