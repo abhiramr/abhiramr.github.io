@@ -120,5 +120,9 @@
   {% if site.matomo %}
   {% include matomo.html %}
   {% endif %}
-
+  
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+  
 </head>
