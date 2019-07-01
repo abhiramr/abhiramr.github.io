@@ -1,6 +1,6 @@
 ---
-title: Design of Everyday Thoughts - 1
-subtitle: Notes from DOET
+title: DOET - 1
+subtitle: Notes from Design of Everyday Thoughts by Don Norman
 comments: true
 ---
 
