@@ -21,7 +21,7 @@ comments: true
 	- <b>Deliver</b> : - 
 
 <p align="center">
-<img src="../../img/scribble/1.png"></p>
+<img src="../../img/scribble/01.png"></p>
 
 ### After Logging In :
 
@@ -60,7 +60,7 @@ comments: true
 	- Admin (To be ideally displayed only if the user is the admin)
 
 <p align="center">
-<img src="../../img/scribble/2.png"></p>
+<img src="../../img/scribble/02.png"></p>
 
 ## Design notes
 
@@ -74,9 +74,9 @@ E.g. - Considering something as rudimentary as Sublime Text or its inferior cous
 - Many friendly websites also have a pop-over the first time they're used, displaying the various options that can be used. For e.g - GMail, Evernote, Dropbox. Granted, these are B2C, but even the users who use a B2B product such as ours will probably appreciate it. 
 Asana, for example is both B2B and B2C, and it has animated tips that flit over in turn.
 <p align="center">
-<img src="../../img/scribble/6.png"></p>
+<img src="../../img/scribble/06.png"></p>
 <p align="center">
-<img src="../../img/scribble/7.png"></p>
+<img src="../../img/scribble/07.png"></p>
 - What if there are features that are offered over and above their current paying slab? They should be aware of it so they can avail it at some point. Even if this is intended as a utilitarian site and not the main business facing website, this can be a part of the "Profile" info so they can view those features and they can request the admin if that's a necessity (This might be overkill.)
 - Based on the role of the user, the FAQ should link to the Operations page or the current FAQ page. As an engineer, I'm more concerned about the technical operations than the offerings of the parent company. 
 
@@ -91,13 +91,13 @@ But here it is as it stands -
 
 
 <p align="center">
-<img src="../../img/scribble/3.png"></p>
+<img src="../../img/scribble/03.png"></p>
 
 <p align="center">
-<img src="../../img/scribble/4.png"></p>
+<img src="../../img/scribble/04.png"></p>
 
 <p align="center">
-<img src="../../img/scribble/5.png"></p>
+<img src="../../img/scribble/05.png"></p>
 
 I personally liked AdminLTE a lot. It seems...sleeker. But yes, the color scheme and layouts will depend on the content. The content depends on the utility. 
 
