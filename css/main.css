@@ -9,7 +9,16 @@ pre.status{
   white-space: pre-wrap;
   word-break: keep-all
 }
+svg {
+  display: block;
+  width: 1000px;
+  height: 600px;
+}
 
+#svg_text {
+  font-family: 'Shadows Into Light', cursive;
+
+}
 .book {
     height: 205px;
     width: 150px;
