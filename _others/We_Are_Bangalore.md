@@ -10,6 +10,10 @@ Now, I'm a data engineer and I'm not in favor of losing out on information that'
 
 So I thought I'd make a ready reckoner for the threads so you can look it up here anytime! :)
 
+<h2><u> Bangalore or Bengaluru? </u></h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Starting off with something light-hearted - <br>Given the changes in names our beloved city has gone through, Bengaluru 👉🏻 Bangalore 👉🏻 Bengaluru , <br>What do You call it?</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1145546120447193088?ref_src=twsrc%5Etfw">July 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr/>
 <h2><u> Favorite parks -</u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">So one of my favorite things to do is take a nice walk in /around a park. Among the ones I frequent are-<br>- Mini Forest (JP Nagar 3rd Phase) <br>- Puttenahalli park<br>- One in RBI Layout, JP Nagar<br>- Dhanavantari Park near SN refreshments.<br>Is there one you go to? Tell us! <a href="https://t.co/cx6YYRa5wy">pic.twitter.com/cx6YYRa5wy</a></p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1145579529819213824?ref_src=twsrc%5Etfw">July 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
