@@ -46,3 +46,27 @@ So I thought I'd make a ready reckoner for the threads discussed during the week
 And of course, I thank the admins of <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> for the opportunity :blush: Cheers!
 
 PS - If you'd like to volunteer to curate the WAB account, reach out to the admins at <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> or fill in their form <a href="http://wearebangalore.webs.com/curator-form"  style="color:blue">here.</a>
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = abhiramr.github.io/others/We_Are_Bangalore;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = We_Are_Bangalore; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://abhiramr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
