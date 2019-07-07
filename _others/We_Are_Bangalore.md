@@ -39,10 +39,12 @@ So I thought I'd make a ready reckoner for the threads discussed during the week
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You know you&#39;re Bangalorean when you have only one fear - &#39;gaadiYethaakondHogbidthaanophobia&#39;</p>&mdash; Abhiram in all probability (@abhicantdraw) <a href="https://twitter.com/abhicantdraw/status/1147164373653131269?ref_src=twsrc%5Etfw">July 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <hr/>
-<h4><i>And finally</i></h4>
 <h2><u>  Communities of Bangalore - </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Thread] Today&#39;s topic of discussion I&#39;d like to broach is one of Community building. I&#39;m a big believer in communities and I&#39;m sure all of you have some stake in this as you Are part of Twitter.</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1146435629514838025?ref_src=twsrc%5Etfw">July 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<hr/>
+<h4><i>Finally, signing off -</i></h4>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Weekend Thread] I&#39;ve had fun curating <a href="https://twitter.com/WeAreBangalore?ref_src=twsrc%5Etfw">@WeAreBangalore</a> this week, guys and girls :)<br>The topics we discussed in summary were hobbies, parks , the Metro, books, community and one of the most important issues plaguing our society - Suicide. I&#39;d hate for our short attention spans to</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1147931211374956544?ref_src=twsrc%5Etfw">July 7, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr/>
 And of course, I thank the admins of <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> for the opportunity :blush: Cheers!
 
 PS - If you'd like to volunteer to curate the WAB account, reach out to the admins at <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> or fill in their form <a href="http://wearebangalore.webs.com/curator-form"  style="color:blue">here.</a>
