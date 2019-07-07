@@ -246,6 +246,9 @@ collections:
   - scribbleio
   - bookreviews
   - data_and_design
+  - learning_machine_learning
+  - others
+
 collections:
   scribbleio:
     output: true
@@ -256,6 +259,12 @@ collections:
   data_and_design:
     output: true
     permalink: /data_and_design/:path/
+  learning_machine_learning:
+    output: true
+    permalink: /learning_machine_learning/:path/
+  others:
+    output: true
+    permalink: /others/:path
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
