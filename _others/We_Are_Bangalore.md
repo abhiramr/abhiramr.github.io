@@ -30,6 +30,9 @@ So I thought I'd make a ready reckoner for the threads discussed during the week
 <h2><u>An earnest note to students, parents and teachers everywhere - </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://t.co/WYiXK9O1UN">https://t.co/WYiXK9O1UN</a><br><br>[Thread - Important] I hate to bring this point up at this point in time and I&#39;ll RT it in the morning but this is a critical thing and I&#39;d like to address all the students and parents following this awesome account.</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1146104433987575808?ref_src=twsrc%5Etfw">July 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <hr/>
+<h2><u> On self-confidence</u></h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Good morning Bengaluru! 😊<br>One thing that I&#39;ve found is integral to self development and even perhaps good day-to-day functioning is self-confidence. You may a lot of talent, intelligence and ability, but if you don&#39;t believe in yourself, you&#39;re just pulling yourself down.</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1146633296287170560?ref_src=twsrc%5Etfw">July 4, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr/>
 <h2><u> A couple of jokes - </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">A tense 20 secs. The petrol bunk guy looked alternatingly at me with increasing suspicion &amp; at the machine with frustration. I looked back at him, not really thinking about anything except the remaining trip to work.<br>Then he said -&quot;Idhu aagalla saar&quot;😑<br>And returned my Metro card.</p>&mdash; Abhiram in all probability (@abhicantdraw) <a href="https://twitter.com/abhicantdraw/status/1146324459583762432?ref_src=twsrc%5Etfw">July 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -39,3 +42,5 @@ So I thought I'd make a ready reckoner for the threads discussed during the week
 <h4><i>And finally</i></h4>
 <h2><u>  Communities of Bangalore - </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Thread] Today&#39;s topic of discussion I&#39;d like to broach is one of Community building. I&#39;m a big believer in communities and I&#39;m sure all of you have some stake in this as you Are part of Twitter.</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1146435629514838025?ref_src=twsrc%5Etfw">July 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+And of course, I thank the admins of <a href="https://twitter.com/WeAreBangalore">We Are Bangalore</a> for the opportunity :blush: Cheers!
