@@ -43,4 +43,6 @@ So I thought I'd make a ready reckoner for the threads discussed during the week
 <h2><u>  Communities of Bangalore - </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">[Thread] Today&#39;s topic of discussion I&#39;d like to broach is one of Community building. I&#39;m a big believer in communities and I&#39;m sure all of you have some stake in this as you Are part of Twitter.</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1146435629514838025?ref_src=twsrc%5Etfw">July 3, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-And of course, I thank the admins of <a href="https://twitter.com/WeAreBangalore">We Are Bangalore</a> for the opportunity :blush: Cheers!
+And of course, I thank the admins of <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> for the opportunity :blush: Cheers!
+
+PS - If you'd like to volunteer to curate the WAB account, reach out to the admins at <a href="https://twitter.com/WeAreBangalore"  style="color:blue">We Are Bangalore</a> or fill in their form <a href="http://wearebangalore.webs.com/curator-form"  style="color:blue">here.</a>
