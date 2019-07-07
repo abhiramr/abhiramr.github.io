@@ -5,10 +5,10 @@ comments: true
 ---
 
 Hey guys,
-Thank you for being an awesome bunch of peeps participating on the threads and sharing your hobbies and ideas and favorite parks and everything else really. :blush: I certainly had a lot of fun learning everything I did. 
+Thank you for being an awesome bunch of peeps participating on the threads during <a href="https://twitter.com/WeAreBangalore/status/1145540378516307968?s=20" style="color:blue">my week curating WAB</a> and sharing your hobbies and ideas and favorite parks and everything else really. :blush: I certainly had a lot of fun learning everything I did. 
 Now, I'm a data engineer and I'm not in favor of losing out on information that's provided because it's invaluable :)
 
-So I thought I'd make a ready reckoner for the threads so you can look it up here anytime! :)
+So I thought I'd make a ready reckoner for the threads discussed during the week so you can look it up here anytime! :)
 
 <h2><u> Bangalore or Bengaluru? </u></h2>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Starting off with something light-hearted - <br>Given the changes in names our beloved city has gone through, Bengaluru 👉🏻 Bangalore 👉🏻 Bengaluru , <br>What do You call it?</p>&mdash; Bengaluru/Abhiram (@WeAreBangalore) <a href="https://twitter.com/WeAreBangalore/status/1145546120447193088?ref_src=twsrc%5Etfw">July 1, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
