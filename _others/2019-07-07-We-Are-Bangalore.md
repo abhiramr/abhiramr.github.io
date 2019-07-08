@@ -59,8 +59,8 @@ PS - If you'd like to volunteer to curate the WAB account, reach out to the admi
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
 var disqus_config = function () {
-this.page.url = abhiramr.github.io/others/We_Are_Bangalore;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = We_Are_Bangalore; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = abhiramr.github.io/others/2019-07-07-We-Are-Bangalore;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2019-07-07-We-Are-Bangalore; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 */
 (function() { // DON'T EDIT BELOW THIS LINE
