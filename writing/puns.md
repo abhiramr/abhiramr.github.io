@@ -2,6 +2,7 @@
 title: Puns
 comments: true
 ---
+The jokes and puns and wordtwisty thingys are all creations of me, Abhiram R and if you'd like to use any of them on your site/page, ping me on Twitter at <b><a href="https://twitter.com/abhicantdraw" style="color:blue">abhicantdraw</a></b> and I will provide a sharable view. If you'd like to contact me for creative content for marketing/ads on a freelance basis/for non-profit, hit me up :blush:. 
 
 ### English
 
@@ -30,10 +31,13 @@ __28-06-2019__
 ### Linkuistic
 
 __08-07-2019__
-- Who called it shaving and not mushkill? 🧐
+- Who called it shaving and not mushkill? :unamused:
 
 - Sun Tzu : The Art of War;
 Sanju : The Art of Farce
+
+__22-06-2019__
+- Police officers in Tamil Nadu should be called Noor Jawan.
 
 __27-06-2019__
 - I ate one lays and one 5 star just now which is in line with my special ketto diet which has just one basic rule - Don't ask me about my diet ketto? :angry:
