@@ -13,6 +13,7 @@ The jokes and puns and wordtwisty thingys below are all creations of mine - Abhi
 
 __09-07-2019__
 -  Most people find stitching tedious. I personally find it sewthing.
+- My puns may not make you smile. :confused: But I guarantee they're all homegroan.:running:
 - Debating who to good naturedly insult from among a group of friends - tough dissision.
 - The technical term for a lamp's brightness is...Lamplitude
 
