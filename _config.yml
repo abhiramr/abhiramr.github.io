@@ -248,7 +248,7 @@ collections:
   - bookreviews
   - data_and_design
   - learning_machine_learning
-  - puns
+  - writing
   - others
 
 collections:
@@ -267,6 +267,9 @@ collections:
   others:
     output: true
     permalink: /others/:path
+  writing:
+    output: true
+    permalink: /writing/:path
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 
