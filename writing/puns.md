@@ -2,7 +2,9 @@
 title: Puns
 comments: true
 ---
-The jokes and puns and wordtwisty thingys are all creations of me, Abhiram R and if you'd like to use any of them on your site/page, ping me on Twitter at <b><a href="https://twitter.com/abhicantdraw" style="color:blue">abhicantdraw</a></b> and I will provide a sharable view. If you'd like to contact me for creative content for marketing/ads on a freelance basis/for non-profit, hit me up :blush:. 
+The jokes and puns and wordtwisty thingys are all creations of me, Abhiram R and if you'd like to use any of them on your site/page, ping me on Twitter at <b><a href="https://twitter.com/abhicantdraw" style="color:blue">abhicantdraw</a></b> and I will provide a sharable view. If you'd like to contact me for creative content/language work for marketing/ads on a freelance basis/for non-profit, hit me up :blush:. 
+
+(This page is being updated with the entire set of my creations from Twitter and FB. It is an arduous process. I should have done this sooner)
 
 ### English
 
