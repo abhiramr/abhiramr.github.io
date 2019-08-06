@@ -3,7 +3,7 @@ title: Podcasts
 subtitle: A growing list of my favorite and publicly favorited podcasts
 comments: true
 ---
-<h2><u>My current, regulars</u></h2>
+<h2><u>My current regulars</u></h2>
 - <a href="https://www.stitcher.com/podcast/parcast/mythology" style="color:blue"> <img src="/img/podcasts/myth.jpg" height="42" width="42"> Mythology by Parcast </a>
 - <a href="https://www.stitcher.com/podcast/rationally-speaking" style="color:blue"> <img src="/img/podcasts/rationally.jpg" height="42" width="42"> Rationally speaking with Julia Galef </a>
 - <a href="https://www.stitcher.com/podcast/tim-ferriss-show/the-tim-ferriss-show" style="color:blue"><img src="/img/podcasts/tf.jpg" height="42" width="42"> The Tim Ferriss Show </a>
