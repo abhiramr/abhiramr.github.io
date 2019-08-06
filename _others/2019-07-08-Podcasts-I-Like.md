@@ -58,6 +58,10 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/canadian-broadcasting-corporation/quirks-and-quarks-complete-show-from-cbc-radio" style="color:blue"><img src="/img/podcasts/quirks.jpg" height="42" width="42"> Quirks and Quarks  </a>
 - <a href="https://www.stitcher.com/podcast/bbc/the-curious-cases-of-rutherford-fry" style="color:blue"><img src="/img/podcasts/rutherford.jpg" height="42" width="42"> The Curious Cases of Rutherford & Fry </a>
 - <a href="https://www.stitcher.com/podcast/the-intersection" style="color:blue"><img src="/img/podcasts/intersection.jpg" height="42" width="42"> The Intersection </a>
+<p><u>Via <a href="https://twitter.com/karmanya"  style="color:blue">karmanya</a></u></p>
+- <a href="https://www.stitcher.com/podcast/stitcher/freakonomics-radio" style="color:blue"><img src="/img/podcasts/freak.jpg" height="42" width="42">Freakonomics Radio</a>
+<p><u>Via <a href="https://twitter.com/calavandi" style="color:blue">Chaitanya</a></u></p>
+- <a href="https://www.stitcher.com/podcast/national-public-radio/invisibilia" style="color:blue"><img src="/img/podcasts/invisibilia.jpg" height="42" width="42">Invisibilia</a>
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
