@@ -48,6 +48,8 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/indus-vox/paperback" style="color:blue"><img src="/img/podcasts/paperback.jpg" height="42" width="42"> Paperback </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/the-seen-and-the-unseen" style="color:blue"><img src="/img/podcasts/seenunseen.jpg" height="42" width="42"> The Seen and the Unseen </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/echoes-of-india-a-history-podcast" style="color:blue"><img src="/img/podcasts/echoesofindia.jpg" height="42" width="42"> Echoes of India </a>
+- <a href="https://www.stitcher.com/podcast/shane-parrish/the-knowledge-project" style="color:blue"><img src="/img/podcasts/knowledge.jpg" height="42" width="42"> The Knowledge Project with Shane Parrish </a>
+- <a href="https://www.stitcher.com/podcast/prx/99-invisible" style="color:blue"><img src="/img/podcasts/99invisible.jpg" height="42" width="42"> 99% Invisible </a>
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
