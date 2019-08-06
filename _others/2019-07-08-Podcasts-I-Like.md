@@ -48,8 +48,10 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/indus-vox/paperback" style="color:blue"><img src="/img/podcasts/paperback.jpg" height="42" width="42"> Paperback </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/the-seen-and-the-unseen" style="color:blue"><img src="/img/podcasts/seenunseen.jpg" height="42" width="42"> The Seen and the Unseen </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/echoes-of-india-a-history-podcast" style="color:blue"><img src="/img/podcasts/echoesofindia.jpg" height="42" width="42"> Echoes of India </a>
+<p><u>Via Nishant Singh</u></p> 
 - <a href="https://www.stitcher.com/podcast/shane-parrish/the-knowledge-project" style="color:blue"><img src="/img/podcasts/knowledge.jpg" height="42" width="42"> The Knowledge Project with Shane Parrish </a>
 - <a href="https://www.stitcher.com/podcast/prx/99-invisible" style="color:blue"><img src="/img/podcasts/99invisible.jpg" height="42" width="42"> 99% Invisible </a>
+<p><u>Via <a href="https://twitter.com/vdeepak13"  style="color:blue">Deepak V</a></u></p>
 - <a href="https://www.stitcher.com/podcast/national-public-radio/hidden-brain" style="color:blue"><img src="/img/podcasts/nprhiddenbrain.jpg" height="42" width="42"> Hidden Brain </a>
 - <a href="https://www.stitcher.com/podcast/the-moth-podcast" style="color:blue"><img src="/img/podcasts/themoth.jpg" height="42" width="42"> The Moth </a>
 - <a href="https://www.stitcher.com/podcast/bbc-the-infinite-monkey-cage" style="color:blue"><img src="/img/podcasts/infinitemonkey.jpg" height="42" width="42"> The Infinite Monkey Cage </a>
