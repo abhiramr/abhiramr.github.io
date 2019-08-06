@@ -62,6 +62,8 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/stitcher/freakonomics-radio" style="color:blue"><img src="/img/podcasts/freak.jpg" height="42" width="42">Freakonomics Radio</a>
 <p><u>Via <a href="https://twitter.com/calavandi" style="color:blue">Chaitanya</a></u></p>
 - <a href="https://www.stitcher.com/podcast/national-public-radio/invisibilia" style="color:blue"><img src="/img/podcasts/invisibilia.jpg" height="42" width="42">Invisibilia</a>
+<p><u>Via Preeti</a></u></p>
+- <a href="https://www.stitcher.com/podcast/aaron-mahnke/lore" style="color:blue"><img src="/img/podcasts/lore.jpg" height="42" width="42">Lore</a>
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
