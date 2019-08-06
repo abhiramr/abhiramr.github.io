@@ -55,7 +55,7 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/bbc-the-infinite-monkey-cage" style="color:blue"><img src="/img/podcasts/infinitemonkey.jpg" height="42" width="42"> The Infinite Monkey Cage </a>
 - <a href="https://www.stitcher.com/podcast/canadian-broadcasting-corporation/quirks-and-quarks-complete-show-from-cbc-radio" style="color:blue"><img src="/img/podcasts/quirks.jpg" height="42" width="42"> Quirks and Quarks  </a>
 - <a href="https://www.stitcher.com/podcast/bbc/the-curious-cases-of-rutherford-fry" style="color:blue"><img src="/img/podcasts/rutherford.jpg" height="42" width="42"> The Curious Cases of Rutherford & Fry </a>
-
+- <a href="https://www.stitcher.com/podcast/the-intersection" style="color:blue"><img src="/img/podcasts/intersection.jpg" height="42" width="42"> The Intersection </a>
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
