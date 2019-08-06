@@ -50,6 +50,12 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/indus-vox/echoes-of-india-a-history-podcast" style="color:blue"><img src="/img/podcasts/echoesofindia.jpg" height="42" width="42"> Echoes of India </a>
 - <a href="https://www.stitcher.com/podcast/shane-parrish/the-knowledge-project" style="color:blue"><img src="/img/podcasts/knowledge.jpg" height="42" width="42"> The Knowledge Project with Shane Parrish </a>
 - <a href="https://www.stitcher.com/podcast/prx/99-invisible" style="color:blue"><img src="/img/podcasts/99invisible.jpg" height="42" width="42"> 99% Invisible </a>
+- <a href="https://www.stitcher.com/podcast/national-public-radio/hidden-brain" style="color:blue"><img src="/img/podcasts/nprhiddenbrain.jpg" height="42" width="42"> Hidden Brain </a>
+- <a href="https://www.stitcher.com/podcast/the-moth-podcast" style="color:blue"><img src="/img/podcasts/themoth.jpg" height="42" width="42"> The Moth </a>
+- <a href="https://www.stitcher.com/podcast/bbc-the-infinite-monkey-cage" style="color:blue"><img src="/img/podcasts/infinitemonkey.jpg" height="42" width="42"> The Infinite Monkey Cage </a>
+- <a href="https://www.stitcher.com/podcast/canadian-broadcasting-corporation/quirks-and-quarks-complete-show-from-cbc-radio" style="color:blue"><img src="/img/podcasts/quirks.jpg" height="42" width="42"> Quirks and Quarks  </a>
+- <a href="https://www.stitcher.com/podcast/bbc/the-curious-cases-of-rutherford-fry" style="color:blue"><img src="/img/podcasts/rutherford.jpg" height="42" width="42"> The Curious Cases of Rutherford & Fry </a>
+
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
