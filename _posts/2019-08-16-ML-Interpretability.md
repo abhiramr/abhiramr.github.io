@@ -6,7 +6,7 @@ comments: true
 tags: [python, R, machine-learning, webinar]
 ---
 
-I attended this Webinar titled <a href="https://www.brighttalk.com/webcast/17563/366621" style="color:blue">"A Data Science Playbook for Explainable ML/AI"</a> conducted by Chief Data Scientist,Josh Poduska, and VP of Marketing, Jon Rooney of Domino Data. This post lays out some of the highlights (in my opinion) of the talk, peppered with my understandings and some additional points that might be of interest. I will breaking this learning-post up into two parts - the first part discussing the theoretical concepts of interpretability and Part-2 on different Open Source models that are in practice today. This is Part-1.
+I attended an interesting Webinar titled <a href="https://www.brighttalk.com/webcast/17563/366621" style="color:blue">"A Data Science Playbook for Explainable ML/AI"</a> conducted by Chief Data Scientist,Josh Poduska, and VP of Marketing, Jon Rooney of Domino Data. This post lays out some of the highlights (in my opinion) of the talk, peppered with my understandings and some additional points that might be of interest. I will breaking this learning-post up into two parts - the first part discussing the theoretical concepts of interpretability and Part-2 on different Open Source models that are in practice today. This is Part-1.
 
 <p/>The first question they started off with was probably one that was on everyone's mind - `Why care about Model Interpretability?`.
 The reasons they provided were threefold -
