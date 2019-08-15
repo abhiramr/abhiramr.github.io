@@ -2,6 +2,7 @@
 layout: post
 title: Machine Learning Interpretability (Part 1 of 2)
 subtitle: Webinar Learnings
+comments: true
 tags: [python, R, machine-learning, webinar]
 ---
 
@@ -71,3 +72,27 @@ This is where we'll mark the logical end of this part of the post. The next part
 
 Here's TL;DR version of this post -
 ![Domino1](../img/tech/domino/domino-2-interpretability-decon.jpg)
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = abhiramr.github.io/2019-08-16-ML-Interpretability;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2019-08-16-ML-Interpretability; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://abhiramr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
