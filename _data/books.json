@@ -1,5 +1,10 @@
 [    
 {"year":"2019","book_list":[
+    {"title":"../img/books/republicofthieves.jpg"},
+    {"title":"../img/books/frysenglishdelight.jpg"},
+    {"title":"../img/books/guernsey.jpg"},
+    {"title":"../img/books/redseasunderredskies.jpg"},
+    {"title":"../img/books/skyalbum.jpg"},
     {"title":"../img/books/the_lies_of_locke_lamora.jpg","link":"../bookreviews/2019_03_13_The_Lies_Of_Locke_Lamora/"},
     {"title":"../img/books/warbreaker.jpg"},
     {"title":"../img/books/a_man_called_ove.jpg","link":"../bookreviews/2019_02_13_A_Man_called_Ove/"},
