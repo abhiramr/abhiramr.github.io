@@ -1,6 +1,7 @@
 [    
 {"year":"2019","book_list":[
-    {"title":"../img/books/republicofthieves.jpg"},
+    {"title":"../img/books/mistborn5.jpg","link":"../bookreviews/2019_08_29_Shadows_of_self/"},
+    {"title":"../img/books/republicofthieves.jpg","link":"../bookreviews/2019_07_20_Republic_of_thieves/"},
     {"title":"../img/books/frysenglishdelight.jpg"},
     {"title":"../img/books/guernsey.jpg"},
     {"title":"../img/books/redseasunderredskies.jpg"},
