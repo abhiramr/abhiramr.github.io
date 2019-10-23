@@ -3,9 +3,6 @@ title: Republic of Thieves
 subtitle: Scott Lynch
 comments: true
 ---
-<b> Dated : 20 Jul 2019 <b>
-
-
 Disclaimer – SPOILER ALERT
 
 

@@ -3,8 +3,6 @@ title: A Man Called Ove
 subtitle: Fredrik Backman
 comments: true
 ---
-<b> Dated : 13 Feb 2019 </b>
-
 <p>	<b>Spoiler alert</b> </p>
 
 <p>A Man called Ove wouldn't cry.  </p>

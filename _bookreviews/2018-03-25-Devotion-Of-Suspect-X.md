@@ -3,7 +3,6 @@ title: The Devotion of Suspect X
 subtitle: Keigo Higashino
 comments: true
 ---
-<b> Dated : 25 Mar 2018 <b>
 <p>	<b>Spoiler alert</b> </p>
 
 <p>I loved the setting and the struggle.</p>
