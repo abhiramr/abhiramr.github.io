@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pandas Notes - A reckoner
+title: Pandas Notes - A Reference
 tags: [python, pandas, data, code]
 ---
 

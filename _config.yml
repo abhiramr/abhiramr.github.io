@@ -26,7 +26,9 @@ navbar-links:
    - Tech : "tech/"
    - Non-Tech: "http://abhiwrites.com"
    - No Man's Land: "others/"
-  Books I've Read: "books/"
+  On Books:
+   - One Book A Day: "onebookaday/"
+   - Books I've Read: "books/"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -246,6 +248,7 @@ plugins:
 collections:
   - scribbleio
   - bookreviews
+  - onebookperday
   - data_and_design
   - learning_machine_learning
   - writing
@@ -258,6 +261,9 @@ collections:
   bookreviews:
     output: true
     permalink: /bookreviews/:path/
+  onebookperday:
+    output: true
+    permalink: /onebookperday/:path/
   data_and_design:
     output: true
     permalink: /data_and_design/:path/
