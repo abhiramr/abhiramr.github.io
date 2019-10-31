@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git extension for Jupyterhub
+title: Git extension for Jupyterlab
 tags: [python, data, git, code]
 ---
 
