@@ -54,6 +54,11 @@ If you see this, you're successfully done :)
 ![git5](../img/jupyter/jupyter_git_5.jpg)
 
 
+### Links for repo - 
+
+- [https://github.com/jupyterlab/jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git)
+- [Looking through the issues help a lot!](https://github.com/jupyterlab/jupyterlab-git/issues)
+
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
