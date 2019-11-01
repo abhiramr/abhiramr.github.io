@@ -8,24 +8,37 @@ tags: [python, data, git, code]
 
 Jupyterlab-git is an extension that lets you stage and commit changes to notebooks made right from within the Jupyterlab interface.
 
-This is best installed within the confines of a virtual environment, as is anything experimental -
+This is best installed within the confines of a virtual environment, as is anything experimental.
+<hr/>
 
 #### Installation steps -
 
 a) Ensure that you have the latest version of jupyterlab (=1.2.0 at the time of this writing) and NodeJS(=12.13.0 at this time)
-> `pip install -U jupyterlab`
+~~~~
+pip install -U jupyterlab
+~~~~
 
 b) Install jupyterlab-git
-> `pip install --upgrade jupyterlab-git`
+~~~~
+pip install --upgrade jupyterlab-git
+~~~~
 
 c) Build jupyter
-> `jupyter lab build`
+~~~~
+jupyter lab build
+~~~~
+
 
 d) Enable jupyterlab_git
-> `jupyter serverextension enable --py jupyterlab_git --sys-prefix`
+~~~~
+jupyter serverextension enable --py jupyterlab_git --sys-prefix
+~~~~
 
 e) Run jupyter-lab
-> `jupyter-lab`
+~~~~
+jupyter-lab
+~~~~
+
 
 <u>In Jupyter-lab</u>
 
@@ -53,12 +66,14 @@ If you see this, you're successfully done :)
 
 ![git5](../img/jupyter/jupyter_git_5.jpg)
 
+<hr/>
 
-### Links for repo - 
+#### Additional reference links - 
 
-- [https://github.com/jupyterlab/jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git)
-- [Looking through the issues help a lot!](https://github.com/jupyterlab/jupyterlab-git/issues)
 
+- <a href="https://github.com/jupyterlab/jupyterlab-git" style="color:blue">https://github.com/jupyterlab/jupyterlab-git</a>
+- <a href="https://github.com/jupyterlab/jupyterlab-git/issues" style="color:blue">Looking through the issues help a lot!</a>
+<p/>
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
