@@ -15,28 +15,28 @@ This is best installed within the confines of a virtual environment, as is anyth
 
 a) Ensure that you have the latest version of jupyterlab (=1.2.0 at the time of this writing) and NodeJS(=12.13.0 at this time)
 ~~~~
-pip install -U jupyterlab
+ pip install -U jupyterlab
 ~~~~
 
 b) Install jupyterlab-git
 ~~~~
-pip install --upgrade jupyterlab-git
+ pip install --upgrade jupyterlab-git
 ~~~~
 
 c) Build jupyter
 ~~~~
-jupyter lab build
+ jupyter lab build
 ~~~~
 
 
 d) Enable jupyterlab_git
 ~~~~
-jupyter serverextension enable --py jupyterlab_git --sys-prefix
+ jupyter serverextension enable --py jupyterlab_git --sys-prefix
 ~~~~
 
 e) Run jupyter-lab
 ~~~~
-jupyter-lab
+ jupyter-lab
 ~~~~
 
 
