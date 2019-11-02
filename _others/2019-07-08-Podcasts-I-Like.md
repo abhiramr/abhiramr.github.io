@@ -48,9 +48,11 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/indus-vox/paperback" style="color:blue"><img src="/img/podcasts/paperback.jpg" height="42" width="42"> Paperback </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/the-seen-and-the-unseen" style="color:blue"><img src="/img/podcasts/seenunseen.jpg" height="42" width="42"> The Seen and the Unseen </a>
 - <a href="https://www.stitcher.com/podcast/indus-vox/echoes-of-india-a-history-podcast" style="color:blue"><img src="/img/podcasts/echoesofindia.jpg" height="42" width="42"> Echoes of India </a>
+
 <p><u>Via Nishant Singh</u></p> 
 - <a href="https://www.stitcher.com/podcast/shane-parrish/the-knowledge-project" style="color:blue"><img src="/img/podcasts/knowledge.jpg" height="42" width="42"> The Knowledge Project with Shane Parrish </a>
 - <a href="https://www.stitcher.com/podcast/prx/99-invisible" style="color:blue"><img src="/img/podcasts/99invisible.jpg" height="42" width="42"> 99% Invisible </a>
+
 <p><u>Via <a href="https://twitter.com/vdeepak13"  style="color:blue">Deepak V</a></u></p>
 - <a href="https://www.stitcher.com/podcast/national-public-radio/hidden-brain" style="color:blue"><img src="/img/podcasts/nprhiddenbrain.jpg" height="42" width="42"> Hidden Brain </a>
 - <a href="https://www.stitcher.com/podcast/the-moth-podcast" style="color:blue"><img src="/img/podcasts/themoth.jpg" height="42" width="42"> The Moth </a>
@@ -58,13 +60,16 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/canadian-broadcasting-corporation/quirks-and-quarks-complete-show-from-cbc-radio" style="color:blue"><img src="/img/podcasts/quirks.jpg" height="42" width="42"> Quirks and Quarks  </a>
 - <a href="https://www.stitcher.com/podcast/bbc/the-curious-cases-of-rutherford-fry" style="color:blue"><img src="/img/podcasts/rutherford.jpg" height="42" width="42"> The Curious Cases of Rutherford & Fry </a>
 - <a href="https://www.stitcher.com/podcast/the-intersection" style="color:blue"><img src="/img/podcasts/intersection.jpg" height="42" width="42"> The Intersection </a>
+
 <p><u>Via <a href="https://twitter.com/karmanya"  style="color:blue">karmanya</a></u></p>
-- <a href="https://www.stitcher.com/podcast/stitcher/freakonomics-radio" style="color:blue"><img src="/img/podcasts/freak.jpg" height="42" width="42">Freakonomics Radio</a>
+- <a href="https://www.stitcher.com/podcast/stitcher/freakonomics-radio" style="color:blue"><img src="/img/podcasts/freak.jpg" height="42" width="42"> Freakonomics Radio</a>
+- <a href="https://podcasts.apple.com/in/podcast/reply-all/id941907967?mt=2&ign-mpt=uo%3D4" style="color:blue"><img src="/img/podcasts/reply_all.png" height="42" width="42"> Reply All</a>
+
 <p><u>Via <a href="https://twitter.com/calavandi" style="color:blue">Chaitanya</a></u></p>
-- <a href="https://www.stitcher.com/podcast/national-public-radio/invisibilia" style="color:blue"><img src="/img/podcasts/invisibilia.jpg" height="42" width="42">Invisibilia</a>
+- <a href="https://www.stitcher.com/podcast/national-public-radio/invisibilia" style="color:blue"><img src="/img/podcasts/invisibilia.jpg" height="42" width="42"> Invisibilia</a>
 
 <p><u>Via Preeti</u></p>
-- <a href="https://www.stitcher.com/podcast/aaron-mahnke/lore" style="color:blue"><img src="/img/podcasts/lore.jpg" height="42" width="42">Lore</a>
+- <a href="https://www.stitcher.com/podcast/aaron-mahnke/lore" style="color:blue"><img src="/img/podcasts/lore.jpg" height="42" width="42"> Lore</a>
 
 
 <p><u>Via <a href="https://twitter.com/kritimonga"  style="color:blue">Kriti Monga</a></u></p>
