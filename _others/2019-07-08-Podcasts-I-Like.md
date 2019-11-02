@@ -62,8 +62,17 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/stitcher/freakonomics-radio" style="color:blue"><img src="/img/podcasts/freak.jpg" height="42" width="42">Freakonomics Radio</a>
 <p><u>Via <a href="https://twitter.com/calavandi" style="color:blue">Chaitanya</a></u></p>
 - <a href="https://www.stitcher.com/podcast/national-public-radio/invisibilia" style="color:blue"><img src="/img/podcasts/invisibilia.jpg" height="42" width="42">Invisibilia</a>
+
 <p><u>Via Preeti</u></p>
 - <a href="https://www.stitcher.com/podcast/aaron-mahnke/lore" style="color:blue"><img src="/img/podcasts/lore.jpg" height="42" width="42">Lore</a>
+
+
+<p><u>Via <a href="https://twitter.com/kritimonga"  style="color:blue">Kriti Monga</a></u></p>
+- <a href="https://podcasts.apple.com/us/podcast/clever/id1106679693" style="color:blue"><img src="/img/podcasts/clever.png" height="42" width="42"> Clever - Amy Devers + Jaime Derringer / Design Milk</a>
+- <a href="https://podcasts.apple.com/gb/podcast/5x15/id857074006" style="color:blue"><img src="/img/podcasts/5x15.png" height="42" width="42"> 5x15</a>
+- <a href="https://podcasts.apple.com/us/podcast/design-matters-with-debbie-millman/id328074695" style="color:blue"><img src="/img/podcasts/design_matters.png" height="42" width="42"> Design Matters with Debbie Millman</a>
+- <a href="https://www.iheart.com/podcast/105-stuff-you-should-know-26940277/" style="color:blue"><img src="/img/podcasts/stuffyoushouldknow.png" height="42" width="42"> Stuff You Should Know
+</a>
 
 If you'd like to suggest your own favorites to be added to this list, leave them in the comments!
 
