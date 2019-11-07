@@ -4,6 +4,8 @@ title: Bangpypers Pre-Workshop Setup
 tags: [python, unix, code, commands]
 ---
 
+<a href="../2019-11-07-Setting-Up-Python38-Jupyter-lab" style="color:red">A guide to installing a newer version of Python is available here.</a>
+
 We at Bangpypers conduct a lot of workshops and some steps are common for all of them. To that end, this post is meant to serve as guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.
 <hr/>
 ### Ubuntu 
