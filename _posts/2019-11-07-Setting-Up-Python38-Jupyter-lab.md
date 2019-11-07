@@ -22,6 +22,13 @@ We use `make altinstall` instead of `make install` so that your existing Python 
 
 This process should likely complete in under a minute.
 
+Confirm that it has successfully installed -
+~~~~
+ python3.8 
+~~~~
+`(should return the IDLE prompt with Python version 3.8.0)`
+
+
 
 #### Step 2 - Install python3.8 specific virtualenv
 
