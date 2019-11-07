@@ -33,7 +33,7 @@ There are a few differences in Python3.8 that prevent your existing virtualenv f
 
 This should likely be installed in `/usr/local/bin/`. So, confirm that it exists -
 ~~~~
-/usr/local/bin/virtualenv --version 
+ /usr/local/bin/virtualenv --version 
 ~~~~
 `(should return the latest version of virtualenv = 16.7.7 as of this writing)`
 
@@ -57,10 +57,10 @@ Example - `/usr/local/bin/virtualenv -p python3.8 py38`
 `cd` to the folder where you created the virtual environment. Using the environment we created in Step 3 - 
 
 ~~~~
-cd ~/.virtual_environments
-source py38/bin/activate
-pip list (You should see only a few packages in your new environment.)
-pip install jupyterlab
+ cd ~/.virtual_environments
+ source py38/bin/activate
+ pip list (You should see only a few packages in your new environment.)
+ pip install jupyterlab
 ~~~~
 
 Now you can traverse to the directory where you want your Jupyter-lab notebook to be spawned and trigger it using `jupyter-lab` and the default <a href="https://stackoverflow.com/questions/52370092/what-is-a-kernel-in-jupyter-notebook-and-how-it-is-different-similar-to-actual-k/" style="color:blue">kernel</a> (if you don't have any other kernel installed) that will be picked up will be running Python3.8.
