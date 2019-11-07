@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting up Python 3.8, Virtualenv and Jupyterlab on Ubuntu 16.04
-tags: [python, data, git, code]
+tags: [python, ubuntu, installation, basic]
 ---
 
 I'm using Ubuntu 16.04 on this machine, so that's what the steps of installation here will be for. But this installation shouldn't largely vary on any distro that's 14.04 and higher.

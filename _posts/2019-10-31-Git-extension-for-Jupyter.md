@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Git extension for Jupyterlab
-tags: [python, data, git, code]
+tags: [python, git, code, intermediate]
 ---
 
 [Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.]
