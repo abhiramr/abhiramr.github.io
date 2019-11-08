@@ -1,14 +1,14 @@
 [    
 {"year":"2019","book_list":[
-    {"title":"../img/books/mistborn5.jpg","link":"../bookreviews/2019_08_29_Shadows_of_self/"},
-    {"title":"../img/books/republicofthieves.jpg","link":"../bookreviews/2019_07_20_Republic_of_thieves/"},
+    {"title":"../img/books/mistborn5.jpg","link":"../bookreviews/2019-08-29-Shadows-of-self/"},
+    {"title":"../img/books/republicofthieves.jpg","link":"../bookreviews/2019-07-20-Republic-of-thieves/"},
     {"title":"../img/books/frysenglishdelight.jpg"},
     {"title":"../img/books/guernsey.jpg"},
     {"title":"../img/books/redseasunderredskies.jpg"},
     {"title":"../img/books/skyalbum.jpg"},
-    {"title":"../img/books/the_lies_of_locke_lamora.jpg","link":"../bookreviews/2019_03_13_The_Lies_Of_Locke_Lamora/"},
+    {"title":"../img/books/the_lies_of_locke_lamora.jpg","link":"../bookreviews/2019-03-13-The-Lies-Of-Locke-Lamora/"},
     {"title":"../img/books/warbreaker.jpg"},
-    {"title":"../img/books/a_man_called_ove.jpg","link":"../bookreviews/2019_02_13_A_Man_called_Ove/"},
+    {"title":"../img/books/a_man_called_ove.jpg","link":"../bookreviews/2019-02-13-A-Man-called-Ove/"},
     {"title":"../img/books/newcomer.jpg"},
     {"title":"../img/books/deep_work.jpg"},
     {"title":"../img/books/emperors_soul.jpg"},
@@ -22,7 +22,7 @@
     {"title":"../img/books/mistborn2.jpg"},
     {"title":"../img/books/mistborn1.png"},
     {"title":"../img/books/badblood.jpg"},
-    {"title":"../img/books/asterixthegaul.jpg","link":"../bookreviews/2018_09_10_Asterix_01/"},
+    {"title":"../img/books/asterixthegaul.jpg","link":"../bookreviews/2018-09-10-Asterix-01/"},
     {"title":"../img/books/armada.jpg"},
     {"title":"../img/books/got_5_2.jpg"},
     {"title":"../img/books/therosieproject.jpg"},
@@ -38,7 +38,7 @@
     {"title":"../img/books/animalfarm.jpg"},
     {"title":"../img/books/malice.jpg"},
     {"title":"../img/books/salvation.jpg"},
-    {"title":"../img/books/devotionx.jpg","link":"../bookreviews/2018_03_25_Devotion_Of_Suspect_X/"},
+    {"title":"../img/books/devotionx.jpg","link":"../bookreviews/2018-03-25-Devotion-Of-Suspect-X/"},
     {"title":"../img/books/girlinspidersweb.jpg"},
     {"title":"../img/books/thehappyprince.jpg"},
     {"title":"../img/books/btmcourtofowls.jpg"},
@@ -46,7 +46,7 @@
     {"title":"../img/books/rpo.jpg"},
     {"title":"../img/books/turtles.jpg"},
     {"title":"../img/books/horseandtwogoats.jpg"},
-    {"title":"../img/books/1984.jpg","link":"../bookreviews/2018_01_18_1984/"},
+    {"title":"../img/books/1984.jpg","link":"../bookreviews/2018-01-18-1984/"},
     {"title":"../img/books/ghachar.jpg"}]
 }
 ]
