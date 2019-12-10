@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Frequently Used Python Commands
-tags: [python, unix, code, commands]
+tags: [python, code, commands]
 ---
 
 The previous post was for commands Unix. This post is about the Python commands I use or Google frequently.

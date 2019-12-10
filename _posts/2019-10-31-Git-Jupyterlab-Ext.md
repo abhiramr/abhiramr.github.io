@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Git extension for Jupyterlab
-tags: [python, git, code, intermediate]
+tags: [setup, jupyterlab, intermediate]
 ---
 
-[Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.]
+<i>Disclaimer : Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.</i>
 
-Jupyterlab-git is an extension that lets you stage and commit changes to notebooks made right from within the Jupyterlab interface.
+`jupyterlab-git` is an extension that lets you stage and commit changes to notebooks made right from within the Jupyterlab interface.
 
 This is best installed within the confines of a virtual environment, as is anything experimental.
 <hr/>
@@ -48,23 +48,23 @@ f) Enable the Extensions Manager (experimental)
 
 g) Search for and Install jupyterlab-git extension. You'll be asked to Rebuild Jupyter.
 
-![git1](../img/jupyter/jupyter_git_1.jpg)
+![git1](../img/jupyter/git_ext/jupyter_git_1.jpg)
 
 h) Once the Git extension shows up post rebuilding, you can stage any changes made per notebook.
 
-![git2](../img/jupyter/jupyter_git_2.jpg)
+![git2](../img/jupyter/git_ext/jupyter_git_2.jpg)
 
 i) Commit post-staging
 
-![git3](../img/jupyter/jupyter_git_3.jpg)
+![git3](../img/jupyter/git_ext/jupyter_git_3.jpg)
 
 j) Push!
 
-![git4](../img/jupyter/jupyter_git_4.jpg)
+![git4](../img/jupyter/git_ext/jupyter_git_4.jpg)
 
 If you see this, you're successfully done :)
 
-![git5](../img/jupyter/jupyter_git_5.jpg)
+![git5](../img/jupyter/git_ext/jupyter_git_5.jpg)
 
 <hr/>
 
