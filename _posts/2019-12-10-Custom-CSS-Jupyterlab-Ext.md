@@ -124,6 +124,9 @@ And now, in classic weight-loss program fashion, here are the before and after p
 
 <hr/>
 
+This is barely the tip of the iceberg. The number of tweaks you can make to your Notebook are limited only by your HTML and CSS savvy!
+
+
 #### Additional reference links - 
 
 
