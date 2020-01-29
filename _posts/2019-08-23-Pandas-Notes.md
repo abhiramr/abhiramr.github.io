@@ -8,11 +8,13 @@ tags: [python, pandas, data, code]
 > `df[df.isna().any(axis=1)]`
 
 ![TailDF](../img/tech/pandas/1.png)
+<hr/>
 
 2. **Get dataframe excluding all NaNs in a particular Column** 
 > `df[df['<col_name>'].notnull()]`
 
 ![TailDF](../img/tech/pandas/2.png)
+<hr/>
 
 3. **Increase width of columns displayed in Jupyter Notebooks**
 - This is possibly one of my most used commands for every notebook that involves dataframes.
