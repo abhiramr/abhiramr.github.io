@@ -18,4 +18,5 @@ tags: [python, pandas, data, code]
 
 **Increase width of columns displayed in Jupyter Notebooks**
 - This is possibly one of my most used commands for every notebook that involves dataframes.
+
 > `pd.set_option('display.max_colwidth',400)`
