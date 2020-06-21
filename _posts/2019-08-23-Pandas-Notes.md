@@ -16,6 +16,11 @@ tags: [python, pandas, data, code]
 ![TailDF](../img/tech/pandas/2.png)
 <hr/>
 
+**Get counts of number of Nulls per column**
+> `df.isnull().sum()`
+
+<hr/>
+
 **Increase width of columns displayed in Jupyter Notebooks**
 - This is possibly one of my most used commands for every notebook that involves dataframes.
 
