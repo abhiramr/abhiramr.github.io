@@ -1,13 +1,13 @@
 ---
 layout: page
-title: One Book A Day
+title: Currently Reading
 ---
 
 <p>
-    This page is reserved for recommendations of good books from all over the world at the rate of 1 per day. The format will be - the author's name, a short blurb and my subjective rating. The reviews will not be comprehensive as all this page seeks to serve as, is a recommendation reckoner. For more detailed reviews, <a href="/book_reviews/" style="color: blue">here you go</a>.
+    This page is reserved for my thoughts on the books I'm currently reading. For complete reviews, <a href="/book_reviews/" style="color: blue">here you go</a>.
 </p>
 <div class="posts-list">
-  {% for post in site.onebookperday %}
+  {% for post in site.currentlyreading %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
 	  <h2 class="post-title">{{ post.title }}</h2>

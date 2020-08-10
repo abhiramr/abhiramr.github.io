@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books I've read
+title: My Bookshelf
 subtitle: 
 ---
 
@@ -13,25 +13,16 @@ subtitle:
     <h3>{{book.year}} ({{book.book_list.size}} {% if book.book_list.size == 1 %}book{% else %}books{% endif %})</h3> 
     {% for b in book.book_list %}
 
-        {% assign loopindex = forloop.index | modulo: 4 %}
+<ul>
+    {% if b.link %}
 
-        {% if loopindex == 0 %}
-            <div class="row">
-        {% endif %}
-        
-        {% if b.link %}
-        <div class="col-xs-4 col-md-2"><a href="{{ b.link }}"><img src="{{ b.title}}" title="Review present!" class="img-responsive book"/></a></div>
-        {% else %}
-        <div class="col-xs-4 col-md-2"><img src="{{ b.title}}" class="img-responsive book"/></div>
-        {% endif %}
+    <li>{{ b.name}}<a href="{{ b.link }}"> <i class="fa fa-book" style="color:red;"></i></a></li>
+    {% else %}
+    <li>{{ b.name}}</li>
+    {% endif %}
 
-        {% if loopindex == 4 %}
-            <div class="col-xs-8 shelf"></div>
-        {% endif %}
+</ul>
 
-        {% if loopindex == 0 %}
-            </div>
-        {% endif %}
         {% endfor %}
 </div>
 <hr/>

@@ -26,8 +26,8 @@ navbar-links:
    - Tech : "tech/"
    - Non-Tech: "http://abhiwrites.com"
    - No Man's Land: "others/"
-  On Books:
-   - One Book A Day: "onebookaday/"
+  On Literature:
+   - Currently Reading: "currentlyreading/"
    - Books I've Read: "books/"
 
 
@@ -248,7 +248,7 @@ plugins:
 collections:
   - scribbleio
   - bookreviews
-  - onebookperday
+  - currentlyreading
   - data_and_design
   - learning_machine_learning
   - writing
@@ -261,9 +261,9 @@ collections:
   bookreviews:
     output: true
     permalink: /bookreviews/:path/
-  onebookperday:
+  currentlyreading:
     output: true
-    permalink: /onebookperday/:path/
+    permalink: /currentlyreading/:path/
   data_and_design:
     output: true
     permalink: /data_and_design/:path/
