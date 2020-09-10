@@ -41,6 +41,13 @@ comments: true
 
 <hr/>
 
+<h2><u>Podcasts by Friends</u></h2>
+
+- <a href="https://ivmpodcasts.com/harate-kannada-podcast-episode-list/2020/2/27/ep-59-tales-of-time-travel" style="color:blue">Tales of Time Travel</a> by <a href="https://twitter.com/theBekku" style="color:blue">Gautham Shenoy</a>
+- <a href="https://ivmpodcasts.com/harate-kannada-podcast-episode-list/2020/1/30/ep-55-kannada-science-fiction" style="color:blue">Kannada Science Fiction</a> by <a href="https://twitter.com/theBekku" style="color:blue">Gautham Shenoy</a>
+- <a href="https://podcasts.adorilabs.com/s/e?eid=IF1t1lT51tJYXuMt" style="color:blue">The Forgotten Heritage of the Deccan</a> by <a href="https://twitter.com/SandalBurn" style="color:blue">Karthik Malli</a>
+
+<hr/>
 <h2><u>People's Choice</u></h2>
 
 - <a href="https://www.stitcher.com/podcast/indus-vox/simblified-2" style="color:blue"> <img src="/img/podcasts/simblified.jpg" height="42" width="42"> Simblified </a>
