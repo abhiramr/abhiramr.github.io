@@ -245,7 +245,6 @@ plugins:
 
 
 collections:
-  - scribbleio
   - bookreviews
   - currentlyreading
   - data_and_design
@@ -254,9 +253,6 @@ collections:
   - others
 
 collections:
-  scribbleio:
-    output: true
-    permalink: /scribbleio/:path/
   bookreviews:
     output: true
     permalink: /bookreviews/:path/
