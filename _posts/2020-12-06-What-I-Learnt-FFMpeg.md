@@ -8,7 +8,6 @@ tags: [media, editing, video, audio]
 
 In their own words, FFmpeg is "A complete, cross-platform solution to record, convert and stream audio and video."
 
-
 I've been recording <a href="http://bangalore.python.org.in/" style="color:blue">Bangpypers</a> videos for the last few months and I haven't really had access to a proper solution to edit videos and audio that I could have got for free/ low-cost. A good friend of mine, Vinay Keerthi, (who incidentally presented the webinar under discussion) told me to chuck GUI based fronts for editing them and told me to try FFmpeg, the CLI tool directly, which these tools probably use in the background anyway. 
 
 So I gave it a shot. 
@@ -35,6 +34,11 @@ For now, here's a working set of steps:
 - Stitch video_1_final.mp4 to video_2_final.mp4
 
 ---- 
+#### Usage: 
+
+- You should typically have ffmpeg natively installed if you're using a Mac. If you're on Windows/ Linux, you can download the binary at <a href="https://ffmpeg.org/download.html" style="color:blue">https://ffmpeg.org/download.html</a>
+- Once you've downloaded the binary, add it to your path if you're on Windows. If you're on Linux, the installation should typically take care of that for you. 
+- In this post, I'm using a Mac, so I will be directly using FFmpeg as `ffmpeg`.
 
 #### Commands for steps above: 
 
