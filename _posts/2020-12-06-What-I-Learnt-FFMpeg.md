@@ -63,6 +63,15 @@ For now, here's a working set of steps:
 The net result of this learning can be viewed at our Bangpypers Channel - 
 <a href="https://www.youtube.com/watch?v=xickNijifOs" style="color:blue">https://www.youtube.com/watch?v=xickNijifOs</a>
 
+#### Explanation/ Legend of params used - 
+
+- `ss`: Start time as hh:mm:ss
+- `t` : Duration for which to clip
+- `v` : Video
+- `a` : Audio
+- `[0:v] [0:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]` : Concatenating 2 videos (n=2) where both `v` and `a` exist. Hence `v=1`,`a=1`
+- The last parameter in each of the commands is the output video. 
+
 ----
 
 #### Chronicled some more of the commands here - 
@@ -75,6 +84,7 @@ The net result of this learning can be viewed at our Bangpypers Channel -
 #### Links referred
 - <a href="https://ffmpeg.org/ffmpeg.html#SEC8" style="color:blue">https://ffmpeg.org/ffmpeg.html#SEC8</a>
 - <a href="https://trac.ffmpeg.org/wiki/Scaling" style="color:blue">https://trac.ffmpeg.org/wiki/Scaling</a>
+- <a href="https://itsfoss.com/ffmpeg/" style="color:blue">https://itsfoss.com/ffmpeg/</a>
 - <a href="https://stackoverflow.com/questions/37327163/ffmpeg-input-link-in1v0-parameters-size-640x640-sar-169-do-not-match-the#" style="color:blue">https://stackoverflow.com/questions/37327163/ffmpeg-input-link-in1v0-parameters-size-640x640-sar-169</a>
 - <a href="https://stackoverflow.com/questions/38753739/ffmpeg-overlay-a-png-image-on-a-video-with-custom-transparency" style="color:blue">https://stackoverflow.com/questions/38753739/</a>
 - <a href="https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg" style="color:blue">https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg</a>
