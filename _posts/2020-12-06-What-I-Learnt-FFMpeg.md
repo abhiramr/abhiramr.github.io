@@ -13,7 +13,7 @@ I've been recording <a href="http://bangalore.python.org.in/" style="color:blue"
 So I gave it a shot. 
 And while it isn't very hard to break into, there are a lot of things that aren't very straight-forward. But it's definitely a treat to use and it gives you a sense of satisfaction when things work. 
 
-<span style="color:red">tl;dr -<span> I basically just edited a couple of videos using a CLI tool. No biggie. But the potential it opens up for me by way of not having to ever download an illegal copy of a GUI based tool (don't tell anyone I did this) or be restricted by what they offer doesn't have to be the case anymore :) 
+<span style="color:red">tl;dr -</span> I basically just edited a couple of videos using a CLI tool. No biggie. But the potential it opens up for me by way of not having to ever download an illegal copy of a GUI based tool (don't tell anyone I did this) or be restricted by what they offer doesn't have to be the case anymore :) 
 
 #### My case-study's solution : 
 
