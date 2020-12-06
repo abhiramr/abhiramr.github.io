@@ -116,3 +116,27 @@ I hope this helps you if you're looking for help with FFMpeg. Feel free to mail/
 #### About Bangpypers
 
 Bangpypers is one of Bangalore's largest Python User Groups. We conduct Meetups where we have talks and workshops on topics related to Python. Feel free to reach out to mail me in case you want to talk at any of our upcoming sessions. We conduct one every month. More details regarding meetups at <a href="https://www.meetup.com/Bangpypers/" style="color:blue">https://www.meetup.com/Bangpypers/</a>. We're also on <a href="https://twitter.com/__bangpypers__" style="color:blue">Twitter<a>!
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = abhiramr.github.io/2020-12-06-What-I-Learnt-FFMpeg;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2020-12-06-What-I-Learnt-FFMpeg; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://abhiramr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
