@@ -1,10 +1,15 @@
 [    
     {
         "year":"2020","book_list":[
+        {"title":"../img/books/.jpg","name":"The Way of Kings"},
+        {"title":"../img/books/.jpg","name":"The Unquiet River"},
+        {"title":"../img/books/.jpg","name":"One, Two, Buckle My Shoe","link":"../bookreviews/2020-08-29-One-Two-Buckle-My-Shoe/"},
+        {"title":"../img/books/.jpg","name":"The Fellowship of the Ring"},
+        {"title":"../img/books/.jpg","name":"The Travelling Cat Chronicles"},
         {"title":"../img/books/.jpg","name":"The Murder of Roger Ackroyd"},
         {"title":"../img/books/.jpg","name":"Crooked Kingdom"},
-        {"title":"../img/books/.jpg","name":"Flowers for Algernon","link":"../bookreviews/"},        
-        {"title":"../img/books/.jpg","name":"The Silent Patient","link":"../bookreviews/"},
+        {"title":"../img/books/.jpg","name":"Flowers for Algernon","link":"../bookreviews/2020-04-19-Flowers-for-algernon"},        
+        {"title":"../img/books/.jpg","name":"The Silent Patient","link":""},
         {"title":"../img/books/.jpg","name":"The Color of Magic"},        
         {"title":"../img/books/.jpg","name":"The Purgatory of Half- Forgotten Riddles"},
         {"title":"../img/books/.jpg","name":"Murder on the Orient Express"}
