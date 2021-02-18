@@ -39,6 +39,16 @@ comments: true
 - <a href="https://www.stitcher.com/podcast/data-stories-podcast/data-stories/e/54262620" style="color:blue">Data Stories : Color with Karen Schloss</a>
 - <a href="https://www.stitcher.com/podcast/rationally-speaking/e/49196690" style="color:blue">FlowingData with Nathan Yau</a> 
 
+<p></p>
+<h4><u>Python Podcasts</u></h4>
+- <a href="https://realpython.com/podcasts/rpp/" style="color:blue">The Real Python Podcast</a>
+- <a href="https://talkpython.fm/" style="color:blue">Talk Python To Me</a> 
+- <a href="https://pythonbytes.fm/" style="color:blue">Python Bytes</a> 
+- <a href="https://testandcode.com/" style="color:blue">Test and Code</a> 
+- <a href="https://www.frompythonimportpodcast.com/" style="color:blue">From Python Import Podcast</a> 
+- <a href="https://www.pythonpodcast.com/" style="color:blue">podcast.__init__</a> 
+
+
 <hr/>
 
 <h2><u>Podcasts by Friends</u></h2>
