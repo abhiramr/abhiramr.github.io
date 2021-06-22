@@ -12,7 +12,7 @@ baseurl: ""
 #baseurl: "/projectname"
 
 # Name of website
-title: Who?
+title: Home
 
 # Short description of your site
 description: Quis Custodiet Ipsos Custodes?
@@ -71,11 +71,10 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
   email: "abhi.darkness@gmail.com"
-  facebook: abhidotr
+  #facebook: abhidotr
   github: abhiramr
-  twitter: abhicantdraw
+  #twitter: abhicantdraw
 #  reddit: yourname
 #  google-plus: +username
   linkedin: abhiramr5459
