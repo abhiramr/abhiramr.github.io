@@ -1,0 +1,705 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="an example blog set up following the tutorial">
+      
+      
+      
+        <link rel="canonical" href="https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/">
+      
+      
+        <link rel="prev" href="../../../../2019/12/10/custom-css-jupyterlab-ext/">
+      
+      
+        <link rel="next" href="../../../../2021/12/27/enabling-spark-history-server-standalone/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>Learning how to use FFMpeg - Abhiram R</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-ffmpeg" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Abhiram R" class="md-header__button md-logo" aria-label="Abhiram R" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Abhiram R
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning how to use FFMpeg
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Abhiram R" class="md-nav__button md-logo" aria-label="Abhiram R" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Abhiram R
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Technical
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Technical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../misc/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Misc
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Misc
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../misc/posts/2019-07-08-Podcasts-I-Like/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Podcasts I like
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../misc/posts/01_design_of_everyday_things_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Notes from Design of Everyday Thoughts by Don Norman - 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-ffmpeg" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is FFmpeg?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What is FFmpeg?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#my-case-studys-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      My case-study's solution :
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commands-for-steps-above" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands for steps above:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation-legend-of-params-used-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explanation/ Legend of params used -
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chronicled-some-more-of-the-commands-here-" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chronicled some more of the commands here -
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links-referred" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links referred
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bloopers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bloopers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#about-bangpypers" class="md-nav__link">
+    <span class="md-ellipsis">
+      About Bangpypers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2020-12-06 00:00:00" class="md-ellipsis">December 6, 2020</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              5 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+
+
+  <h1>Learning how to use FFMpeg</h1>
+
+<h3 id="what-is-ffmpeg">What is FFmpeg?</h3>
+<p>In their own words, FFmpeg is "A complete, cross-platform solution to record, convert and stream audio and video."</p>
+<p>I've been recording <a href="http://bangalore.python.org.in/" style="color:blue">Bangpypers</a> videos for the last few months and I haven't really had access to a proper solution to edit videos and audio that I could have got for free/ low-cost. A good friend of mine, Vinay Keerthi, (who incidentally presented the webinar under discussion) told me to chuck GUI based fronts for editing them and told me to try FFmpeg, the CLI tool directly, which these tools probably use in the background anyway. </p>
+<!-- more -->
+
+<p>So I gave it a shot. 
+And while it isn't very hard to break into, there are a lot of things that aren't very straight-forward. But it's definitely a treat to use and it gives you a sense of satisfaction when things work. </p>
+<p><span style="color:red">tl;dr -</span> I basically just edited a couple of videos using a CLI tool. No biggie. But the potential it opens up for me by way of not having to ever download an illegal copy of a GUI based tool (don't tell anyone I did this) or be restricted by what they offer doesn't have to be the case anymore :) </p>
+<h4 id="my-case-studys-solution">My case-study's solution :</h4>
+<p>So I've mentioned above about videos recorded for Bangpypers. This particular case today was for editing one such video. </p>
+<p>Basically, I had a 40 minute webinar that I needed to cut up to replace a part of the video with an image, and then stitch these sections with another video, also a part of the webinar but recorded separately. This second half also needed to have some part of the video trimmed and the rest have the video be replaced with the Bangpypers Logo. </p>
+<p>There were a lot of experiments I did in the process. </p>
+<p>For now, here's a working set of steps: </p>
+<ul>
+<li>Split the first video from [0,time_a] and [time_a,time_b] resulting in videos say -  video_1_a.mp4, video_1_b.mp4</li>
+<li>Overlay the video in video_1_a with the desired png = bangpypers.png.</li>
+<li>
+<p>Once the overlayed video is available, stitch video_1_a_overlay.mp4 to video_1_b.mp4. = video_1_final.mp4</p>
+<ul>
+<li>In this step, there were issues because the image used was a 900*900 png but the video in question was of a higher resolution. So the obvious remedy was to scale the image and stitch it up. But I took some time to get to this resolution and found ways to stitch it directly just fine but the resultant was obviously very messed up. So the entire set of steps had to be repeated. </li>
+</ul>
+</li>
+<li>
+<p>For the second video, treat it similarly as in the video_1_a.mp4. Let's call this video_2.mp4</p>
+</li>
+<li>Trim the video from [time_a,end]</li>
+<li>Overlay the trimmed video with the desired png = bangpypers.png.</li>
+<li>Stitch video_1_final.mp4 to video_2_final.mp4</li>
+</ul>
+<hr />
+<h4 id="usage">Usage:</h4>
+<ul>
+<li>You should typically have ffmpeg natively installed if you're using a Mac. If you're on Windows/ Linux, you can download the binary at <a href="https://ffmpeg.org/download.html" style="color:blue">https://ffmpeg.org/download.html</a></li>
+<li>Once you've downloaded the binary, add it to your path if you're on Windows. If you're on Linux, the installation should typically take care of that for you. </li>
+<li>In this post, I'm using a Mac, so I will be directly using FFmpeg as <code>ffmpeg</code>.</li>
+</ul>
+<h4 id="commands-for-steps-above">Commands for steps above:</h4>
+<p><em>Video 1</em></p>
+<p><code>ffmpeg -ss 00:01:01 -i Webinar_Full_Part1.mp4 -t 00:05:19 -c copy video_1_a.mp4</code></p>
+<p><code>ffmpeg -ss 00:06:21 -i Webinar_Full_Part1.mp4 -t 00:33:50 -c copy video_1_b.mp4</code></p>
+<p><code>ffmpeg -i video_1_a.mp4 -i bangpypers.png -filter_complex "[1][0]scale2ref[i][v];[v][i]overlay" -c:a copy video_1_a.mp4</code></p>
+<p><code>ffmpeg -i video_1_a.mp4 -i video_1_b.mp4 -filter_complex "[0:v] [0:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]" -map "[v]" -map "[a]" video_1_processed.mp4</code></p>
+<p><em>Video 2</em></p>
+<p><code>ffmpeg -ss 00:03:23 -i Webinar_Full_Part2.mp4 -t 00:09:08 -c copy video_2.mp4</code></p>
+<p><code>ffmpeg -i video_2.mp4 -i bangpypers.png -filter_complex "[1][0]scale2ref[i][v];[v][i]overlay" -c:a copy video_2.mp4</code></p>
+<p><code>ffmpeg -i video_2.mp4 -vf scale=1920:1080,setsar=1:1 video_2_processed.mp4</code></p>
+<p><em>Final</em></p>
+<p><code>ffmpeg -i video_1_processed.mp4 -i video_2_processed.mp4 -filter_complex "[0:v] [0:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]" -map "[v]" -map "[a]" Webinar_video_processed.mp4</code></p>
+<p>The net result of this learning can be viewed at our Bangpypers Channel - 
+<a href="https://www.youtube.com/watch?v=xickNijifOs" style="color:blue">https://www.youtube.com/watch?v=xickNijifOs</a></p>
+<h4 id="explanation-legend-of-params-used-">Explanation/ Legend of params used -</h4>
+<ul>
+<li><code>ss</code>: Start time as hh:mm:ss</li>
+<li><code>t</code> : Duration for which to clip</li>
+<li><code>v</code> : Video</li>
+<li><code>a</code> : Audio</li>
+<li><code>[0:v] [0:a] [1:v] [1:a] concat=n=2:v=1:a=1 [v] [a]</code> : Concatenating 2 videos (n=2) where both <code>v</code> and <code>a</code> exist. Hence <code>v=1</code>,<code>a=1</code></li>
+<li>The last parameter in each of the commands is the output video. </li>
+</ul>
+<hr />
+<h4 id="chronicled-some-more-of-the-commands-here-">Chronicled some more of the commands here -</h4>
+<ul>
+<li><a href="https://docs.google.com/document/d/1sax37PO6DMFKCS5iwnl7dboaSnpLRl-YXiY3uyiWhXo/edit?usp=sharing" style="color:blue">https://docs.google.com/document/d/1sax37PO6DMFKCS5iwnl7dboaSnpLRl-YXiY3uyiWhXo/edit?usp=sharing</a></li>
+</ul>
+<hr />
+<h4 id="links-referred">Links referred</h4>
+<ul>
+<li><a href="https://ffmpeg.org/ffmpeg.html#SEC8" style="color:blue">https://ffmpeg.org/ffmpeg.html#SEC8</a></li>
+<li><a href="https://trac.ffmpeg.org/wiki/Scaling" style="color:blue">https://trac.ffmpeg.org/wiki/Scaling</a></li>
+<li><a href="https://itsfoss.com/ffmpeg/" style="color:blue">https://itsfoss.com/ffmpeg/</a></li>
+<li><a href="https://stackoverflow.com/questions/37327163/ffmpeg-input-link-in1v0-parameters-size-640x640-sar-169-do-not-match-the#" style="color:blue">https://stackoverflow.com/questions/37327163/ffmpeg-input-link-in1v0-parameters-size-640x640-sar-169</a></li>
+<li><a href="https://stackoverflow.com/questions/38753739/ffmpeg-overlay-a-png-image-on-a-video-with-custom-transparency" style="color:blue">https://stackoverflow.com/questions/38753739/</a></li>
+<li><a href="https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg" style="color:blue">https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg</a></li>
+<li><a href="https://stackoverflow.com/questions/40480153/how-to-overlay-place-an-image-on-a-video-in-ffmpeg" style="color:blue">https://stackoverflow.com/questions/40480153/how-to-overlay-place-an-image-on-a-video-in-ffmpeg</a></li>
+<li><a href="https://stackoverflow.com/questions/19425674/ffmpeg-concat-and-scale-simultaneously" style="color:blue">https://stackoverflow.com/questions/19425674/ffmpeg-concat-and-scale-simultaneously</a></li>
+<li><a href="https://superuser.com/questions/377343/cut-part-from-video-file-from-start-position-to-end-position-with-ffmpeg" style="color:blue">https://superuser.com/questions/377343/cut-part-from-video-file-from-start-position-to-end-position-with-ffmpeg</a></li>
+<li><a href="https://superuser.com/questions/855276/join-2-video-file-by-command-or-code" style="color:blue">https://superuser.com/questions/855276/join-2-video-file-by-command-or-code</a></li>
+<li><a href="https://superuser.com/questions/722247/how-can-i-remove-multiple-segments-from-a-video-keeping-the-audio-using-ffmpeg" style="color:blue">https://superuser.com/questions/722247/how-can-i-remove-multiple-segments-from-a-video-keeping-the-audio-using-ffmpeg</a></li>
+<li><a href="https://superuser.com/questions/268985/remove-audio-from-video-file-with-ffmpeg" style="color:blue">https://superuser.com/questions/268985/remove-audio-from-video-file-with-ffmpeg</a></li>
+<li><a href="https://video.stackexchange.com/questions/20430/how-to-concatenate-multiple-videos-with-ffmpeg?newreg=9c40f3f240a24b30a72120c8cb6f4d76" style="color:blue">https://video.stackexchange.com/questions/20430/how-to-concatenate-multiple-videos-with-ffmpeg?newreg=9c40f3f240a24b30a72120c8cb6f4d76</a></li>
+<li><a href="https://video.stackexchange.com/questions/15468/non-monotonous-dts-on-concat-ffmpeg" style="color:blue">https://video.stackexchange.com/questions/15468/non-monotonous-dts-on-concat-ffmpeg</a></li>
+</ul>
+<hr />
+<h4 id="bloopers">Bloopers</h4>
+<p>I made a lot of mistakes in trying other stuff but learnt quite a bit in the process. Here's a glimpse of the commands tried -</p>
+<p><img alt="ffmpeg" src="../img/tech/ffmpeg_bloopers.png" /></p>
+<p>I hope this helps you if you're looking for help with FFMpeg. Feel free to mail/<a href="https://twitter.com/abhicantdraw" style="color:blue">tweet at</a>  me if you have any issues!</p>
+<h4 id="about-bangpypers">About Bangpypers</h4>
+<p>Bangpypers is one of Bangalore's largest Python User Groups. We conduct Meetups where we have talks and workshops on topics related to Python. Feel free to reach out to mail me in case you want to talk at any of our upcoming sessions. We conduct one every month. More details regarding meetups at <a href="https://www.meetup.com/Bangpypers/" style="color:blue">https://www.meetup.com/Bangpypers/</a>. We're also on <a href="https://twitter.com/__bangpypers__" style="color:blue">Twitter<a>!</p>
+<p>{% if page.comments %}</p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = abhiramr.github.io/2020-12-06-What-I-Learnt-FFMpeg;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = 2020-12-06-What-I-Learnt-FFMpeg; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://abhiramr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<p>{% endif %}</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.indexes"], "search": "../../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
