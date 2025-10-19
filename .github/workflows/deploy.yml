@@ -1,0 +1,5 @@
+- name: Create .env file
+       run: |
+         echo "REACT_APP_SUPABASE_URL=${{ secrets.REACT_APP_SUPABASE_URL }}" >> .env
+         echo "REACT_APP_SUPABASE_ANON_KEY=${{ secrets.REACT_APP_SUPABASE_ANON_KEY }}" >> .env
+         echo "REACT_APP_ADMIN_PASSWORD=${{ secrets.REACT_APP_ADMIN_PASSWORD }}" >> .env
