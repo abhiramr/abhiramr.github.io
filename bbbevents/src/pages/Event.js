@@ -18,26 +18,52 @@ function Event() {
   const fetchEvent = async () => {
     const { data, error } = await supabase
       .from('events')
-      .select('*')
+      .select('*, rsvps(id)') // Select rsvps to count them
       .eq('id', id)
       .single();
     if (error) console.error('Error fetching event:', error);
-    else setEvent(data);
+    else {
+      // Calculate seats_left based on total_seats and actual rsvps count
+      const rsvpsCount = data.rsvps ? data.rsvps.length : 0;
+      setEvent({ ...data, seats_left: data.total_seats - rsvpsCount });
+    }
   };
 
   const handleRsvp = async (e) => {
     e.preventDefault();
-    const { data, error } = await supabase
+
+    if (event.seats_left <= 0) {
+      alert('Sorry, this event is full!');
+      return;
+    }
+
+    // First, insert the RSVP
+    const { data: rsvpData, error: rsvpError } = await supabase
       .from('rsvps')
       .insert([{ event_id: id, name, email }]);
-    if (error) {
-      console.error('Error RSVPing:', error);
+
+    if (rsvpError) {
+      console.error('Error RSVPing:', rsvpError);
       alert('Error RSVPing. See console for details.');
     } else {
-      console.log('RSVP successful:', data);
-      alert('Thank you for RSVPing!');
-      setName('');
-      setEmail('');
+      console.log('RSVP successful:', rsvpData);
+
+      // Then, decrement seats_left in the events table
+      const newSeatsLeft = event.seats_left - 1;
+      const { error: updateError } = await supabase
+        .from('events')
+        .update({ seats_left: newSeatsLeft })
+        .eq('id', id);
+
+      if (updateError) {
+        console.error('Error updating seats left:', updateError);
+        alert('RSVP successful, but failed to update seats count.');
+      } else {
+        alert('Thank you for RSVPing!');
+        setEvent(prevEvent => ({ ...prevEvent, seats_left: newSeatsLeft }));
+        setName('');
+        setEmail('');
+      }
     }
   };
 
@@ -61,9 +87,12 @@ function Event() {
             <Box sx={{ my: 2, '& a': { color: 'secondary.main' }, lineHeight: '1.7' }}>
               <ReactMarkdown>{event.description}</ReactMarkdown>
             </Box>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
+              Seats Left: {event.seats_left} / {event.total_seats}
+            </Typography>
           </Grid>
           <Grid item xs={12} md={5}>
-            <Box sx={{ p: 3, backgroundColor: '#fff', border: '1px solid #ddd', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+            <Box sx={{ p: 3, backgroundColor: '#fff', border: '1px solid', borderColor: 'grey.300', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
               <Typography variant="h5" component="h2" gutterBottom align="center" color="primary">
                 RSVP for this Event
               </Typography>
@@ -85,8 +114,8 @@ function Event() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button type="submit" variant="contained" color="secondary" size="large" sx={{ mt: 2, width: '100%' }}>
-                  Confirm Your Seat
+                <Button type="submit" variant="contained" color="secondary" size="large" sx={{ mt: 2, width: '100%' }} disabled={event.seats_left <= 0}>
+                  {event.seats_left <= 0 ? 'Event Full' : 'Confirm Your Seat'}
                 </Button>
               </form>
             </Box>
