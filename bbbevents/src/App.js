@@ -50,7 +50,7 @@ function App() {
         <Container sx={{ mt: 4 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/event/:id" element={<Event />} />
+            <Route path="/event/:slug" element={<Event />} />
             <Route path="/admin" element={<AdminLogin />} />
           </Routes>
         </Container>

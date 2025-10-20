@@ -76,7 +76,7 @@ function Home() {
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: 'center', mb: 1 }}>
-                <Button component={Link} to={`/event/${event.id}`} variant="contained" color="secondary">
+                <Button component={Link} to={`/event/${event.slug}`} variant="contained" color="secondary">
                   View Details & RSVP
                 </Button>
               </CardActions>

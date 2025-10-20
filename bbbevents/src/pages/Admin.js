@@ -80,11 +80,20 @@ function Admin() {
     fetchRsvps(e.target.value);
   };
 
+  const generateSlug = (name) => {
+    return name
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '') // Remove special characters except spaces and hyphens
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-'); // Replace multiple hyphens with a single hyphen
+  };
+
   const handleCreateSubmit = async (e) => {
     e.preventDefault();
+    const slug = generateSlug(eventName);
     const { data, error } = await supabase
       .from('events')
-      .insert([{ name: eventName, date: eventDate, description: eventDescription, total_seats: totalSeats, seats_left: totalSeats }]);
+      .insert([{ name: eventName, date: eventDate, description: eventDescription, total_seats: totalSeats, seats_left: totalSeats, slug: slug }]);
 
     if (error) {
       console.error('Error creating event:', error);
@@ -111,9 +120,10 @@ function Admin() {
 
   const handleUpdateSubmit = async (e) => {
     e.preventDefault();
+    const slug = generateSlug(eventName);
     const { data, error } = await supabase
       .from('events')
-      .update({ name: eventName, date: eventDate, description: eventDescription })
+      .update({ name: eventName, date: eventDate, description: eventDescription, slug: slug })
       .eq('id', currentEvent.id);
 
     if (error) {

@@ -6,20 +6,20 @@ import { Container, Typography, Box, TextField, Button, Paper, Grid, Chip } from
 import EventIcon from '@mui/icons-material/Event';
 
 function Event() {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [event, setEvent] = useState(null);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
   useEffect(() => {
     fetchEvent();
-  }, [id]);
+  }, [slug]);
 
   const fetchEvent = async () => {
     const { data, error } = await supabase
       .from('events')
       .select('*, rsvps(id)') // Select rsvps to count them
-      .eq('id', id)
+      .eq('slug', slug)
       .single();
     if (error) console.error('Error fetching event:', error);
     else {
