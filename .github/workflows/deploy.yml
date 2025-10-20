@@ -35,22 +35,10 @@ jobs:
         working-directory: ./bbbevents
 
       - name: Deploy to GitHub Pages
-        run: |
-          # Configure git
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Remove existing bbbevents directory to ensure a clean deployment
-          git rm -rf bbbevents
-
-          # Copy the new build output to the bbbevents directory
-          cp -r ./bbbevents/build bbbevents
-
-          # Add changes
-          git add bbbevents
-
-          # Commit changes
-          git commit -m "Deploy bbbevents to GitHub Pages (manual git)"
-
-          # Push changes to main branch
-          git push
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./bbbevents/build
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy bbbevents to GitHub Pages'
