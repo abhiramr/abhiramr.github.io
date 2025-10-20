@@ -52,6 +52,32 @@
   
   
     <body dir="ltr">
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current url and converts the path and query
+      // string into just the hash component, e.g.
+      // https://www.foo.bar/baz?query=a -> https://www.foo.bar/#/baz?query=a
+      // On redirect to index.html the 404 page, the page will load and parse
+      // the URL and redirect again. This is required for `react-router-dom`
+      // to work correctly with `basename`.
+      (function(){
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          window.location.replace(redirect);
+        } else {
+          var path = window.location.pathname;
+          var query = window.location.search;
+          var hash = window.location.hash;
+          if (path.startsWith('/bbbevents')) { // Only redirect if it's for the bbbevents app
+            sessionStorage.setItem('redirect', '/bbbevents/#' + path.substring('/bbbevents'.length) + query + hash);
+            window.location.replace('/bbbevents/index.html');
+          }
+        }
+      })();
+    </script>
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
