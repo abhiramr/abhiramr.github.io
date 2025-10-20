@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/bbbevents/static/js/main.bdcecc4c.js",
+    "main.js": "/bbbevents/static/js/main.f8b7ee78.js",
     "static/media/banner.jpg": "/bbbevents/static/media/banner.57db4de23000e5d1c349.jpg",
     "index.html": "/bbbevents/index.html",
-    "main.bdcecc4c.js.map": "/bbbevents/static/js/main.bdcecc4c.js.map"
+    "main.f8b7ee78.js.map": "/bbbevents/static/js/main.f8b7ee78.js.map"
   },
   "entrypoints": [
-    "static/js/main.bdcecc4c.js"
+    "static/js/main.f8b7ee78.js"
   ]
 }
