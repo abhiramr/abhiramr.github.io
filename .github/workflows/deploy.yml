@@ -35,17 +35,9 @@ jobs:
         working-directory: ./bbbevents
 
       - name: Deploy to GitHub Pages
-        run: |
-          # Navigate to the build output directory
-          cd ./bbbevents/build
-          # Initialize git in this directory
-          git init
-          # Configure git user
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Add all files
-          git add .
-          # Commit changes
-          git commit -m "Deploy bbbevents to GitHub Pages"
-          # Force push to the bbbevents directory on the main branch
-          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" main:main --prefix bbbevents
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main
+          publish_dir: ./bbbevents/build
+          destination_dir: bbbevents
