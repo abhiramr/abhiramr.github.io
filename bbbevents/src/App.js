@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Event from './pages/Event';
 import AdminLogin from './pages/AdminLogin';
+import NotFound from './pages/NotFound';
 import { createTheme, ThemeProvider, CssBaseline, Container } from '@mui/material';
 
 const theme = createTheme({
@@ -51,13 +52,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router basename="/bbbevents">
+      <Router>
         <Header />
         <Container sx={{ mt: 4 }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/event/:slug" element={<Event />} />
             <Route path="/admin" element={<AdminLogin />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Container>
       </Router>

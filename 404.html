@@ -53,9 +53,14 @@
   
     <body dir="ltr">
     <script>
-      // Redirect to the index.html of the bbbevents application
-      // HashRouter will then handle the path from the hash.
-      window.location.replace('/bbbevents/index.html');
+      // Check if the requested path is for the bbbevents application
+      if (window.location.pathname.startsWith('/bbbevents/')) {
+        // If it is, redirect to the root of the bbbevents application
+        // HashRouter will then handle the path from the hash.
+        window.location.replace('/bbbevents/');
+      } else {
+        // Otherwise, let the default 404 content be displayed.
+      }
     </script>
   
     
