@@ -40,7 +40,7 @@ function Event() {
     // First, insert the RSVP
     const { data: rsvpData, error: rsvpError } = await supabase
       .from('rsvps')
-      .insert([{ event_id: id, name, email }]);
+      .insert([{ event_id: event.id, name, email }]);
 
     if (rsvpError) {
       console.error('Error RSVPing:', rsvpError);
@@ -53,7 +53,7 @@ function Event() {
       const { error: updateError } = await supabase
         .from('events')
         .update({ seats_left: newSeatsLeft })
-        .eq('id', id);
+        .eq('id', event.id);
 
       if (updateError) {
         console.error('Error updating seats left:', updateError);
