@@ -87,9 +87,11 @@ function Event() {
             <Box sx={{ my: 2, '& a': { color: 'secondary.main' }, lineHeight: '1.7' }}>
               <ReactMarkdown>{event.description}</ReactMarkdown>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mt: 2 }}>
-              Seats Left: {event.seats_left} / {event.total_seats}
-            </Typography>
+            <Chip
+              label={`Seats Left: ${event.seats_left} / ${event.total_seats}`}
+              color={event.seats_left === 0 ? 'error' : (event.seats_left <= 5 ? 'warning' : 'success')}
+              sx={{ mt: 2, fontSize: '1rem' }}
+            />
           </Grid>
           <Grid item xs={12} md={5}>
             <Box sx={{ p: 3, backgroundColor: '#fff', border: '1px solid', borderColor: 'grey.300', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>

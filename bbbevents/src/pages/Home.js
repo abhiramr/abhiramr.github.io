@@ -11,13 +11,19 @@ function Home() {
     fetchEvents();
   }, []);
 
-  const fetchEvents = async () => {
+    const fetchEvents = async () => {
     const { data, error } = await supabase
       .from('events')
-      .select('*')
+      .select('*, rsvps(id)') // Select rsvps to count them
       .order('date', { ascending: true });
     if (error) console.error('Error fetching events:', error);
-    else setEvents(data);
+    else {
+      const eventsWithSeats = data.map(event => {
+        const rsvpsCount = event.rsvps ? event.rsvps.length : 0;
+        return { ...event, seats_left: event.total_seats - rsvpsCount };
+      });
+      setEvents(eventsWithSeats);
+    }
   };
 
   const truncateDescription = (description) => {
@@ -60,6 +66,11 @@ function Home() {
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
                   {new Date(event.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </Typography>
+                <Chip
+                  label={`Seats Left: ${event.seats_left} / ${event.total_seats}`}
+                  color={event.seats_left === 0 ? 'error' : (event.seats_left <= 5 ? 'warning' : 'success')}
+                  sx={{ mb: 2, fontSize: '0.8rem' }}
+                />
                 <Typography variant="body1">
                   {truncateDescription(event.description)}
                 </Typography>
