@@ -13,22 +13,22 @@ function Event() {
   const [numTickets, setNumTickets] = useState(1); // Default to 1 ticket
 
   useEffect(() => {
+    const fetchEvent = async () => {
+      const { data, error } = await supabase
+        .from('events')
+        .select('*, rsvps(id), max_tickets_per_rsvp') // Select rsvps to count them and max_tickets_per_rsvp
+        .eq('slug', slug)
+        .single();
+      if (error) console.error('Error fetching event:', error);
+      else {
+        // Calculate seats_left based on total_seats and actual rsvps count
+        const rsvpsCount = data.rsvps ? data.rsvps.length : 0;
+        setEvent({ ...data, seats_left: data.total_seats - rsvpsCount });
+      }
+    };
+
     fetchEvent();
   }, [slug]);
-
-  const fetchEvent = async () => {
-    const { data, error } = await supabase
-      .from('events')
-      .select('*, rsvps(id), max_tickets_per_rsvp') // Select rsvps to count them and max_tickets_per_rsvp
-      .eq('slug', slug)
-      .single();
-    if (error) console.error('Error fetching event:', error);
-    else {
-      // Calculate seats_left based on total_seats and actual rsvps count
-      const rsvpsCount = data.rsvps ? data.rsvps.length : 0;
-      setEvent({ ...data, seats_left: data.total_seats - rsvpsCount });
-    }
-  };
 
   const handleRsvp = async (e) => {
     e.preventDefault();
