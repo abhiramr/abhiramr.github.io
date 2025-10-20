@@ -3,6 +3,7 @@ import { supabase } from '../supabaseClient';
 import { Container, TextField, Button, Typography, Box, Tabs, Tab, List, ListItem, ListItemText, IconButton, Modal, Select, MenuItem, InputLabel, FormControl, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const style = {
   position: 'absolute',
@@ -66,9 +67,51 @@ function Admin() {
   };
 
   const fetchRsvps = async (eventId) => {
-    const { data, error } = await supabase.from('rsvps').select('name, email').eq('event_id', eventId);
+    const { data, error } = await supabase.from('rsvps').select('id, name, email, event_id').eq('event_id', eventId);
     if (error) console.error('Error fetching rsvps:', error);
     else setRsvps(data);
+  };
+
+  const handleCancelRsvp = async (rsvpId, eventId) => {
+    if (window.confirm('Are you sure you want to cancel this RSVP?')) {
+      // Delete the RSVP
+      const { error: deleteError } = await supabase
+        .from('rsvps')
+        .delete()
+        .eq('id', rsvpId);
+
+      if (deleteError) {
+        console.error('Error canceling RSVP:', deleteError);
+        alert('Error canceling RSVP. See console for details.');
+      } else {
+        // Increment seats_left in the events table
+        const { data: eventData, error: fetchEventError } = await supabase
+          .from('events')
+          .select('seats_left')
+          .eq('id', eventId)
+          .single();
+
+        if (fetchEventError) {
+          console.error('Error fetching event for seat update:', fetchEventError);
+          alert('RSVP canceled, but failed to update seats count.');
+        } else {
+          const newSeatsLeft = eventData.seats_left + 1;
+          const { error: updateError } = await supabase
+            .from('events')
+            .update({ seats_left: newSeatsLeft })
+            .eq('id', eventId);
+
+          if (updateError) {
+            console.error('Error updating seats left:', updateError);
+            alert('RSVP canceled, but failed to update seats count.');
+          } else {
+            alert('RSVP canceled successfully!');
+            fetchRsvps(selectedEvent); // Refresh the current RSVP list
+            fetchEvents(); // Refresh the main events list to update seat counts
+          }
+        }
+      }
+    }
   };
 
   const handleChange = (event, newValue) => {
@@ -193,121 +236,6 @@ function Admin() {
             value={eventDescription}
             onChange={(e) => setEventDescription(e.target.value)}
           />
-          <TextField
-            label="Total Seats"
-            type="number"
-            variant="outlined"
-            fullWidth
-            margin="normal"
-            value={totalSeats}
-            onChange={(e) => setTotalSeats(e.target.value)}
-          />
-          <Button type="submit" variant="contained" color="primary" fullWidth>
-            Create Event
-          </Button>
-        </form>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Typography variant="h5" component="h2" gutterBottom>
-          Edit or Delete an Existing Event
-        </Typography>
-        <List>
-          {events.map((event) => (
-            <ListItem
-              key={event.id}
-              secondaryAction={
-                <>
-                  <IconButton edge="end" aria-label="edit" onClick={() => handleEdit(event)}>
-                    <EditIcon />
-                  </IconButton>
-                  <IconButton edge="end" aria-label="delete" onClick={() => handleDelete(event.id)}>
-                    <DeleteIcon />
-                  </IconButton>
-                </>
-              }
-            >
-              <ListItemText
-                primary={event.name}
-                secondary={new Date(event.date).toLocaleDateString()}
-              />
-            </ListItem>
-          ))}
-        </List>
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Typography variant="h5" component="h2" gutterBottom>
-          View Event RSVPs
-        </Typography>
-        <FormControl fullWidth>
-          <InputLabel id="event-select-label">Select Event</InputLabel>
-          <Select
-            labelId="event-select-label"
-            id="event-select"
-            value={selectedEvent}
-            label="Select Event"
-            onChange={handleEventSelect}
-          >
-            {events.map((event) => (
-              <MenuItem key={event.id} value={event.id}>{event.name}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-        <Table sx={{ mt: 4 }}>
-          <TableHead>
-            <TableRow>
-              <TableCell>Name</TableCell>
-              <TableCell>Email</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rsvps.map((rsvp, index) => (
-              <TableRow key={index}>
-                <TableCell>{rsvp.name}</TableCell>
-                <TableCell>{rsvp.email}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TabPanel>
-      <Modal
-        open={open}
-        onClose={() => setOpen(false)}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Edit Event
-          </Typography>
-          <form onSubmit={handleUpdateSubmit}>
-            <TextField
-              label="Event Name"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              value={eventName}
-              onChange={(e) => setEventName(e.target.value)}
-            />
-            <TextField
-              label="Event Date"
-              type="date"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              InputLabelProps={{ shrink: true }}
-              value={eventDate}
-              onChange={(e) => setEventDate(e.target.value)}
-            />
-            <TextField
-              label="Event Description"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              multiline
-              rows={4}
-              value={eventDescription}
-              onChange={(e) => setEventDescription(e.target.value)}
-            />
             <TextField
               label="Total Seats"
               type="number"
@@ -318,13 +246,134 @@ function Admin() {
               onChange={(e) => setTotalSeats(e.target.value)}
             />
             <Button type="submit" variant="contained" color="primary" fullWidth>
-              Update Event
+              Create Event
             </Button>
           </form>
-        </Box>
-      </Modal>
-    </Container>
-  );
-}
-
-export default Admin;
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <Typography variant="h5" component="h2" gutterBottom>
+            Edit or Delete an Existing Event
+          </Typography>
+          <List>
+            {events.map((event) => (
+              <ListItem
+                key={event.id}
+                secondaryAction={
+                  <>
+                    <IconButton edge="end" aria-label="edit" onClick={() => handleEdit(event)}>
+                      <EditIcon />
+                    </IconButton>
+                    <IconButton edge="end" aria-label="delete" onClick={() => handleDelete(event.id)}>
+                      <DeleteIcon />
+                    </IconButton>
+                  </>
+                }
+              >
+                <ListItemText
+                  primary={event.name}
+                  secondary={new Date(event.date).toLocaleDateString()}
+                />
+              </ListItem>
+            ))}
+          </List>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Typography variant="h5" component="h2" gutterBottom>
+            View Event RSVPs
+          </Typography>
+          <FormControl fullWidth>
+            <InputLabel id="event-select-label">Select Event</InputLabel>
+            <Select
+              labelId="event-select-label"
+              id="event-select"
+              value={selectedEvent}
+              label="Select Event"
+              onChange={handleEventSelect}
+            >
+              {events.map((event) => (
+                <MenuItem key={event.id} value={event.id}>{event.name}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+          <Table sx={{ mt: 4 }}>
+            <TableHead>
+              <TableRow>
+                <TableCell>Name</TableCell>
+                <TableCell>Email</TableCell>
+                <TableCell>Action</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rsvps.map((rsvp, index) => (
+                <TableRow key={index}>
+                  <TableCell>{rsvp.name}</TableCell>
+                  <TableCell>{rsvp.email}</TableCell>
+                  <TableCell>
+                    <IconButton edge="end" aria-label="cancel" onClick={() => handleCancelRsvp(rsvp.id, rsvp.event_id)}>
+                      <CancelIcon />
+                    </IconButton>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TabPanel>
+        <Modal
+          open={open}
+          onClose={() => setOpen(false)}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Edit Event
+            </Typography>
+            <form onSubmit={handleUpdateSubmit}>
+              <TextField
+                label="Event Name"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                value={eventName}
+                onChange={(e) => setEventName(e.target.value)}
+              />
+              <TextField
+                label="Event Date"
+                type="date"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                InputLabelProps={{ shrink: true }}
+                value={eventDate}
+                onChange={(e) => setEventDate(e.target.value)}
+              />
+              <TextField
+                label="Event Description"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                multiline
+                rows={4}
+                value={eventDescription}
+                onChange={(e) => setEventDescription(e.target.value)}
+              />
+              <TextField
+                label="Total Seats"
+                type="number"
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                value={totalSeats}
+                onChange={(e) => setTotalSeats(e.target.value)}
+              />
+              <Button type="submit" variant="contained" color="primary" fullWidth>
+                Update Event
+              </Button>
+            </form>
+          </Box>
+        </Modal>
+      </Container>
+    );
+  }
+  
+  export default Admin;
