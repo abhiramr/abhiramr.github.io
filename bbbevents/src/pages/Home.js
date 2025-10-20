@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 import { Link } from 'react-router-dom';
 import { Container, Typography, Grid, Card, CardContent, Button, CardActions, CardMedia, Chip } from '@mui/material';
-import banner from '../images/banner.jpg';
+import banner from '../images/bbb_g.png';
 
 function Home() {
   const [events, setEvents] = useState([]);
