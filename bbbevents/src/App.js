@@ -22,21 +22,27 @@ const theme = createTheme({
     fontFamily: 'Roboto, sans-serif',
     h1: {
       fontFamily: 'Georgia, serif',
+      fontSize: '2.5rem', // Reduced from default 6rem
     },
     h2: {
       fontFamily: 'Georgia, serif',
+      fontSize: '2rem', // Reduced from default 3.75rem
     },
     h3: {
       fontFamily: 'Georgia, serif',
+      fontSize: '1.75rem', // Reduced from default 3rem
     },
     h4: {
       fontFamily: 'Georgia, serif',
+      fontSize: '1.5rem', // Reduced from default 2.125rem
     },
     h5: {
       fontFamily: 'Georgia, serif',
+      fontSize: '1.25rem', // Reduced from default 1.5rem
     },
     h6: {
       fontFamily: 'Georgia, serif',
+      fontSize: '1rem', // Reduced from default 1.25rem
     },
   },
 });
