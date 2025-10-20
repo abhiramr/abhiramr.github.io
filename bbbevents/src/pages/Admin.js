@@ -48,6 +48,7 @@ function Admin() {
   const [eventName, setEventName] = useState('');
   const [eventDate, setEventDate] = useState('');
   const [eventDescription, setEventDescription] = useState('');
+  const [totalSeats, setTotalSeats] = useState('');
   const [events, setEvents] = useState([]);
   const [open, setOpen] = useState(false);
   const [currentEvent, setCurrentEvent] = useState(null);
@@ -83,7 +84,7 @@ function Admin() {
     e.preventDefault();
     const { data, error } = await supabase
       .from('events')
-      .insert([{ name: eventName, date: eventDate, description: eventDescription }]);
+      .insert([{ name: eventName, date: eventDate, description: eventDescription, total_seats: totalSeats, seats_left: totalSeats }]);
 
     if (error) {
       console.error('Error creating event:', error);
@@ -94,6 +95,7 @@ function Admin() {
       setEventName('');
       setEventDate('');
       setEventDescription('');
+      setTotalSeats('');
       fetchEvents(); // Refresh the list
     }
   };
@@ -103,6 +105,7 @@ function Admin() {
     setEventName(event.name);
     setEventDate(event.date);
     setEventDescription(event.description);
+    setTotalSeats(event.total_seats);
     setOpen(true);
   };
 
@@ -179,6 +182,15 @@ function Admin() {
             rows={4}
             value={eventDescription}
             onChange={(e) => setEventDescription(e.target.value)}
+          />
+          <TextField
+            label="Total Seats"
+            type="number"
+            variant="outlined"
+            fullWidth
+            margin="normal"
+            value={totalSeats}
+            onChange={(e) => setTotalSeats(e.target.value)}
           />
           <Button type="submit" variant="contained" color="primary" fullWidth>
             Create Event
@@ -285,6 +297,15 @@ function Admin() {
               rows={4}
               value={eventDescription}
               onChange={(e) => setEventDescription(e.target.value)}
+            />
+            <TextField
+              label="Total Seats"
+              type="number"
+              variant="outlined"
+              fullWidth
+              margin="normal"
+              value={totalSeats}
+              onChange={(e) => setTotalSeats(e.target.value)}
             />
             <Button type="submit" variant="contained" color="primary" fullWidth>
               Update Event
