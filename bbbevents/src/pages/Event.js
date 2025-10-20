@@ -10,6 +10,7 @@ function Event() {
   const [event, setEvent] = useState(null);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [numTickets, setNumTickets] = useState(1); // Default to 1 ticket
 
   useEffect(() => {
     fetchEvent();
@@ -18,7 +19,7 @@ function Event() {
   const fetchEvent = async () => {
     const { data, error } = await supabase
       .from('events')
-      .select('*, rsvps(id)') // Select rsvps to count them
+      .select('*, rsvps(id), max_tickets_per_rsvp') // Select rsvps to count them and max_tickets_per_rsvp
       .eq('slug', slug)
       .single();
     if (error) console.error('Error fetching event:', error);
@@ -32,15 +33,24 @@ function Event() {
   const handleRsvp = async (e) => {
     e.preventDefault();
 
-    if (event.seats_left <= 0) {
-      alert('Sorry, this event is full!');
+    // Validations
+    if (numTickets <= 0) {
+      alert('Number of tickets must be at least 1.');
+      return;
+    }
+    if (numTickets > event.max_tickets_per_rsvp) {
+      alert(`You can request a maximum of ${event.max_tickets_per_rsvp} tickets for this event.`);
+      return;
+    }
+    if (numTickets > event.seats_left) {
+      alert(`Sorry, there are only ${event.seats_left} seats left.`);
       return;
     }
 
     // First, insert the RSVP
     const { data: rsvpData, error: rsvpError } = await supabase
       .from('rsvps')
-      .insert([{ event_id: event.id, name, email }]);
+      .insert([{ event_id: event.id, name, email, num_tickets: numTickets }]);
 
     if (rsvpError) {
       console.error('Error RSVPing:', rsvpError);
@@ -49,7 +59,7 @@ function Event() {
       console.log('RSVP successful:', rsvpData);
 
       // Then, decrement seats_left in the events table
-      const newSeatsLeft = event.seats_left - 1;
+      const newSeatsLeft = event.seats_left - numTickets;
       const { error: updateError } = await supabase
         .from('events')
         .update({ seats_left: newSeatsLeft })
@@ -63,6 +73,7 @@ function Event() {
         setEvent(prevEvent => ({ ...prevEvent, seats_left: newSeatsLeft }));
         setName('');
         setEmail('');
+        setNumTickets(1); // Reset tickets to 1
       }
     }
   };
@@ -116,7 +127,17 @@ function Event() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button type="submit" variant="contained" color="secondary" size="large" sx={{ mt: 2, width: '100%' }} disabled={event.seats_left <= 0}>
+                <TextField
+                  label="Number of Tickets"
+                  type="number"
+                  variant="filled"
+                  fullWidth
+                  margin="normal"
+                  value={numTickets}
+                  onChange={(e) => setNumTickets(parseInt(e.target.value, 10))}
+                  inputProps={{ min: 1, max: event.max_tickets_per_rsvp }}
+                />
+                <Button type="submit" variant="contained" color="secondary" size="large" sx={{ mt: 2, width: '100%' }} disabled={event.seats_left <= 0 || numTickets <= 0 || numTickets > event.seats_left || numTickets > event.max_tickets_per_rsvp}>
                   {event.seats_left <= 0 ? 'Event Full' : 'Confirm Your Seat'}
                 </Button>
               </form>
