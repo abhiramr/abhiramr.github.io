@@ -10,7 +10,7 @@ mainSections = ["blog"]
 
 [params]
   author = "Abhiram R"
-  description = "Senior software engineer building production-grade generative AI integrations for O9's supply chain platform."
+  description = "Senior software engineer building production-grade generative AI integrations for O9 Solutions' supply chain platform."
   defaultTheme = "auto"
   homeLatestCount = 4
   ShowReadingTime = true
@@ -23,7 +23,7 @@ mainSections = ["blog"]
 
 [params.homeInfoParams]
   Title = "Hi. I'm Abhiram"
-  Content = "I’m a senior software engineer building production-grade generative AI integrations for O9's supply chain platform.\n\nI write about the things that hold my attention, from engineering and GenAI to short stories and small day-to-day happenings.\n\nI also run one of Bangalore's longest running bookclubs, [Broke Bibliophiles Bangalore](https://brokebibliophilesbangalore.substack.com)."
+  Content = "I’m a senior software engineer building production-grade generative AI integrations for O9 Solutions' supply chain platform.\n\nI write about the things that hold my attention, from engineering and GenAI to short stories and small day-to-day happenings.\n\nI also run one of Bangalore's longest running bookclubs, [Broke Bibliophiles Bangalore](https://brokebibliophilesbangalore.substack.com)."
 
 [[params.socialIcons]]
   name = "email"
