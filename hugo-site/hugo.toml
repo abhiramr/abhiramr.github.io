@@ -1,0 +1,69 @@
+baseURL = "https://abhiramr.com/"
+title = "Abhiram R"
+theme = "PaperMod"
+paginate = 20
+enableRobotsTXT = true
+buildDrafts = false
+languageCode = "en-us"
+
+mainSections = ["blog"]
+
+[params]
+  author = "Abhiram R"
+  description = "ML Engineer, writer, book club founder"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  pygmentsUseClasses = true
+  googleAnalytics = "G-NK6FWGKQPH"
+
+[params.homeInfoParams]
+  Title = "Hi. I'm Abhiram"
+  Content = "ML Engineer · Writer · [Book club founder](https://brokebibliophilesbangalore.com)"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:mail@abhiramr.com"
+
+[[params.socialIcons]]
+  name = "substack"
+  url = "https://everythingpython.substack.com"
+
+[[params.socialIcons]]
+  name = "youtube"
+  url = "https://www.youtube.com/channel/UCeeNKQuq_h8_sMKtoAYS2Rw/"
+
+[menu]
+  [[menu.main]]
+    name = "Technical"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "Writing"
+    url = "/writing/"
+    weight = 2
+  [[menu.main]]
+    name = "Books"
+    url = "/books/"
+    weight = 3
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "github-dark"
+  lineNos = false
+  codeFences = true

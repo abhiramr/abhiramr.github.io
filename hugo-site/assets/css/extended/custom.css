@@ -1,0 +1,313 @@
+/* ============================================================
+   Typography
+   ============================================================ */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+code, pre, kbd {
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+    font-size: 0.88em;
+}
+
+/* ============================================================
+   Color tweaks — warmer, less stark
+   ============================================================ */
+:root {
+    --theme: #fff;
+    --entry: #fff;
+    --primary: #111;
+    --secondary: #777;
+    --tertiary: #e8e8e8;
+    --content: #222;
+    --border: #ebebeb;
+    --code-bg: #f5f5f5;
+    --code-block-bg: #1c1d21;
+    --accent: #2563eb;        /* blue accent for links */
+}
+
+:root[data-theme="dark"] {
+    --theme: #141414;
+    --entry: #1e1e1e;
+    --primary: #e8e8e8;
+    --secondary: #888;
+    --tertiary: #2e2e2e;
+    --content: #ccc;
+    --border: #2a2a2a;
+    --code-bg: #1e1e1e;
+    --code-block-bg: #1e1e1e;
+    --accent: #60a5fa;
+}
+
+/* ============================================================
+   Post list — flat, no card boxes
+   ============================================================ */
+.post-entry {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding: 20px 0;
+    margin-bottom: 0;
+    transition: none;
+}
+
+.post-entry:first-child {
+    border-top: 1px solid var(--border);
+}
+
+.post-entry:active {
+    transform: none;
+}
+
+.entry-header h2 {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.entry-content {
+    font-size: 14px;
+    margin: 4px 0 0;
+    -webkit-line-clamp: 2;
+    color: var(--secondary);
+}
+
+.entry-footer {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* ============================================================
+   Home info — cleaner hero
+   ============================================================ */
+.first-entry.home-info {
+    min-height: unset;
+    padding: 48px 0 40px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.first-entry .entry-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.first-entry .entry-content {
+    font-size: 16px;
+    color: var(--secondary);
+    margin: 8px 0 0;
+    line-height: 1.6;
+}
+
+.first-entry .entry-footer {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+/* ============================================================
+   Nav / header
+   ============================================================ */
+.logo a {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+#menu a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary);
+    transition: color 0.15s;
+}
+
+#menu a:hover,
+#menu .active {
+    color: var(--primary);
+}
+
+#menu .active {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+/* ============================================================
+   Post (single) — better reading experience
+   ============================================================ */
+.post-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 1.25;
+}
+
+.post-content {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.post-content h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 36px 0 16px;
+    letter-spacing: -0.2px;
+}
+
+.post-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 28px 0 12px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+.post-content a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+
+.post-content a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.post-content code {
+    background: var(--code-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.post-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+.post-content blockquote {
+    border-left: 3px solid var(--tertiary);
+    padding-left: 16px;
+    color: var(--secondary);
+    font-style: italic;
+    margin: 24px 0;
+}
+
+/* ============================================================
+   Tags — hue per-tag via JS (extend_footer.html)
+   Post-page tags: color dot + neutral text  (Linear/Notion style)
+   Tag cloud (/tags/): Radix-style soft tint badge
+   ============================================================ */
+
+/* ---- Post-page tag strip ---------------------------------- */
+.post-tags {
+    gap: 6px;
+}
+
+.post-tags a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding: 3px 9px 3px 7px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--secondary);
+    line-height: 1.6;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+/* Color dot before each tag */
+.post-tags a::before {
+    content: '';
+    flex-shrink: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: hsl(var(--tag-h, 220), 65%, 50%);
+}
+
+.post-tags a:hover {
+    border-color: hsl(var(--tag-h, 220), 45%, 75%);
+    background: hsl(var(--tag-h, 220), 60%, 96%);
+    color: hsl(var(--tag-h, 220), 55%, 30%);
+}
+
+/* Dark mode — post-page tags */
+:root[data-theme="dark"] .post-tags a {
+    border-color: var(--border);
+    background: transparent;
+    color: var(--secondary);
+}
+
+:root[data-theme="dark"] .post-tags a::before {
+    background: hsl(var(--tag-h, 220), 55%, 62%);
+}
+
+:root[data-theme="dark"] .post-tags a:hover {
+    border-color: hsl(var(--tag-h, 220), 35%, 38%);
+    background: hsl(var(--tag-h, 220), 28%, 20%);
+    color: hsl(var(--tag-h, 220), 60%, 76%);
+}
+
+/* ---- Tag cloud (/tags/ page) ------------------------------ */
+.terms-tags a {
+    /* Radix step-3/step-11 pairing: very light tint bg, dark text */
+    background: hsl(var(--tag-h, 220), 58%, 94%);
+    color:      hsl(var(--tag-h, 220), 55%, 32%);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.terms-tags a:active,
+.terms-tags a:hover {
+    background: hsl(var(--tag-h, 220), 58%, 88%);
+    color:      hsl(var(--tag-h, 220), 60%, 24%);
+    transform: none;
+}
+
+/* Dark mode — tag cloud */
+:root[data-theme="dark"] .terms-tags a {
+    background: hsl(var(--tag-h, 220), 28%, 20%);
+    color:      hsl(var(--tag-h, 220), 58%, 72%);
+}
+
+:root[data-theme="dark"] .terms-tags a:hover {
+    background: hsl(var(--tag-h, 220), 28%, 26%);
+    color:      hsl(var(--tag-h, 220), 62%, 80%);
+}
+
+/* ============================================================
+   Section list pages (e.g. /blog/, /writing/)
+   ============================================================ */
+.page-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.footer {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.footer a {
+    border-bottom: none;
+    color: var(--secondary);
+}
+
+.footer a:hover {
+    color: var(--primary);
+    border-bottom: none;
+}
