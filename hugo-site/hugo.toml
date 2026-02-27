@@ -10,8 +10,9 @@ mainSections = ["blog"]
 
 [params]
   author = "Abhiram R"
-  description = "ML Engineer, writer, book club founder"
+  description = "Senior software engineer building production-grade generative AI integrations for O9's supply chain platform."
   defaultTheme = "auto"
+  homeLatestCount = 4
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -22,15 +23,19 @@ mainSections = ["blog"]
 
 [params.homeInfoParams]
   Title = "Hi. I'm Abhiram"
-  Content = "ML Engineer · Writer · [Book club founder](https://brokebibliophilesbangalore.com)"
+  Content = "I’m a senior software engineer building production-grade generative AI integrations for O9's supply chain platform.\n\nI write about the things that hold my attention, from engineering and GenAI to short stories and small day-to-day happenings.\n\nI also run one of Bangalore's longest running bookclubs, [Broke Bibliophiles Bangalore](https://brokebibliophilesbangalore.substack.com)."
 
 [[params.socialIcons]]
   name = "email"
-  url = "mailto:mail@abhiramr.com"
+  url = "mailto:abhiram.ramesh.1212@gmail.com"
 
 [[params.socialIcons]]
   name = "substack"
   url = "https://everythingpython.substack.com"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/abhiramr5459/"
 
 [[params.socialIcons]]
   name = "youtube"
