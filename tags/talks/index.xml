@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Talks on Abhiram R</title><link>https://abhiramr.com/tags/talks/</link><description>Recent content in Talks on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Fri, 28 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/talks/index.xml" rel="self" type="application/rss+xml"/><item><title>Streaming Real-Time AI Inference Results into MongoDB</title><link>https://abhiramr.com/blog/streaming-real-time-ai-inference-results-into-mongodb/</link><pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/streaming-real-time-ai-inference-results-into-mongodb/</guid><description>&lt;p&gt;I&amp;rsquo;m going to be presenting a talk at a Mongo DB User group meetup later today and I thought I&amp;rsquo;d write about it so that it would -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;serve as reading material for folks wanting to go through the content of my talk later&lt;/li&gt;
+&lt;li&gt;let everyone else know what this is all about.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let me pre-emptively say, I don&amp;rsquo;t know why I chose this to be the &amp;ldquo;TITLE&amp;rdquo; of the talk.
+It is extremely dry. But the topic is actually a lot of fun!&lt;/p&gt;</description></item></channel></rss>

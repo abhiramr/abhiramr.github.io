@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Bash on Abhiram R</title><link>https://abhiramr.com/tags/bash/</link><description>Recent content in Bash on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Mon, 24 Dec 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/bash/index.xml" rel="self" type="application/rss+xml"/><item><title>Unix Commands I Use</title><link>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</link><pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</guid><description>&lt;p&gt;I keep Googling commands for some of these situations regularly -&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;General -&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) To find files one level below your current directory -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I was trying to find which repos in my set of folders have a setup.py file. So, this is what I&amp;rsquo;d use.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find . -maxdepth 2 -iname setup.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) To find what process is running on port 2181 -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo lsof -n -i :2181 | grep LISTEN&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

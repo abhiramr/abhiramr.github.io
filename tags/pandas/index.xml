@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Pandas on Abhiram R</title><link>https://abhiramr.com/tags/pandas/</link><description>Recent content in Pandas on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Fri, 23 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>Pandas Notes</title><link>https://abhiramr.com/blog/2019/08/23/pandas-notes/</link><pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/08/23/pandas-notes/</guid><description>&lt;p&gt;These are the commands I use a lot using Pandas -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Get rows with NaNs in any column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df.isna().any(axis=1)]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/1.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get dataframe excluding all NaNs in a particular Column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df['&amp;lt;col_name&amp;gt;'].notnull()]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/2.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get counts of number of Nulls per column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df.isnull().sum()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Increase width of columns displayed in Jupyter Notebooks&lt;/strong&gt; - This is possibly one of my most used commands for every notebook that involves dataframes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pd.set_option('display.max_colwidth',400)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>Studying The Show About Nothing</title><link>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</link><pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</guid><description>&lt;p&gt;I have watched and re-watched Seinfeld over and over for the last 6–7 years now and it remains, till date, one of my most favorite shows. For a show that claims to be about nothing, it has certainly managed to fill up nine seasons worth of content, all with seemingly no plot.&lt;/p&gt;
+&lt;p&gt;The show, if you’re unfamiliar with it, traces the day-to-day lives of (mainly) 4 quite unremarkable people — Jerry Seinfeld, George Costanza, Cosmo Kramer and Elaine Benes. These 4, along with plenty of other side characters and guest stars engage in what seems to be a series of meaningless conversations and activities, which somehow all come together towards the end of the duration of each episode.&lt;/p&gt;</description></item></channel></rss>

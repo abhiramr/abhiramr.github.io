@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Web-Scraping on Abhiram R</title><link>https://abhiramr.com/tags/web-scraping/</link><description>Recent content in Web-Scraping on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Mon, 26 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/web-scraping/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting topics of Interest from HN</title><link>https://abhiramr.com/blog/getting-topics-of-interest-from-hn/</link><pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/getting-topics-of-interest-from-hn/</guid><description>&lt;p&gt;Building a Classifier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fetching stories from Hacker News&lt;/li&gt;
+&lt;li&gt;Extracting key information from articles&lt;/li&gt;
+&lt;li&gt;Using AI to determine article topics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Code -&lt;/p&gt;
+&lt;p&gt;{% gist 5181b0e3c9957617598d4b446609ba01 hn_scraper_llm_topics.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist d6a97bbd3534c532d148ea8a1efc851b strings.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist d2fc27b41a17497466621b7e25c924fa data_models.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist 3bb526888e592de66c82eba391dd08ea keys.py %}&lt;/p&gt;</description></item><item><title>Studying The Show About Nothing</title><link>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</link><pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</guid><description>&lt;p&gt;I have watched and re-watched Seinfeld over and over for the last 6–7 years now and it remains, till date, one of my most favorite shows. For a show that claims to be about nothing, it has certainly managed to fill up nine seasons worth of content, all with seemingly no plot.&lt;/p&gt;
+&lt;p&gt;The show, if you’re unfamiliar with it, traces the day-to-day lives of (mainly) 4 quite unremarkable people — Jerry Seinfeld, George Costanza, Cosmo Kramer and Elaine Benes. These 4, along with plenty of other side characters and guest stars engage in what seems to be a series of meaningless conversations and activities, which somehow all come together towards the end of the duration of each episode.&lt;/p&gt;</description></item><item><title>Data Visualization Exp2</title><link>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</link><pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</guid><description>&lt;p&gt;Alright. Round 2 . FIGHT!&lt;/p&gt;
+&lt;p&gt;So, the last time, I figured out, unintentionally, at what times of the day most of my posts happened. This time, I again unintentionally got results different from what I set out to do — I’ll get to this eventually I guess, but for now, the objective is obtaining a measure of the number of posts I make per day and thereby see if I can figure out which days of the week have been the most (least?) productive. Of course, this is still a step away from my eventual goal (hopefully Experiment 3 should sort it out). Let’s get to the methodology —&lt;/p&gt;</description></item></channel></rss>

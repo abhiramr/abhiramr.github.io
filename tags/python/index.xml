@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Python on Abhiram R</title><link>https://abhiramr.com/tags/python/</link><description>Recent content in Python on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Alias Creation in Windows Using Python</title><link>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</link><pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</guid><description>&lt;p&gt;One thing I&amp;rsquo;ve missed in Windows post my switch from Linux is the ability to create aliases for commands.&lt;/p&gt;
+&lt;p&gt;In Linux, you can create an alias for a command by adding the following line to your &lt;code&gt;.bashrc&lt;/code&gt; or &lt;code&gt;.bash_profile&lt;/code&gt; file -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias &lt;span style="color:#79c0ff"&gt;ll&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would allow you to use &lt;code&gt;ll&lt;/code&gt; instead of &lt;code&gt;ls -l&lt;/code&gt; in your terminal.&lt;/p&gt;
+&lt;p&gt;In Windows, you can create a similar alias by creating a batch file and adding it to your PATH environment variable.&lt;/p&gt;</description></item><item><title>Focus mode - A "kutty" chrome extension</title><link>https://abhiramr.com/blog/focus-mode-a-kutty-chrome-extension/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/focus-mode-a-kutty-chrome-extension/</guid><description>&lt;p&gt;By now you&amp;rsquo;ve seen a lot of stuff being built using ChatGPT. A lot, Jerry. A LOT.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve built a few apps and extensions as well, but this is the first I&amp;rsquo;m writing about.&lt;/p&gt;
+&lt;p&gt;Over the last 3-4 years, &amp;ldquo;building&amp;rdquo; software on any scale has seen quite a radical shift.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s an image to scale -&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/non-python/chrome-extension-focus/productivity.png"&gt;&lt;/p&gt;
+&lt;p&gt;So when I first tried to build a Chrome extension for a company hackathon in 2022, I took around 12 hours, pulling an all-nighter.
+I looked up documentation, Stack Overflow answers, sample blogs and trudged through the whole process - The way god intended it. And finally completed&amp;hellip;something.
+The end result was something that did the job I wanted but it looked absolutely horrendous and I had to hand-wave over the UX because I had no time before the presentation.&lt;/p&gt;</description></item><item><title>Timeline charts</title><link>https://abhiramr.com/blog/timeline-charts/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/timeline-charts/</guid><description>&lt;p&gt;I&amp;rsquo;m not feeling all too well but I didn&amp;rsquo;t want to break my streak of writing. So today I&amp;rsquo;m writing about a non-Python related topic - Timeline Charts.&lt;/p&gt;
+&lt;p&gt;I was doing a profiling activity for work and I was scratching my head for a way to represent the info so as to explain it easily. Then I got to thinking, how does Google build all those charts to track page loads and API runtimes in Developer tools?&lt;/p&gt;</description></item><item><title>Dataclasses</title><link>https://abhiramr.com/blog/dataclasses/</link><pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/dataclasses/</guid><description>&lt;h3 id="19th-nov-2024"&gt;19th Nov 2024&lt;/h3&gt;
+&lt;p&gt;I was trying to write an article on Dataclasses&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; and I looked up an example on the official website&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Easy enough on the face of it, but it led me into quite a rabbit hole.
+A dataclass allows for the creation of &amp;ldquo;special methods&amp;rdquo; for a class when the annotation @dataclass is sighted.&lt;/p&gt;
+&lt;p&gt;So if I have a class &amp;ldquo;Superhero&amp;rdquo; with the annotation :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#d2a8ff;font-weight:bold"&gt;@dataclass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;class&lt;/span&gt; &lt;span style="color:#f0883e;font-weight:bold"&gt;Superhero&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; A class of superheroes and properties about their appearance
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; in Marvel movies
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; name: str
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; superpower: str
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; appearances: int &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;beckon&lt;/span&gt;(self):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#79c0ff"&gt;f&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;name&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; with the super power - &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;superpower&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; has appeared in Marvel movies &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;appearances&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; times&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;superhero &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; Superhero(&lt;span style="color:#a5d6ff"&gt;&amp;#34;Aquaman&amp;#34;&lt;/span&gt;,&lt;span style="color:#a5d6ff"&gt;&amp;#34;Underwater breathing&amp;#34;&lt;/span&gt;,&lt;span style="color:#a5d6ff"&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;superhero&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;beckon()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It effectively means that :&lt;/p&gt;</description></item><item><title>Making your first blog with mkdocs</title><link>https://abhiramr.com/blog/making-your-first-blog-with-mkdocs/</link><pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/making-your-first-blog-with-mkdocs/</guid><description>&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/blog/mkdocs/mkdocs-banner.webp"&gt;&lt;/p&gt;
+&lt;p&gt;Now, why do this?&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s wrong with &lt;a href="medium.com"&gt;Medium&lt;/a&gt; and &lt;a href="https://substack.com"&gt;Substack&lt;/a&gt; and &lt;a href="blogger.com"&gt;Blogger&lt;/a&gt; and &lt;a href="wordpress.com"&gt;Wordpress&lt;/a&gt; and all the tens of websites out there?
+Nothing. You could totally just create a blog there and publish. That&amp;rsquo;s why Content Management Systems exist - so you could focus on the &lt;em&gt;content&lt;/em&gt; and not on the &lt;em&gt;management&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;But if you&amp;rsquo;re like me and want some more control over how you publish your blogs, customize them etc. , you will find this and the other upcoming articles in this category interesting.&lt;/p&gt;</description></item><item><title>LC Num 21</title><link>https://abhiramr.com/blog/lc-num-21/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/lc-num-21/</guid><description>&lt;p&gt;&lt;a href="https://leetcode.com/problems/merge-two-sorted-lists/"&gt;21. Merge Two Sorted Lists&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First I didn&amp;rsquo;t understand the problem I think. In the sense that I accepted the inputs as two lists and returned a list - Python list.
+Then I read it and realized they want the operation in Linked lists.&lt;/p&gt;
+&lt;p&gt;i took some time to recall how to move along a list and finally figured it out.&lt;/p&gt;
+&lt;p&gt;The other thing that gave me a minor ankle break was when the test case was two empty lists.&lt;/p&gt;</description></item><item><title>Enabling Spark History Server Standalone</title><link>https://abhiramr.com/blog/2021/12/27/enabling-spark-history-server-standalone/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2021/12/27/enabling-spark-history-server-standalone/</guid><description>&lt;p&gt;I&amp;rsquo;ve been using Spark for close to 2 years now but because I&amp;rsquo;ve always used it largely on clusters at work, I&amp;rsquo;ve never really had to struggle with the minutae of enabling monitoring pages like the Spark History Server UI etc.&lt;/p&gt;
+&lt;p&gt;Now that I&amp;rsquo;m exploring some advanced concepts in Spark, one of the first things I learnt was enabling the Spark History Server locally i.e on a Standalone installation.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s assume that our Spark installation&amp;rsquo;s version is 2.3.2 and we&amp;rsquo;ve extracted the binary into /opt/spark-2.3.2-bin-hadoop2.7.&lt;/p&gt;</description></item><item><title>Learning how to use FFMpeg</title><link>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</link><pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</guid><description>&lt;h3 id="what-is-ffmpeg"&gt;What is FFmpeg?&lt;/h3&gt;
+&lt;p&gt;In their own words, FFmpeg is &amp;ldquo;A complete, cross-platform solution to record, convert and stream audio and video.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been recording &lt;a href="http://bangalore.python.org.in/"&gt;Bangpypers&lt;/a&gt; videos for the last few months and I haven&amp;rsquo;t really had access to a proper solution to edit videos and audio that I could have got for free/ low-cost. A good friend of mine, Vinay Keerthi, (who incidentally presented the webinar under discussion) told me to chuck GUI based fronts for editing them and told me to try FFmpeg, the CLI tool directly, which these tools probably use in the background anyway.&lt;/p&gt;</description></item><item><title>Custom CSS Jupyterlab Ext</title><link>https://abhiramr.com/blog/2019/12/10/custom-css-jupyterlab-ext/</link><pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/12/10/custom-css-jupyterlab-ext/</guid><description>&lt;p&gt;Jupyterlab is a definite improvement on the older IPython notebook interface - both in features and in appearance. There is now even an in-built &amp;ldquo;Dark Theme&amp;rdquo; that can be enabled.&lt;/p&gt;
+&lt;p&gt;But is that all?&lt;/p&gt;
+&lt;p&gt;As we know, Jupyterlab is a browser based app and is ipso facto, written on a base of HTML, CSS and Javascript. So if we want to change the appearance over and above what we get out of the box with jupyterlab, we can. Now, it &lt;em&gt;is&lt;/em&gt; possible to make any CSS changes by hacking into the internals of the notebook, but thanks to a nifty Jupyterlab extension by Adam Wallner, we don&amp;rsquo;t have to.&lt;/p&gt;</description></item><item><title>Setting Up Python3.8 and Jupyterlab</title><link>https://abhiramr.com/blog/2019/11/07/setting-up-python38-and-jupyterlab/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/11/07/setting-up-python38-and-jupyterlab/</guid><description>&lt;p&gt;I&amp;rsquo;m using Ubuntu 16.04 on this machine, so that&amp;rsquo;s what the steps of installation here will be for. But this installation shouldn&amp;rsquo;t largely vary on any distro that&amp;rsquo;s 14.04 and higher.&lt;/p&gt;
+&lt;h4 id="step-1---download-python-source-code"&gt;Step 1 - Download Python source code&lt;/h4&gt;
+&lt;p&gt;Binary installations are available for Windows and Mac but you can either install Python3.8 on Ubuntu using &amp;ldquo;apt&amp;rdquo; or download and install from source. I did the latter. Obtain the gz file from &lt;a href="https://www.python.org/downloads/release/python-380/"&gt;here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Git Jupyterlab Ext</title><link>https://abhiramr.com/blog/2019/10/31/git-jupyterlab-ext/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/10/31/git-jupyterlab-ext/</guid><description>&lt;p&gt;&lt;em&gt;Disclaimer : Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;jupyterlab-git&lt;/code&gt; is an extension that lets you stage and commit changes to notebooks made right from within the Jupyterlab interface.&lt;/p&gt;
+&lt;p&gt;This is best installed within the confines of a virtual environment, as is anything experimental.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id="installation-steps--"&gt;Installation steps -&lt;/h4&gt;
+&lt;p&gt;a) Ensure that you have the latest version of jupyterlab (=1.2.0 at the time of this writing) and NodeJS(=12.13.0 at this time)&lt;/p&gt;</description></item><item><title>Pandas Notes</title><link>https://abhiramr.com/blog/2019/08/23/pandas-notes/</link><pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/08/23/pandas-notes/</guid><description>&lt;p&gt;These are the commands I use a lot using Pandas -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Get rows with NaNs in any column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df.isna().any(axis=1)]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/1.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get dataframe excluding all NaNs in a particular Column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df['&amp;lt;col_name&amp;gt;'].notnull()]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/2.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get counts of number of Nulls per column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df.isnull().sum()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Increase width of columns displayed in Jupyter Notebooks&lt;/strong&gt; - This is possibly one of my most used commands for every notebook that involves dataframes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pd.set_option('display.max_colwidth',400)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>Podcasts I like</title><link>https://abhiramr.com/misc/2019-07-08-podcasts-i-like/</link><pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/misc/2019-07-08-podcasts-i-like/</guid><description>&lt;h2 id="my-current-regulars"&gt;&lt;em&gt;My current regulars&lt;/em&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/parcast/mythology"&gt; Mythology by Parcast &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/rationally-speaking"&gt; Rationally speaking with Julia Galef &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/tim-ferriss-show/the-tim-ferriss-show"&gt; The Tim Ferriss Show &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/naval"&gt; Naval Ravikant &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/data-stories-podcast/data-stories"&gt; Data Stories &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/on-being-with-krista-tippett"&gt; On Being with Krista Tippett&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/podcast-init"&gt; The Python Podcast.__init &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/pods/akimbo"&gt; Akimbo: A Podcast from Seth Godin &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/factordaily/outliers-3"&gt; Outliers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/paul-cooper/fall-of-civilizations"&gt; Fall of Civilizations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="my-favorite-episodes"&gt;&lt;em&gt;My favorite episodes&lt;/em&gt;&lt;/h2&gt;
+&lt;h4 id="literary"&gt;&lt;em&gt;Literary&lt;/em&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://podcasts.apple.com/us/podcast/catholic-church-is-force-for-good-stephen-fry-christopher/id916588760?i=1000413931440"&gt;Is the catholic church a force for good - An Intelligence Squared Debate - With Stephen Fry and Christopher Hitchens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://player.fm/series/what-makes-us-human-with-jeremy-vine/stephen-fry-what-makes-us-human"&gt;What makes us human? - with Stephen Fry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://player.fm/series/the-intellectual-dark-web-podcast/ep-032-the-four-horsemen-dawkins-dennet-hitchens-harris-2007"&gt;The Four Horsemen - Richard Dawkins, Daniel Dennet, Christopher Hitchens and Sam Harris &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/tim-ferriss-show/the-tim-ferriss-show/e/59738425"&gt;The Tim Ferriss Show - with Neil Gaiman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/salt-seminars-about-long-term-thinking-9478/e/39343363"&gt;Neil Gaiman: How Stories Last&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/bbc/great-lives/e/51054858"&gt;Stephen Fry on PG Wodehouse&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="economics-psychology-marketing"&gt;&lt;em&gt;Economics, Psychology, Marketing&lt;/em&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/shane-parrish/the-knowledge-project/e/50320841"&gt;The Psychology of Advertising with Rory Sutherland&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/art-of-charm/the-art-of-charm/e/48107201"&gt;Dan Ariely | Payoff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/rationally-speaking/e/49196690"&gt;Rationally Speaking #178 - Tim Urban on &amp;ldquo;Trying to live&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="on-data"&gt;&lt;em&gt;On Data&lt;/em&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/data-stories-podcast/data-stories/e/54262620"&gt;Data Stories : Color with Karen Schloss&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/rationally-speaking/e/49196690"&gt;FlowingData with Nathan Yau&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="python-podcasts"&gt;&lt;em&gt;Python Podcasts&lt;/em&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://realpython.com/podcasts/rpp/"&gt;The Real Python Podcast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://talkpython.fm/"&gt;Talk Python To Me&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pythonbytes.fm/"&gt;Python Bytes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://testandcode.com/"&gt;Test and Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.frompythonimportpodcast.com/"&gt;From Python Import Podcast&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pythonpodcast.com/"&gt;podcast.&lt;strong&gt;init&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="podcasts-by-friends"&gt;&lt;em&gt;Podcasts by Friends&lt;/em&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ivmpodcasts.com/harate-kannada-podcast-episode-list/2020/2/27/ep-59-tales-of-time-travel"&gt;Tales of Time Travel&lt;/a&gt; by &lt;a href="https://twitter.com/theBekku"&gt;Gautham Shenoy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ivmpodcasts.com/harate-kannada-podcast-episode-list/2020/1/30/ep-55-kannada-science-fiction"&gt;Kannada Science Fiction&lt;/a&gt; by &lt;a href="https://twitter.com/theBekku"&gt;Gautham Shenoy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://podcasts.adorilabs.com/s/e?eid=IF1t1lT51tJYXuMt"&gt;The Forgotten Heritage of the Deccan&lt;/a&gt; by &lt;a href="https://twitter.com/SandalBurn"&gt;Karthik Malli&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="people"&gt;&lt;em&gt;People&amp;rsquo;s Choice&lt;/em&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/indus-vox/simblified-2"&gt; Simblified &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/indus-vox/the-pragati-podcast"&gt; The Pragati Podcast &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/indus-vox/paperback"&gt; Paperback &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/indus-vox/the-seen-and-the-unseen"&gt; The Seen and the Unseen &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.stitcher.com/podcast/indus-vox/echoes-of-india-a-history-podcast"&gt; Echoes of India &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Via Nishant Singh&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Bangpypers PreWorkshop Setup</title><link>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</link><pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</guid><description>&lt;p&gt;&lt;a href="https://abhiramr.com/2019-11-07-Setting-Up-Python38-Jupyter-lab"&gt;A guide to installing a newer version of Python is available here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We at Bangpypers conduct a lot of workshops and some steps are common for all of them. To that end, this post is meant to serve as guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="ubuntu"&gt;Ubuntu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Check your existing version of Python to see if you already have what&amp;rsquo;s required.&lt;/p&gt;</description></item><item><title>F U Python Commands</title><link>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</guid><description>&lt;p&gt;The previous post was for commands Unix. This post is about the Python commands I use or Google frequently.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To find the absolute path of the directory of the current file being executed -&lt;/p&gt;
+&lt;p&gt;abs_path = os.path.dirname(os.path.realpath(&lt;strong&gt;file&lt;/strong&gt;))&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copyfile
+copyfile(src, dst)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file or directory from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copy
+copy(src, dst)&lt;/p&gt;</description></item><item><title>Django Filter To Shorten Naturaltime</title><link>https://abhiramr.com/blog/2018/06/26/django-filter-to-shorten-naturaltime/</link><pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/06/26/django-filter-to-shorten-naturaltime/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is a filter snippet to shorten the natural time value obtained using naturaltime function from humanize.&lt;/p&gt;
+&lt;p&gt;#In templatetag file , say file_tags.py
+from django import template
+register = template.Library()&lt;/p&gt;
+&lt;p&gt;@register.filter
+def shorten_naturaltime(naturaltime):
+naturaltime = naturaltime.replace(&amp;lsquo;minutes&amp;rsquo;,&amp;rsquo;m&amp;rsquo;).replace(&amp;lsquo;hours&amp;rsquo;,&amp;lsquo;h&amp;rsquo;).replace(&amp;lsquo;days&amp;rsquo;,&amp;rsquo;d&amp;rsquo;)
+naturaltime = naturaltime.replace(&amp;lsquo;months&amp;rsquo;,&amp;lsquo;mon&amp;rsquo;).replace(&amp;lsquo;weeks&amp;rsquo;,&amp;lsquo;w&amp;rsquo;).replace(&amp;lsquo;week&amp;rsquo;,&amp;lsquo;w&amp;rsquo;)
+return naturaltime&lt;/p&gt;
+&lt;p&gt;#In Usage file
+{% load file_tags %}
+{{start_time|naturaltime|shorten_naturaltime}} #where start_time is the datetime object to be modified&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{% if page.comments %}&lt;/p&gt;
+&lt;p&gt;Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Memory Monitor Widget Using Python</title><link>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</link><pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</guid><description>&lt;p&gt;I use Ubuntu 16.04 and I&amp;rsquo;ve been searching for a good memory monitoring desktop widget to no avail. I found a couple of taskbar widgets but none that would tell me the free memory left in addition to the used/swap/cache memories.&lt;/p&gt;
+&lt;p&gt;So I decided to write my own (with loads of help from the Internet of course).&lt;/p&gt;
+&lt;h3 id="component-1--the-widget"&gt;Component 1 — The widget&lt;/h3&gt;
+&lt;p&gt;I didn&amp;rsquo;t know how to do this. Thankfully &lt;a href="https://www.kryogenix.org/days/2014/03/03/writing-a-simple-desktop-widget-for-ubuntu/"&gt;Stuart Langridge&lt;/a&gt; had already done this for me. I tweaked the &lt;code&gt;override_background_color&lt;/code&gt; parameter to get a red background for my widget and the size of the widget itself to be &lt;code&gt;400*20&lt;/code&gt; so it would be a nice small strip rather than a big blob of a rectangle.&lt;/p&gt;</description></item><item><title>Studying The Show About Nothing</title><link>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</link><pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</guid><description>&lt;p&gt;I have watched and re-watched Seinfeld over and over for the last 6–7 years now and it remains, till date, one of my most favorite shows. For a show that claims to be about nothing, it has certainly managed to fill up nine seasons worth of content, all with seemingly no plot.&lt;/p&gt;
+&lt;p&gt;The show, if you’re unfamiliar with it, traces the day-to-day lives of (mainly) 4 quite unremarkable people — Jerry Seinfeld, George Costanza, Cosmo Kramer and Elaine Benes. These 4, along with plenty of other side characters and guest stars engage in what seems to be a series of meaningless conversations and activities, which somehow all come together towards the end of the duration of each episode.&lt;/p&gt;</description></item><item><title>Data Visualization Exp2</title><link>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</link><pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</guid><description>&lt;p&gt;Alright. Round 2 . FIGHT!&lt;/p&gt;
+&lt;p&gt;So, the last time, I figured out, unintentionally, at what times of the day most of my posts happened. This time, I again unintentionally got results different from what I set out to do — I’ll get to this eventually I guess, but for now, the objective is obtaining a measure of the number of posts I make per day and thereby see if I can figure out which days of the week have been the most (least?) productive. Of course, this is still a step away from my eventual goal (hopefully Experiment 3 should sort it out). Let’s get to the methodology —&lt;/p&gt;</description></item><item><title>Data Visualization Exp1</title><link>https://abhiramr.com/blog/2017/09/27/data-visualization-exp1/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2017/09/27/data-visualization-exp1/</guid><description>&lt;h3 id="hours-of-max-fb-usage-"&gt;Hours of max FB Usage —&lt;/h3&gt;
+&lt;p&gt;I originally intended to do something else, but ended up doing this instead — Figuring out at what hours during the day I’ve been most active on Facebook — outliers included.&lt;/p&gt;
+&lt;h5 id="how"&gt;How?&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Downloaded my entire Facebook data - This can be done using the Facebook APIs or using the less painful way — requesting for a copy of your Facebook data as a zip file from your Settings panel.&lt;/p&gt;</description></item></channel></rss>

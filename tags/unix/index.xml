@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Unix on Abhiram R</title><link>https://abhiramr.com/tags/unix/</link><description>Recent content in Unix on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/unix/index.xml" rel="self" type="application/rss+xml"/><item><title>Alias Creation in Windows Using Python</title><link>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</link><pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</guid><description>&lt;p&gt;One thing I&amp;rsquo;ve missed in Windows post my switch from Linux is the ability to create aliases for commands.&lt;/p&gt;
+&lt;p&gt;In Linux, you can create an alias for a command by adding the following line to your &lt;code&gt;.bashrc&lt;/code&gt; or &lt;code&gt;.bash_profile&lt;/code&gt; file -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias &lt;span style="color:#79c0ff"&gt;ll&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would allow you to use &lt;code&gt;ll&lt;/code&gt; instead of &lt;code&gt;ls -l&lt;/code&gt; in your terminal.&lt;/p&gt;
+&lt;p&gt;In Windows, you can create a similar alias by creating a batch file and adding it to your PATH environment variable.&lt;/p&gt;</description></item><item><title>Postgres (post 1)</title><link>https://abhiramr.com/blog/postgres-post-1/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/postgres-post-1/</guid><description>&lt;h2 id="installing-postgres-locally-and-connecting-to-it-from-python"&gt;Installing Postgres locally and connecting to it from Python&lt;/h2&gt;
+&lt;p&gt;First of all, what is Postgres and why do I care?&lt;/p&gt;
+&lt;p&gt;Over the course of our working with data, we come across a lot of ways of storing data - cache, in-mem, files, file based databases, SQL databases, NoSQL databases etc. Each option has a specific set of usecases that are best satisfied by said storage mechanism.&lt;/p&gt;
+&lt;p&gt;Postgres DB is one such storage mechanism - specifically an Open Source, Relational Database.&lt;/p&gt;</description></item><item><title>Learning how to use FFMpeg</title><link>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</link><pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</guid><description>&lt;h3 id="what-is-ffmpeg"&gt;What is FFmpeg?&lt;/h3&gt;
+&lt;p&gt;In their own words, FFmpeg is &amp;ldquo;A complete, cross-platform solution to record, convert and stream audio and video.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been recording &lt;a href="http://bangalore.python.org.in/"&gt;Bangpypers&lt;/a&gt; videos for the last few months and I haven&amp;rsquo;t really had access to a proper solution to edit videos and audio that I could have got for free/ low-cost. A good friend of mine, Vinay Keerthi, (who incidentally presented the webinar under discussion) told me to chuck GUI based fronts for editing them and told me to try FFmpeg, the CLI tool directly, which these tools probably use in the background anyway.&lt;/p&gt;</description></item><item><title>Bangpypers PreWorkshop Setup</title><link>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</link><pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</guid><description>&lt;p&gt;&lt;a href="https://abhiramr.com/2019-11-07-Setting-Up-Python38-Jupyter-lab"&gt;A guide to installing a newer version of Python is available here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We at Bangpypers conduct a lot of workshops and some steps are common for all of them. To that end, this post is meant to serve as guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="ubuntu"&gt;Ubuntu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Check your existing version of Python to see if you already have what&amp;rsquo;s required.&lt;/p&gt;</description></item><item><title>F U Python Commands</title><link>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</guid><description>&lt;p&gt;The previous post was for commands Unix. This post is about the Python commands I use or Google frequently.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To find the absolute path of the directory of the current file being executed -&lt;/p&gt;
+&lt;p&gt;abs_path = os.path.dirname(os.path.realpath(&lt;strong&gt;file&lt;/strong&gt;))&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copyfile
+copyfile(src, dst)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file or directory from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copy
+copy(src, dst)&lt;/p&gt;</description></item><item><title>Unix Commands I Use</title><link>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</link><pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</guid><description>&lt;p&gt;I keep Googling commands for some of these situations regularly -&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;General -&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) To find files one level below your current directory -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I was trying to find which repos in my set of folders have a setup.py file. So, this is what I&amp;rsquo;d use.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find . -maxdepth 2 -iname setup.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) To find what process is running on port 2181 -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo lsof -n -i :2181 | grep LISTEN&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Memory Monitor Widget Using Python</title><link>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</link><pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</guid><description>&lt;p&gt;I use Ubuntu 16.04 and I&amp;rsquo;ve been searching for a good memory monitoring desktop widget to no avail. I found a couple of taskbar widgets but none that would tell me the free memory left in addition to the used/swap/cache memories.&lt;/p&gt;
+&lt;p&gt;So I decided to write my own (with loads of help from the Internet of course).&lt;/p&gt;
+&lt;h3 id="component-1--the-widget"&gt;Component 1 — The widget&lt;/h3&gt;
+&lt;p&gt;I didn&amp;rsquo;t know how to do this. Thankfully &lt;a href="https://www.kryogenix.org/days/2014/03/03/writing-a-simple-desktop-widget-for-ubuntu/"&gt;Stuart Langridge&lt;/a&gt; had already done this for me. I tweaked the &lt;code&gt;override_background_color&lt;/code&gt; parameter to get a red background for my widget and the size of the widget itself to be &lt;code&gt;400*20&lt;/code&gt; so it would be a nice small strip rather than a big blob of a rectangle.&lt;/p&gt;</description></item></channel></rss>

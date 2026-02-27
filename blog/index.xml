@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Technical Articles on Abhiram R</title><link>https://abhiramr.com/blog/</link><description>Recent content in Technical Articles on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Vibecoding a status dashboard</title><link>https://abhiramr.com/blog/vibecoding-a-status-dashboard/</link><pubDate>Thu, 08 May 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/vibecoding-a-status-dashboard/</guid><description>&lt;p&gt;I work in the engineering division of a supply chain company and our development process, as most companies do, involves the setting up of our SaaS platform locally.
+This means that there are a lot of dependent services that need to be run first that support the overall execution of the platform.&lt;/p&gt;
+&lt;p&gt;For e.g. -
+Our platform&amp;rsquo;s stack requires SQL Server, Solr, Redis, Postgres, RabbitMQ, MongoDB as core services to be running first.
+Once these are all running and available, a service called WebAPI can be run that makes use of some of the above to run as well.
+Following this, there are a few more microservices that need to run, but that need not be part of this article since the underlying concept will already come through with the above being demonstrated.&lt;/p&gt;</description></item><item><title>Napkin Math-ing Reddit</title><link>https://abhiramr.com/blog/napkin-math-ing-reddit/</link><pubDate>Mon, 07 Apr 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/napkin-math-ing-reddit/</guid><description>&lt;p&gt;I&amp;rsquo;ve done &lt;strong&gt;some&lt;/strong&gt; Napkin Math - an essential part of system design - in my different jobs in the last decade but it&amp;rsquo;s been ad-hoc or purpose driven at that moment and I&amp;rsquo;ve not thought about it much . Today, I came across a &lt;a href="https://x.com/One2NC/status/1909209892801356125"&gt;tweet from One2N&lt;/a&gt; and a rabbit hole of a &lt;a href="https://sirupsen.com/napkin"&gt;blog by Simon Eskildsen&lt;/a&gt; after that and it made me want to consciously think about it for a few use cases if only to improve my engineering decisions.
+I&amp;rsquo;m sure I will get a lot of things wrong, but over time I hope to tune it to be right.&lt;/p&gt;</description></item><item><title>How to make 3B1B videos using Claude and Manim</title><link>https://abhiramr.com/blog/how-to-make-3b1b-videos-using-claude-and-manim/</link><pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/how-to-make-3b1b-videos-using-claude-and-manim/</guid><description>&lt;p&gt;3 Blue 1 Brown is an amazing Youtube resource to learn Math and Physics concepts from!
+Manim is an opensource package created by them to help generate the animations they use to teach these concepts. In this article, I will create a similar video with the help of Claude and Manim!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, install &lt;a href="https://miktex.org/download"&gt;miktex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Then, in powershell, install &lt;a href="https://www.gyan.dev/ffmpeg/builds/"&gt;ffmpeg&lt;/a&gt; : run &lt;code&gt;choco install ffmpeg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new virtual environment and install manim and manimgl - &lt;code&gt;uv pip install manim manimgl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use Claude to generate a manim program for a formula or something you want to demonstrate - E.g. : &lt;a href="https://claude.ai/share/4e8601c7-c2b1-42b6-95e0-52059378902f"&gt;My Claude Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Create a program that you got out of claude - &lt;a href="https://claude.site/artifacts/fdfb2ed3-efcb-45df-b459-e0a32c5571a3"&gt;Manim Program for x-squared&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Execute it - &lt;code&gt;manim -pql xsquared.py ExplainXSquared&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This results in this beautiful 3 Blue 1 Brown like video! -
+&lt;a href="https://www.youtube.com/watch?v=5Ql_vAj0ZVs"&gt;https://www.youtube.com/watch?v=5Ql_vAj0ZVs&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Streaming Real-Time AI Inference Results into MongoDB</title><link>https://abhiramr.com/blog/streaming-real-time-ai-inference-results-into-mongodb/</link><pubDate>Fri, 28 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/streaming-real-time-ai-inference-results-into-mongodb/</guid><description>&lt;p&gt;I&amp;rsquo;m going to be presenting a talk at a Mongo DB User group meetup later today and I thought I&amp;rsquo;d write about it so that it would -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;serve as reading material for folks wanting to go through the content of my talk later&lt;/li&gt;
+&lt;li&gt;let everyone else know what this is all about.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let me pre-emptively say, I don&amp;rsquo;t know why I chose this to be the &amp;ldquo;TITLE&amp;rdquo; of the talk.
+It is extremely dry. But the topic is actually a lot of fun!&lt;/p&gt;</description></item><item><title>Neetcode For Fun - 1</title><link>https://abhiramr.com/blog/neetcode-for-fun-1/</link><pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/neetcode-for-fun-1/</guid><description>&lt;p&gt;Solving &lt;a href="https://neetcode.io/problems/is-anagram"&gt;https://neetcode.io/problems/is-anagram&lt;/a&gt; . Started at 1:29 AM.&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://abhiramr.com/assets/img/lc/nc-1/nc-1-1.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Let&amp;rsquo;s think about this for a minute.&lt;/p&gt;
+&lt;p&gt;A word &amp;lsquo;w1&amp;rsquo; is an anagram of a word &amp;lsquo;w2&amp;rsquo; if all the characters in w1 belong in w2. Duplicates included.&lt;/p&gt;
+&lt;p&gt;So the simplest solution would be to go through every letter in w1 and then check if it is there in w2.
+That&amp;rsquo;s a O(n^2) complexity because to check against the second string, each letter would have to be compared against.
+&lt;strong&gt;Let&amp;rsquo;s code it up :&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Alias Creation in Windows Using Python</title><link>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</link><pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/alias-creation-in-windows-using-python/</guid><description>&lt;p&gt;One thing I&amp;rsquo;ve missed in Windows post my switch from Linux is the ability to create aliases for commands.&lt;/p&gt;
+&lt;p&gt;In Linux, you can create an alias for a command by adding the following line to your &lt;code&gt;.bashrc&lt;/code&gt; or &lt;code&gt;.bash_profile&lt;/code&gt; file -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;alias &lt;span style="color:#79c0ff"&gt;ll&lt;/span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This would allow you to use &lt;code&gt;ll&lt;/code&gt; instead of &lt;code&gt;ls -l&lt;/code&gt; in your terminal.&lt;/p&gt;
+&lt;p&gt;In Windows, you can create a similar alias by creating a batch file and adding it to your PATH environment variable.&lt;/p&gt;</description></item><item><title>Focus mode - A "kutty" chrome extension</title><link>https://abhiramr.com/blog/focus-mode-a-kutty-chrome-extension/</link><pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/focus-mode-a-kutty-chrome-extension/</guid><description>&lt;p&gt;By now you&amp;rsquo;ve seen a lot of stuff being built using ChatGPT. A lot, Jerry. A LOT.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve built a few apps and extensions as well, but this is the first I&amp;rsquo;m writing about.&lt;/p&gt;
+&lt;p&gt;Over the last 3-4 years, &amp;ldquo;building&amp;rdquo; software on any scale has seen quite a radical shift.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s an image to scale -&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/non-python/chrome-extension-focus/productivity.png"&gt;&lt;/p&gt;
+&lt;p&gt;So when I first tried to build a Chrome extension for a company hackathon in 2022, I took around 12 hours, pulling an all-nighter.
+I looked up documentation, Stack Overflow answers, sample blogs and trudged through the whole process - The way god intended it. And finally completed&amp;hellip;something.
+The end result was something that did the job I wanted but it looked absolutely horrendous and I had to hand-wave over the UX because I had no time before the presentation.&lt;/p&gt;</description></item><item><title>Azure Devops TIL</title><link>https://abhiramr.com/blog/azure-devops-til/</link><pubDate>Wed, 22 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/azure-devops-til/</guid><description>&lt;p&gt;TIL about the importance of buildContext in Azure Devops Pipelines for a Docker@2 task. 😵&lt;/p&gt;
+&lt;p&gt;Kept breaking my head trying to copy files over to an image and it kept saying they weren&amp;rsquo;t found. Tried a hundred combinations of paths and folder structures.&lt;/p&gt;
+&lt;p&gt;Finally after some github-repo-hunting and documentation reading (No, LLMs didn&amp;rsquo;t help) , turned out I was building a dockerfile two levels deeper from my root path and the context was set by default as the path where the Dockerfile was present.&lt;/p&gt;</description></item><item><title>I want to learn Python -2</title><link>https://abhiramr.com/blog/i-want-to-learn-python-2/</link><pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/i-want-to-learn-python-2/</guid><description>&lt;h3 id="ive-installed-python-now-what"&gt;I&amp;rsquo;ve installed Python. Now what?&lt;/h3&gt;
+&lt;p&gt;If you can open CMD and when you execute &lt;code&gt;python --version&lt;/code&gt;, you see
+&lt;code&gt;Python 3.13.1&lt;/code&gt; , it means your installation is successful.&lt;/p&gt;
+&lt;p&gt;There are a Lot of syntaxes and operations to cover in Python and in programming in general.&lt;/p&gt;
+&lt;p&gt;But I will consider some common operations in the real world and we will see what the programming construct for it is and what the corresponding Python commands are for it.&lt;/p&gt;</description></item><item><title>I want to learn Python</title><link>https://abhiramr.com/blog/i-want-to-learn-python/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/i-want-to-learn-python/</guid><description>&lt;p&gt;This is one of the most common questions I get asked by people who are just starting out with Python.&lt;/p&gt;
+&lt;p&gt;If you have no prior programming experience, how Do you start? Valid question.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" loading="lazy" src="https://abhiramr.com/assets/img/basics/how-to-start-1/how-to-start.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take it step by step.&lt;/p&gt;
+&lt;p&gt;Most guides start with understanding the syntax of Python, the basic data types, control structures etc. Which is all well and good but I think the first thing you should do is to install Python on your system.&lt;/p&gt;</description></item><item><title>import re</title><link>https://abhiramr.com/blog/import-re/</link><pubDate>Sat, 11 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/import-re/</guid><description>&lt;p&gt;I was writing some tests for work today and I accidentally ended up using the re.match() function instead of re.search() function and I thought I&amp;rsquo;d write that as today&amp;rsquo;s mini-TIL.&lt;/p&gt;
+&lt;p&gt;In a nutshell,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;re.match() checks for a match only at the beginning of the string,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;whereas&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;re.search() checks for a match anywhere in the string.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s a quick example to illustrate the difference:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;import&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;re&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;string &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;Was it a car or a cat I saw?&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;string2 &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;Severus was impressed at Harry&amp;#39;s Occlumency skills but he did not show it.&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# re.match() will return None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(re&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;match&lt;/span&gt;(&lt;span style="color:#a5d6ff"&gt;&amp;#34;cat&amp;#34;&lt;/span&gt;, string))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# re.search() will return a match object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(re&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;search(&lt;span style="color:#a5d6ff"&gt;&amp;#34;cat&amp;#34;&lt;/span&gt;, string))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# re.match() will return a match object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(re&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;match&lt;/span&gt;(&lt;span style="color:#a5d6ff"&gt;&amp;#34;Severus&amp;#34;&lt;/span&gt;, string2))
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# re.search() will return a match object&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(re&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;search(&lt;span style="color:#a5d6ff"&gt;&amp;#34;Severus&amp;#34;&lt;/span&gt;, string2))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Output -&lt;/p&gt;</description></item><item><title>FrozenLists</title><link>https://abhiramr.com/blog/frozenlists/</link><pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/frozenlists/</guid><description>&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/intermediate/frozenlists.webp"&gt;&lt;/p&gt;
+&lt;p&gt;I happened to see this package - &lt;strong&gt;FrozenList&lt;/strong&gt; - get installed when i was installing a set of requirements for an environment for work. I&amp;rsquo;ve not yet dived deep into which package frozenlist was a dependency for.&lt;/p&gt;
+&lt;p&gt;But I still wanted to see what it was and Googled it.&lt;/p&gt;
+&lt;p&gt;Turns out it&amp;rsquo;s a package created to create a new data structure which is, well, a list that can be &lt;em&gt;frozen&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>I want to run LLM Models locally. What do I do?</title><link>https://abhiramr.com/blog/i-want-to-run-llm-models-locally-what-do-i-do/</link><pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/i-want-to-run-llm-models-locally-what-do-i-do/</guid><description>&lt;p&gt;One of the most sought after things to learn right now is about how to set up your own local LLM server and how to use LLM models locally.
+With the arrival of some things like Ollama and LM Studio etc, it has become very easy.
+Ollama is an orchestrator that lets you serve up models locally, models like Llama 3.1, Qwen-2.5, Phi, whatever models you have on HuggingFace.
+These are available to be served up and many more.&lt;/p&gt;</description></item><item><title>The Apache Airflow piece</title><link>https://abhiramr.com/blog/the-apache-airflow-piece/</link><pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/the-apache-airflow-piece/</guid><description>&lt;p&gt;Yesterday I learnt how to get Google News articles using Python - [[Read GoogleNews using Python]]&lt;/p&gt;
+&lt;p&gt;The next piece I need for my planned workflow is running Airflow - locally - at first.&lt;/p&gt;
+&lt;p&gt;Airflow is a platform for scheduling and executing workflows.
+To give an example, suppose I run a restaurant. If it&amp;rsquo;s not doing very well, you don&amp;rsquo;t really need a workflow, so one way to reduce work is to be unsuccessful 😀👀
+But if I run it successfully and get a lot of orders on a daily basis, I would like to have a mechanism to process everything. Let&amp;rsquo;s say I have the following steps to be done -&lt;/p&gt;</description></item><item><title>GoogleNews using Python</title><link>https://abhiramr.com/blog/googlenews-using-python/</link><pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/googlenews-using-python/</guid><description>&lt;p&gt;&lt;em&gt;This article is part of something I&amp;rsquo;m building up to&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I wanted to find a way in which I can get news off of Google News programatically and something that doesn&amp;rsquo;t need to me be authenticated for it. I wondered if I should build a scraper for it, but thankfully, there&amp;rsquo;s a Python package already that does it - &lt;a href="https://pypi.org/project/GoogleNews/"&gt;GoogleNews on Pypi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I installed it in a new &lt;a href="https://everythingpython.substack.com/p/virtual-environments-using-uv"&gt;&lt;code&gt;uv&lt;/code&gt; virtual environment&lt;/a&gt; using &lt;code&gt;pip install googlenews&lt;/code&gt; and it was pretty easy to use .&lt;/p&gt;</description></item><item><title>List comprehension tuples and obj equals</title><link>https://abhiramr.com/blog/list-comprehension-tuples-and-obj-equals/</link><pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/list-comprehension-tuples-and-obj-equals/</guid><description>&lt;p&gt;2 Quick TILs today -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You cannot use a tuple in a list comprehension without params -
+&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/basics/lc_tuples/lc_tuples_1.png"&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The correct syntax is
+&lt;code&gt;[(i,j) for i in a for j in b&lt;/code&gt;&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;The usage of obj= within a formatted string during printing results in both the object&amp;rsquo;s name as well its value separated by an &amp;ldquo;=&amp;rdquo; being printed -&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the imge below, &lt;code&gt;a&lt;/code&gt; is a list as used earlier. Therefore -&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/basics/lc_tuples/lc_tuples_2.png"&gt;&lt;/p&gt;</description></item><item><title>Timeline charts</title><link>https://abhiramr.com/blog/timeline-charts/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/timeline-charts/</guid><description>&lt;p&gt;I&amp;rsquo;m not feeling all too well but I didn&amp;rsquo;t want to break my streak of writing. So today I&amp;rsquo;m writing about a non-Python related topic - Timeline Charts.&lt;/p&gt;
+&lt;p&gt;I was doing a profiling activity for work and I was scratching my head for a way to represent the info so as to explain it easily. Then I got to thinking, how does Google build all those charts to track page loads and API runtimes in Developer tools?&lt;/p&gt;</description></item><item><title>Dataclasses</title><link>https://abhiramr.com/blog/dataclasses/</link><pubDate>Tue, 19 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/dataclasses/</guid><description>&lt;h3 id="19th-nov-2024"&gt;19th Nov 2024&lt;/h3&gt;
+&lt;p&gt;I was trying to write an article on Dataclasses&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; and I looked up an example on the official website&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Easy enough on the face of it, but it led me into quite a rabbit hole.
+A dataclass allows for the creation of &amp;ldquo;special methods&amp;rdquo; for a class when the annotation @dataclass is sighted.&lt;/p&gt;
+&lt;p&gt;So if I have a class &amp;ldquo;Superhero&amp;rdquo; with the annotation :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#d2a8ff;font-weight:bold"&gt;@dataclass&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;class&lt;/span&gt; &lt;span style="color:#f0883e;font-weight:bold"&gt;Superhero&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;&amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; A class of superheroes and properties about their appearance
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; in Marvel movies
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; name: str
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; superpower: str
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; appearances: int &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;beckon&lt;/span&gt;(self):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#79c0ff"&gt;f&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;name&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; with the super power - &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;superpower&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; has appeared in Marvel movies &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;appearances&lt;span style="color:#a5d6ff"&gt;}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt; times&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;superhero &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; Superhero(&lt;span style="color:#a5d6ff"&gt;&amp;#34;Aquaman&amp;#34;&lt;/span&gt;,&lt;span style="color:#a5d6ff"&gt;&amp;#34;Underwater breathing&amp;#34;&lt;/span&gt;,&lt;span style="color:#a5d6ff"&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;superhero&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;beckon()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It effectively means that :&lt;/p&gt;</description></item><item><title>Class Methods</title><link>https://abhiramr.com/blog/class-methods/</link><pubDate>Sun, 17 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/class-methods/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;I was today years old when I learnt about how to use the classmethod decorator in Python.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I&amp;rsquo;ve always thought of a class method as a method in a class - just intuitively. But there&amp;rsquo;s actually a decorator called &amp;ldquo;@classmethod&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Imagine you have a class C. A class method in this class would be defined as -&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;class&lt;/span&gt; &lt;span style="color:#f0883e;font-weight:bold"&gt;C&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;@classmethod&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;cl_method&lt;/span&gt;(cls):
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#79c0ff"&gt;f&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#34;I&amp;#39;m in the class method &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;{&lt;/span&gt;cls&lt;span style="color:#a5d6ff"&gt;=}&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The distinctive marks of a class method are :&lt;/p&gt;</description></item><item><title>Making your first blog with mkdocs</title><link>https://abhiramr.com/blog/making-your-first-blog-with-mkdocs/</link><pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/making-your-first-blog-with-mkdocs/</guid><description>&lt;p&gt;&lt;img alt="Alt Text" loading="lazy" src="https://abhiramr.com/assets/img/blog/mkdocs/mkdocs-banner.webp"&gt;&lt;/p&gt;
+&lt;p&gt;Now, why do this?&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s wrong with &lt;a href="medium.com"&gt;Medium&lt;/a&gt; and &lt;a href="https://substack.com"&gt;Substack&lt;/a&gt; and &lt;a href="blogger.com"&gt;Blogger&lt;/a&gt; and &lt;a href="wordpress.com"&gt;Wordpress&lt;/a&gt; and all the tens of websites out there?
+Nothing. You could totally just create a blog there and publish. That&amp;rsquo;s why Content Management Systems exist - so you could focus on the &lt;em&gt;content&lt;/em&gt; and not on the &lt;em&gt;management&lt;/em&gt; .&lt;/p&gt;
+&lt;p&gt;But if you&amp;rsquo;re like me and want some more control over how you publish your blogs, customize them etc. , you will find this and the other upcoming articles in this category interesting.&lt;/p&gt;</description></item><item><title>Iterating over Itertools - 1</title><link>https://abhiramr.com/blog/iterating-over-itertools-1/</link><pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/iterating-over-itertools-1/</guid><description>&lt;p&gt;I had the opportunity to work with some of the functions in the &lt;code&gt;itertools&lt;/code&gt; package in Python over the month and I thought before the month ends in a few minutes, I’ll write about a few of them -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;a) The Count function -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is useful when you want to iterate from a starting number , say ‘n’ up to an indeterminate number that you do not know at the point of starting the iterator. The example below assumes the end limit to be 10 numbers from the point of starting the counter. The second argument to the ‘count’ function is a “step” parameter.&lt;/p&gt;</description></item><item><title>Installing Streamlit</title><link>https://abhiramr.com/blog/installing-streamlit/</link><pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/installing-streamlit/</guid><description>&lt;p&gt;This is a rather simplistic topic but one of my good friends has been trying to setup Streamlit and has been unsuccessful at it. So he asked if I could help him out. If this helps him atleast, I will have done my job.&lt;/p&gt;
+&lt;p&gt;Hence this topic for today&amp;rsquo;s mini essay.&lt;/p&gt;
+&lt;p&gt;Going forward, pretty much every local package I install will use &lt;code&gt;uv&lt;/code&gt;.
+(How to install uv? &lt;a href="https://everythingpython.substack.com/p/uv-python-packager-written-in-rust"&gt;https://everythingpython.substack.com/p/uv-python-packager-written-in-rust&lt;/a&gt;)
+Operating system under use - Windows (but this will work on Ubuntu as well)
+So let&amp;rsquo;s create a folder for our Streamlit apps -&lt;/p&gt;</description></item><item><title>Reading DDIA - Part 4</title><link>https://abhiramr.com/blog/reading-ddia-part-4/</link><pubDate>Wed, 02 Oct 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/reading-ddia-part-4/</guid><description>&lt;h2 id="chapter-2---data-models-and-query-languages"&gt;Chapter 2 - Data Models and Query Languages&lt;/h2&gt;
+&lt;h4 id="thoughts--02-10-2024"&gt;Thoughts [02-10-2024]&lt;/h4&gt;</description></item><item><title>Reading DDIA - Part 3</title><link>https://abhiramr.com/blog/reading-ddia-part-3/</link><pubDate>Thu, 26 Sep 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/reading-ddia-part-3/</guid><description>&lt;h2 id="chapter-1---reliable-scalable-and-maintainable-applications"&gt;Chapter 1 - Reliable, Scalable and Maintainable Applications&lt;/h2&gt;
+&lt;p&gt;In [[Reading DDIA - Part 2]] , I read about the second way in which design decisions are typically driven - Scalability.
+This section is about what the book says is the third factor - Maintainability.&lt;/p&gt;
+&lt;h2 id="what-is-a-maintainable-system"&gt;&lt;u&gt;What is a maintainable system?&lt;/u&gt;&lt;/h2&gt;
+&lt;h3 id="my--thoughts-prior-to-reading-the-section--"&gt;My thoughts prior to reading the section -&lt;/h3&gt;
+&lt;p&gt;Something they said in the &lt;a href="https://www.youtube.com/watch?v=JqDAEH_2t6M"&gt;San Diego Machine Learning&lt;/a&gt; struck me as my reaction as well - Maintainability is not one of the &amp;ldquo;concerns&amp;rdquo; I would have listed for a data intensive system.
+But now that it is, let&amp;rsquo;s think about it -
+What does it mean to &lt;strong&gt;maintain&lt;/strong&gt; a system?
+My interpretation is - how would the system be set up for functioning smoothly over time?
+To that end,&lt;/p&gt;</description></item><item><title>Reading DDIA - Part 2</title><link>https://abhiramr.com/blog/reading-ddia-part-2/</link><pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/reading-ddia-part-2/</guid><description>&lt;h2 id="chapter-1---reliable-scalable-and-maintainable-applications"&gt;Chapter 1 - Reliable, Scalable and Maintainable Applications&lt;/h2&gt;
+&lt;p&gt;In [[Reading DDIA - Part 1]] , I read about Reliability. The next section is Scalability .
+First let me talk about the assumptions I made about the term Scalability, what I understand from it prior to reading Martin Kleppman&amp;rsquo;s thoughts on the topic -&lt;/p&gt;
+&lt;h1 id="what-is-a-scalable-system"&gt;&lt;u&gt;What is a scalable system?&lt;/u&gt;&lt;/h1&gt;
+&lt;h3 id="my--thoughts-prior-to-reading-the-section--"&gt;My thoughts prior to reading the section -&lt;/h3&gt;
+&lt;p&gt;Scale refers to how does a system grow. Growth can be needed for multiple reasons -&lt;/p&gt;</description></item><item><title>Reading DDIA - Part 1</title><link>https://abhiramr.com/blog/reading-ddia-part-1/</link><pubDate>Mon, 23 Sep 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/reading-ddia-part-1/</guid><description>&lt;p&gt;&lt;em&gt;(Here&amp;rsquo;s the preface in case you missed it - [[Reading DDIA - Preface]])&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="chapter-1---reliable-scalable-and-maintainable-applications"&gt;Chapter 1 - Reliable, Scalable and Maintainable Applications&lt;/h2&gt;
+&lt;p&gt;This chapter&amp;rsquo;s goal is to effectively give us a high level overview of what this book is fundamentally about -&lt;/p&gt;
+&lt;p&gt;Thinking about data systems along the axes of :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reliability&lt;/li&gt;
+&lt;li&gt;Scalability&lt;/li&gt;
+&lt;li&gt;Maintainability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="what-is-a-reliable-system"&gt;&lt;u&gt;What is a reliable system?&lt;/u&gt;&lt;/h1&gt;
+&lt;h3 id="my-thoughts-before-reading-the-section-"&gt;My thoughts before reading the section :&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A system that is available to return results/outputs that are expected of it when it is employed.&lt;/li&gt;
+&lt;li&gt;If I&amp;rsquo;m accessing an API, if the API is available 99 out of 100 times, then its reliability is 99%&lt;/li&gt;
+&lt;li&gt;If a server is available for 23 hrs 45 minutes per day then its availability is 23.75/24 = 98.9%&lt;/li&gt;
+&lt;li&gt;But is availability == reliability? Let&amp;rsquo;s see.&lt;/li&gt;
+&lt;li&gt;A reliable human is someone who does something that he says he will do or is expected to do every time. Similarly a reliable system is one that returns the expected results every time that they are used.&lt;/li&gt;
+&lt;li&gt;An ATM is reliable if I can withdraw money from it in the denominations that I want, when I want it. For example, the ATM in Puttenahalli , JP Nagar is perpetually unavailable. Everytime I go there, the system is under maintenance. It is 0% reliable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s read the chapter.&lt;/p&gt;</description></item><item><title>Reading DDIA - Preface</title><link>https://abhiramr.com/blog/reading-ddia-preface/</link><pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/reading-ddia-preface/</guid><description>&lt;p&gt;Over the next few weeks, I want to read a book that has been long-pending - &lt;a href="https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"&gt;&amp;ldquo;Designing Data Intensive Applications&amp;rdquo;&lt;/a&gt; by Martin Kleppman. I&amp;rsquo;ve been building data applications for a while now but most, if not all the learnings, have been through trial and error after error after error. I&amp;rsquo;ve learnt a decent bit from observing more senior engineers, architects, design documents and building architectures little by little on my own, but not yet I think, in a structured, deliberate manner. I&amp;rsquo;m hoping to learn that in this book along with the other books I will likely have to refer along the way.&lt;/p&gt;</description></item><item><title>The Basics - 1</title><link>https://abhiramr.com/blog/the-basics-1/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/the-basics-1/</guid><description>&lt;h4 id="what-is-a-package-in-python"&gt;What is a package in Python?&lt;/h4&gt;
+&lt;p&gt;Hold up, isn&amp;rsquo;t this one of those terms we use synonymously with other terms like &lt;code&gt;library&lt;/code&gt;, &lt;code&gt;module&lt;/code&gt; etc?&lt;/p&gt;
+&lt;p&gt;Well no. Let&amp;rsquo;s learn what the differences are -&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="module"&gt;Module&lt;/h3&gt;
+&lt;p&gt;A &lt;code&gt;module&lt;/code&gt; can be any file with a &lt;code&gt;.py&lt;/code&gt; extension. For example -&lt;/p&gt;
+&lt;h4 id="heropy"&gt;&lt;strong&gt;&lt;code&gt;hero.py&lt;/code&gt;&lt;/strong&gt;&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;hero&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;f&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#34;Anyone&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(hero())
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This module when executed using &lt;code&gt;python hero.py&lt;/code&gt; returns the string &amp;ldquo;Anyone&amp;rdquo;.
+&lt;em&gt;Because a hero can be &lt;a href="https://www.youtube.com/watch?v=iGx5a1ifSDs"&gt;Anyone&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="package"&gt;Package&lt;/h3&gt;
+&lt;p&gt;A package is typically a collection or a group of related modules.
+The indication of a package is via an empty &lt;strong&gt;init&lt;/strong&gt;.py file alongside the rest of the package&amp;rsquo;s modules.&lt;/p&gt;</description></item><item><title>Getting topics of Interest from HN</title><link>https://abhiramr.com/blog/getting-topics-of-interest-from-hn/</link><pubDate>Mon, 26 Aug 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/getting-topics-of-interest-from-hn/</guid><description>&lt;p&gt;Building a Classifier&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fetching stories from Hacker News&lt;/li&gt;
+&lt;li&gt;Extracting key information from articles&lt;/li&gt;
+&lt;li&gt;Using AI to determine article topics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Code -&lt;/p&gt;
+&lt;p&gt;{% gist 5181b0e3c9957617598d4b446609ba01 hn_scraper_llm_topics.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist d6a97bbd3534c532d148ea8a1efc851b strings.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist d2fc27b41a17497466621b7e25c924fa data_models.py %}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;{% gist 3bb526888e592de66c82eba391dd08ea keys.py %}&lt;/p&gt;</description></item><item><title>Blogs to read</title><link>https://abhiramr.com/blog/blogs-to-read/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/blogs-to-read/</guid><description>&lt;h2 id="1st-aug-2024"&gt;1st Aug 2024&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;https://sensortower.com/blog/speeding-up-the-backend-with-graph-theory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://www.postgresql.org/docs/8.4/high-availability.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://zerodha.tech/blog/1-5-million-pdfs-in-25-minutes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://arpit.substack.com/p/implementing-hash-sets-with-hash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://zerodha.tech/blog/working-with-postgresql/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://tailscale.com/blog/new-internet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;https://satoricyber.com/postgres-security/postgres-audit/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Postgres (post 1)</title><link>https://abhiramr.com/blog/postgres-post-1/</link><pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/postgres-post-1/</guid><description>&lt;h2 id="installing-postgres-locally-and-connecting-to-it-from-python"&gt;Installing Postgres locally and connecting to it from Python&lt;/h2&gt;
+&lt;p&gt;First of all, what is Postgres and why do I care?&lt;/p&gt;
+&lt;p&gt;Over the course of our working with data, we come across a lot of ways of storing data - cache, in-mem, files, file based databases, SQL databases, NoSQL databases etc. Each option has a specific set of usecases that are best satisfied by said storage mechanism.&lt;/p&gt;
+&lt;p&gt;Postgres DB is one such storage mechanism - specifically an Open Source, Relational Database.&lt;/p&gt;</description></item><item><title>Concurrency in Python</title><link>https://abhiramr.com/blog/concurrency-in-python/</link><pubDate>Sun, 21 Apr 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/concurrency-in-python/</guid><description>&lt;p&gt;These next set of posts are going to be about Concurrency and Async in Python.
+So, one non-tech thing about me is that I run a bookclub that meets once a month. In this bookclub, we discuss books we&amp;rsquo;ve read that month and at the end of the meet, we have a nice list of books that each person has mentioned and/or discussed.
+After I get back home, I typically try and get the Goodreads link for each book discussed and create a little more comprehensive list for people to refer to later on.&lt;/p&gt;</description></item><item><title>LC Num 21</title><link>https://abhiramr.com/blog/lc-num-21/</link><pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/lc-num-21/</guid><description>&lt;p&gt;&lt;a href="https://leetcode.com/problems/merge-two-sorted-lists/"&gt;21. Merge Two Sorted Lists&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First I didn&amp;rsquo;t understand the problem I think. In the sense that I accepted the inputs as two lists and returned a list - Python list.
+Then I read it and realized they want the operation in Linked lists.&lt;/p&gt;
+&lt;p&gt;i took some time to recall how to move along a list and finally figured it out.&lt;/p&gt;
+&lt;p&gt;The other thing that gave me a minor ankle break was when the test case was two empty lists.&lt;/p&gt;</description></item><item><title>Design Patterns in Python - 2</title><link>https://abhiramr.com/blog/design-patterns-in-python-2/</link><pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/design-patterns-in-python-2/</guid><description>&lt;h3 id="creational-patterns---the-factory-method"&gt;Creational Patterns - The Factory Method&lt;/h3&gt;
+&lt;p&gt;In the previous article - [[Design Patterns in Python - 1]] , I wrote about the simplest creational pattern - The Singleton. In this edition, we look at another way to create objects - the Factory method.&lt;/p&gt;
+&lt;p&gt;Again, we start with examining the meaning of the word and why it would have been used for the behavior to follow. A &lt;em&gt;factory&lt;/em&gt; in the common usage of the word is a place where products are manufactured, where the factory is the entity doing the manufacturing.&lt;/p&gt;</description></item><item><title>Design Patterns in Python - 1</title><link>https://abhiramr.com/blog/design-patterns-in-python-1/</link><pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/design-patterns-in-python-1/</guid><description>&lt;p&gt;If you’ve been using Python in production for a while like I have, you’ve either intentionally or inadvertently used some design patterns in your code. But what are they anyway?&lt;/p&gt;
+&lt;p&gt;Design Patterns are well, patterns or reusable structures of code (templates) - that can be employed to implement solutions to software problems.&lt;/p&gt;
+&lt;p&gt;These patterns have been bucketed into 3 main categories :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Creational Patterns&lt;/li&gt;
+&lt;li&gt;Structural Patterns&lt;/li&gt;
+&lt;li&gt;Behavioural Patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On what basis though? What do each of these words mean in a programmatic sense? I will deal with each of the meanings as we come across patterns that fall under them.&lt;/p&gt;</description></item><item><title>Using Decorators</title><link>https://abhiramr.com/blog/using-decorators/</link><pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/using-decorators/</guid><description>&lt;p&gt;In Python, a decorator is a way to modify or extend the behavior of a function or class without changing its source code. Decorators are a powerful tool for adding functionality to existing code, and they are especially useful when you want to apply the same behavior to multiple functions or classes.&lt;/p&gt;
+&lt;h3 id="how-decorators-work"&gt;How Decorators Work&lt;/h3&gt;
+&lt;p&gt;In Python, functions are first-class objects, which means they can be assigned to variables, passed as arguments to other functions, and returned as values from other functions. This makes it possible to define a decorator function that takes another function as an argument, modifies its behavior in some way, and then returns the modified function.&lt;/p&gt;</description></item><item><title>Enabling Spark History Server Standalone</title><link>https://abhiramr.com/blog/2021/12/27/enabling-spark-history-server-standalone/</link><pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2021/12/27/enabling-spark-history-server-standalone/</guid><description>&lt;p&gt;I&amp;rsquo;ve been using Spark for close to 2 years now but because I&amp;rsquo;ve always used it largely on clusters at work, I&amp;rsquo;ve never really had to struggle with the minutae of enabling monitoring pages like the Spark History Server UI etc.&lt;/p&gt;
+&lt;p&gt;Now that I&amp;rsquo;m exploring some advanced concepts in Spark, one of the first things I learnt was enabling the Spark History Server locally i.e on a Standalone installation.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s assume that our Spark installation&amp;rsquo;s version is 2.3.2 and we&amp;rsquo;ve extracted the binary into /opt/spark-2.3.2-bin-hadoop2.7.&lt;/p&gt;</description></item><item><title>About 3.10</title><link>https://abhiramr.com/blog/about-310/</link><pubDate>Thu, 23 Sep 2021 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/about-310/</guid><description>&lt;p&gt;Forget the intro posts.&lt;/p&gt;
+&lt;p&gt;We’re diving in.&lt;/p&gt;
+&lt;p&gt;I’ve wanted to check out the latest features of a Python release without it being in the middle of an explorative search to optimize your work code or make it more readable for a long time now. And I thought this initial post was as good a place as any to fulfil that long-time desire. So today I’ll be looking into what’s new in Python 3.10. I don’t know what the future posts will hold. We&amp;rsquo;ll see.&lt;/p&gt;</description></item><item><title>Learning how to use FFMpeg</title><link>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</link><pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2020/12/06/learning-how-to-use-ffmpeg/</guid><description>&lt;h3 id="what-is-ffmpeg"&gt;What is FFmpeg?&lt;/h3&gt;
+&lt;p&gt;In their own words, FFmpeg is &amp;ldquo;A complete, cross-platform solution to record, convert and stream audio and video.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been recording &lt;a href="http://bangalore.python.org.in/"&gt;Bangpypers&lt;/a&gt; videos for the last few months and I haven&amp;rsquo;t really had access to a proper solution to edit videos and audio that I could have got for free/ low-cost. A good friend of mine, Vinay Keerthi, (who incidentally presented the webinar under discussion) told me to chuck GUI based fronts for editing them and told me to try FFmpeg, the CLI tool directly, which these tools probably use in the background anyway.&lt;/p&gt;</description></item><item><title>Custom CSS Jupyterlab Ext</title><link>https://abhiramr.com/blog/2019/12/10/custom-css-jupyterlab-ext/</link><pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/12/10/custom-css-jupyterlab-ext/</guid><description>&lt;p&gt;Jupyterlab is a definite improvement on the older IPython notebook interface - both in features and in appearance. There is now even an in-built &amp;ldquo;Dark Theme&amp;rdquo; that can be enabled.&lt;/p&gt;
+&lt;p&gt;But is that all?&lt;/p&gt;
+&lt;p&gt;As we know, Jupyterlab is a browser based app and is ipso facto, written on a base of HTML, CSS and Javascript. So if we want to change the appearance over and above what we get out of the box with jupyterlab, we can. Now, it &lt;em&gt;is&lt;/em&gt; possible to make any CSS changes by hacking into the internals of the notebook, but thanks to a nifty Jupyterlab extension by Adam Wallner, we don&amp;rsquo;t have to.&lt;/p&gt;</description></item><item><title>Setting Up Python3.8 and Jupyterlab</title><link>https://abhiramr.com/blog/2019/11/07/setting-up-python38-and-jupyterlab/</link><pubDate>Thu, 07 Nov 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/11/07/setting-up-python38-and-jupyterlab/</guid><description>&lt;p&gt;I&amp;rsquo;m using Ubuntu 16.04 on this machine, so that&amp;rsquo;s what the steps of installation here will be for. But this installation shouldn&amp;rsquo;t largely vary on any distro that&amp;rsquo;s 14.04 and higher.&lt;/p&gt;
+&lt;h4 id="step-1---download-python-source-code"&gt;Step 1 - Download Python source code&lt;/h4&gt;
+&lt;p&gt;Binary installations are available for Windows and Mac but you can either install Python3.8 on Ubuntu using &amp;ldquo;apt&amp;rdquo; or download and install from source. I did the latter. Obtain the gz file from &lt;a href="https://www.python.org/downloads/release/python-380/"&gt;here&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Git Jupyterlab Ext</title><link>https://abhiramr.com/blog/2019/10/31/git-jupyterlab-ext/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/10/31/git-jupyterlab-ext/</guid><description>&lt;p&gt;&lt;em&gt;Disclaimer : Extensions in Jupyter-lab are still very much experimental. But this one seems to be working fabulously so far.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;jupyterlab-git&lt;/code&gt; is an extension that lets you stage and commit changes to notebooks made right from within the Jupyterlab interface.&lt;/p&gt;
+&lt;p&gt;This is best installed within the confines of a virtual environment, as is anything experimental.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id="installation-steps--"&gt;Installation steps -&lt;/h4&gt;
+&lt;p&gt;a) Ensure that you have the latest version of jupyterlab (=1.2.0 at the time of this writing) and NodeJS(=12.13.0 at this time)&lt;/p&gt;</description></item><item><title>Pandas Notes</title><link>https://abhiramr.com/blog/2019/08/23/pandas-notes/</link><pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/08/23/pandas-notes/</guid><description>&lt;p&gt;These are the commands I use a lot using Pandas -&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Get rows with NaNs in any column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df.isna().any(axis=1)]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/1.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get dataframe excluding all NaNs in a particular Column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df[df['&amp;lt;col_name&amp;gt;'].notnull()]&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="TailDF" loading="lazy" src="https://abhiramr.com/img/tech/pandas/2.png"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Get counts of number of Nulls per column&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;df.isnull().sum()&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Increase width of columns displayed in Jupyter Notebooks&lt;/strong&gt; - This is possibly one of my most used commands for every notebook that involves dataframes.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;pd.set_option('display.max_colwidth',400)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description></item><item><title>ML Interpretability</title><link>https://abhiramr.com/blog/2019/08/16/ml-interpretability/</link><pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/08/16/ml-interpretability/</guid><description>&lt;p&gt;I attended an interesting Webinar titled &lt;a href="https://www.brighttalk.com/webcast/17563/366621"&gt;&amp;ldquo;A Data Science Playbook for Explainable ML/AI&amp;rdquo;&lt;/a&gt; conducted by Chief Data Scientist,Josh Poduska, and VP of Marketing, Jon Rooney of Domino Data. This post lays out some of the highlights (in my opinion) of the talk, peppered with my understandings and some additional points that might be of interest. I will breaking this learning-post up into two parts - the first part discussing the theoretical concepts of interpretability and Part-2 on different Open Source models that are in practice today. This is Part-1.&lt;/p&gt;</description></item><item><title>Bangpypers PreWorkshop Setup</title><link>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</link><pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/02/22/bangpypers-preworkshop-setup/</guid><description>&lt;p&gt;&lt;a href="https://abhiramr.com/2019-11-07-Setting-Up-Python38-Jupyter-lab"&gt;A guide to installing a newer version of Python is available here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We at Bangpypers conduct a lot of workshops and some steps are common for all of them. To that end, this post is meant to serve as guide for people to install Python on Ubuntu and Windows (if required), setting up virtualenv and installing the package(s) germane to the corresponding Workshop.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id="ubuntu"&gt;Ubuntu&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Check your existing version of Python to see if you already have what&amp;rsquo;s required.&lt;/p&gt;</description></item><item><title>F U Python Commands</title><link>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</guid><description>&lt;p&gt;The previous post was for commands Unix. This post is about the Python commands I use or Google frequently.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To find the absolute path of the directory of the current file being executed -&lt;/p&gt;
+&lt;p&gt;abs_path = os.path.dirname(os.path.realpath(&lt;strong&gt;file&lt;/strong&gt;))&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copyfile
+copyfile(src, dst)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file or directory from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copy
+copy(src, dst)&lt;/p&gt;</description></item><item><title>Unix Commands I Use</title><link>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</link><pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</guid><description>&lt;p&gt;I keep Googling commands for some of these situations regularly -&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;General -&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) To find files one level below your current directory -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I was trying to find which repos in my set of folders have a setup.py file. So, this is what I&amp;rsquo;d use.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find . -maxdepth 2 -iname setup.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) To find what process is running on port 2181 -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo lsof -n -i :2181 | grep LISTEN&lt;/code&gt;&lt;/p&gt;</description></item><item><title>My HIPC 2018 experience</title><link>https://abhiramr.com/blog/2018/12/21/my-hipc-2018-experience/</link><pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/12/21/my-hipc-2018-experience/</guid><description>&lt;p&gt;The HIPC Conference this year (2018) was held at the Radisson Blu hotel in Bangalore, India from 17-20 December. This year, HIPC celebrated its 25th year of running and it was amazing.&lt;/p&gt;
+&lt;p&gt;--WIP&amp;ndash;&lt;/p&gt;</description></item><item><title>Nginx Gunicorn Ref Links</title><link>https://abhiramr.com/blog/2018/10/01/nginx-gunicorn-ref-links/</link><pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/10/01/nginx-gunicorn-ref-links/</guid><description>&lt;p&gt;So, I looked up a lot of links while learning how to configure Gunicorn and Nginx for a Flask app I&amp;rsquo;m building. An article on the specifics of what I learnt will follow this one. This one focuses on the links and resources themselves -&lt;/p&gt;
+&lt;h3 id="first-of-all-youre-probably-asking---why-do-i-need-gunicorn-and-nginx-thats-what-i-looked-up-first-as-well"&gt;First of all, you&amp;rsquo;re probably asking - Why do I need Gunicorn and Nginx? That&amp;rsquo;s what I looked up first as well.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://serverfault.com/questions/331256/why-do-i-need-nginx-and-something-like-gunicorn"&gt;https://serverfault.com/questions/331256/why-do-i-need-nginx-and-something-like-gunicorn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="next-how-to-actually-go-about-the-whole-process"&gt;Next, how to actually go about the whole process?&lt;/h3&gt;
+&lt;p&gt;The obvious links: - &lt;a href="https://gunicorn.org/#quickstart"&gt;https://gunicorn.org/#quickstart&lt;/a&gt; - &lt;a href="https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/"&gt;https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/&lt;/a&gt; - &lt;a href="http://nginx.org/en/docs/beginners_guide.html"&gt;http://nginx.org/en/docs/beginners_guide.html&lt;/a&gt; - &lt;a href="https://www.fullstackpython.com/green-unicorn-gunicorn.html"&gt;https://www.fullstackpython.com/green-unicorn-gunicorn.html&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Django Filter To Shorten Naturaltime</title><link>https://abhiramr.com/blog/2018/06/26/django-filter-to-shorten-naturaltime/</link><pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/06/26/django-filter-to-shorten-naturaltime/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is a filter snippet to shorten the natural time value obtained using naturaltime function from humanize.&lt;/p&gt;
+&lt;p&gt;#In templatetag file , say file_tags.py
+from django import template
+register = template.Library()&lt;/p&gt;
+&lt;p&gt;@register.filter
+def shorten_naturaltime(naturaltime):
+naturaltime = naturaltime.replace(&amp;lsquo;minutes&amp;rsquo;,&amp;rsquo;m&amp;rsquo;).replace(&amp;lsquo;hours&amp;rsquo;,&amp;lsquo;h&amp;rsquo;).replace(&amp;lsquo;days&amp;rsquo;,&amp;rsquo;d&amp;rsquo;)
+naturaltime = naturaltime.replace(&amp;lsquo;months&amp;rsquo;,&amp;lsquo;mon&amp;rsquo;).replace(&amp;lsquo;weeks&amp;rsquo;,&amp;lsquo;w&amp;rsquo;).replace(&amp;lsquo;week&amp;rsquo;,&amp;lsquo;w&amp;rsquo;)
+return naturaltime&lt;/p&gt;
+&lt;p&gt;#In Usage file
+{% load file_tags %}
+{{start_time|naturaltime|shorten_naturaltime}} #where start_time is the datetime object to be modified&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{% if page.comments %}&lt;/p&gt;
+&lt;p&gt;Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Memory Monitor Widget Using Python</title><link>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</link><pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/06/05/memory-monitor-widget-using-python/</guid><description>&lt;p&gt;I use Ubuntu 16.04 and I&amp;rsquo;ve been searching for a good memory monitoring desktop widget to no avail. I found a couple of taskbar widgets but none that would tell me the free memory left in addition to the used/swap/cache memories.&lt;/p&gt;
+&lt;p&gt;So I decided to write my own (with loads of help from the Internet of course).&lt;/p&gt;
+&lt;h3 id="component-1--the-widget"&gt;Component 1 — The widget&lt;/h3&gt;
+&lt;p&gt;I didn&amp;rsquo;t know how to do this. Thankfully &lt;a href="https://www.kryogenix.org/days/2014/03/03/writing-a-simple-desktop-widget-for-ubuntu/"&gt;Stuart Langridge&lt;/a&gt; had already done this for me. I tweaked the &lt;code&gt;override_background_color&lt;/code&gt; parameter to get a red background for my widget and the size of the widget itself to be &lt;code&gt;400*20&lt;/code&gt; so it would be a nice small strip rather than a big blob of a rectangle.&lt;/p&gt;</description></item><item><title>Surprising Searches 1 of n</title><link>https://abhiramr.com/blog/2018/03/06/surprising-searches-1-of-n/</link><pubDate>Tue, 06 Mar 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/03/06/surprising-searches-1-of-n/</guid><description>&lt;p&gt;You’re probably aware of most of the products that Google offers. Trends, is one of them and it allows you to look up various trends of searches by time, country etc. It’s a lot of fun…if you’re into that sort of thing.&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://abhiramr.com/img/glass_128.png"&gt;&lt;/p&gt;
+&lt;p&gt;I was randomly searching for usages of English words on Google Trends (as one does) and as I went through words of no real significance — boat, silo etc, at one point paused and almost on a whim looked up “Batman” , juust to see if people search for knowledge about the caped crusader on a daily basis.&lt;/p&gt;</description></item><item><title>Studying The Show About Nothing</title><link>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</link><pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/02/12/studying-the-show-about-nothing/</guid><description>&lt;p&gt;I have watched and re-watched Seinfeld over and over for the last 6–7 years now and it remains, till date, one of my most favorite shows. For a show that claims to be about nothing, it has certainly managed to fill up nine seasons worth of content, all with seemingly no plot.&lt;/p&gt;
+&lt;p&gt;The show, if you’re unfamiliar with it, traces the day-to-day lives of (mainly) 4 quite unremarkable people — Jerry Seinfeld, George Costanza, Cosmo Kramer and Elaine Benes. These 4, along with plenty of other side characters and guest stars engage in what seems to be a series of meaningless conversations and activities, which somehow all come together towards the end of the duration of each episode.&lt;/p&gt;</description></item><item><title>Data Visualization Exp2</title><link>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</link><pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2017/11/27/data-visualization-exp2/</guid><description>&lt;p&gt;Alright. Round 2 . FIGHT!&lt;/p&gt;
+&lt;p&gt;So, the last time, I figured out, unintentionally, at what times of the day most of my posts happened. This time, I again unintentionally got results different from what I set out to do — I’ll get to this eventually I guess, but for now, the objective is obtaining a measure of the number of posts I make per day and thereby see if I can figure out which days of the week have been the most (least?) productive. Of course, this is still a step away from my eventual goal (hopefully Experiment 3 should sort it out). Let’s get to the methodology —&lt;/p&gt;</description></item><item><title>Data Visualization Exp1</title><link>https://abhiramr.com/blog/2017/09/27/data-visualization-exp1/</link><pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2017/09/27/data-visualization-exp1/</guid><description>&lt;h3 id="hours-of-max-fb-usage-"&gt;Hours of max FB Usage —&lt;/h3&gt;
+&lt;p&gt;I originally intended to do something else, but ended up doing this instead — Figuring out at what hours during the day I’ve been most active on Facebook — outliers included.&lt;/p&gt;
+&lt;h5 id="how"&gt;How?&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Downloaded my entire Facebook data - This can be done using the Facebook APIs or using the less painful way — requesting for a copy of your Facebook data as a zip file from your Settings panel.&lt;/p&gt;</description></item></channel></rss>

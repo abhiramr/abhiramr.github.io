@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Reference on Abhiram R</title><link>https://abhiramr.com/tags/reference/</link><description>Recent content in Reference on Abhiram R</description><generator>Hugo -- 0.157.0</generator><language>en-us</language><lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://abhiramr.com/tags/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>F U Python Commands</title><link>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</link><pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2019/01/09/f-u-python-commands/</guid><description>&lt;p&gt;The previous post was for commands Unix. This post is about the Python commands I use or Google frequently.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;To find the absolute path of the directory of the current file being executed -&lt;/p&gt;
+&lt;p&gt;abs_path = os.path.dirname(os.path.realpath(&lt;strong&gt;file&lt;/strong&gt;))&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copyfile
+copyfile(src, dst)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;
+&lt;p&gt;To copy a file or directory from source to destination (using shutil)-&lt;/p&gt;
+&lt;p&gt;from shutil import copy
+copy(src, dst)&lt;/p&gt;</description></item><item><title>Unix Commands I Use</title><link>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</link><pubDate>Mon, 24 Dec 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/12/24/unix-commands-i-use/</guid><description>&lt;p&gt;I keep Googling commands for some of these situations regularly -&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;General -&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1) To find files one level below your current directory -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I was trying to find which repos in my set of folders have a setup.py file. So, this is what I&amp;rsquo;d use.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find . -maxdepth 2 -iname setup.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2) To find what process is running on port 2181 -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo lsof -n -i :2181 | grep LISTEN&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Nginx Gunicorn Ref Links</title><link>https://abhiramr.com/blog/2018/10/01/nginx-gunicorn-ref-links/</link><pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate><guid>https://abhiramr.com/blog/2018/10/01/nginx-gunicorn-ref-links/</guid><description>&lt;p&gt;So, I looked up a lot of links while learning how to configure Gunicorn and Nginx for a Flask app I&amp;rsquo;m building. An article on the specifics of what I learnt will follow this one. This one focuses on the links and resources themselves -&lt;/p&gt;
+&lt;h3 id="first-of-all-youre-probably-asking---why-do-i-need-gunicorn-and-nginx-thats-what-i-looked-up-first-as-well"&gt;First of all, you&amp;rsquo;re probably asking - Why do I need Gunicorn and Nginx? That&amp;rsquo;s what I looked up first as well.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://serverfault.com/questions/331256/why-do-i-need-nginx-and-something-like-gunicorn"&gt;https://serverfault.com/questions/331256/why-do-i-need-nginx-and-something-like-gunicorn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="next-how-to-actually-go-about-the-whole-process"&gt;Next, how to actually go about the whole process?&lt;/h3&gt;
+&lt;p&gt;The obvious links: - &lt;a href="https://gunicorn.org/#quickstart"&gt;https://gunicorn.org/#quickstart&lt;/a&gt; - &lt;a href="https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/"&gt;https://www.linode.com/docs/web-servers/nginx/how-to-configure-nginx/&lt;/a&gt; - &lt;a href="http://nginx.org/en/docs/beginners_guide.html"&gt;http://nginx.org/en/docs/beginners_guide.html&lt;/a&gt; - &lt;a href="https://www.fullstackpython.com/green-unicorn-gunicorn.html"&gt;https://www.fullstackpython.com/green-unicorn-gunicorn.html&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
