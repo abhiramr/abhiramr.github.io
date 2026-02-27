@@ -1,6 +1,6 @@
 ---
 title: On evaluating LLMs (WIP)
-date: 2026-02-28
+date: 2026-02-27
 tags:
   - evals
   - llms
