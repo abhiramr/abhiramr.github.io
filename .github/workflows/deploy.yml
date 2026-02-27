@@ -24,31 +24,7 @@ jobs:
         run: hugo --minify
         working-directory: ./hugo-site
 
-      # Build BBB Events
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install BBB Events dependencies
-        run: npm ci
-        working-directory: ./bbbevents
-
-      - name: Create BBB Events .env
-        run: |
-          echo "REACT_APP_SUPABASE_URL=${{ secrets.REACT_APP_SUPABASE_URL }}" >> .env
-          echo "REACT_APP_SUPABASE_ANON_KEY=${{ secrets.REACT_APP_SUPABASE_ANON_KEY }}" >> .env
-          echo "REACT_APP_ADMIN_PASSWORD=${{ secrets.REACT_APP_ADMIN_PASSWORD }}" >> .env
-        working-directory: ./bbbevents
-
-      - name: Build BBB Events
-        run: npm run build
-        working-directory: ./bbbevents
-
-      # Merge BBB Events into Hugo output
-      - name: Merge BBB Events into Hugo public
-        run: cp -r ./bbbevents/build ./hugo-site/public/bbbevents
-
-      # Deploy merged output to gh-pages
+      # Deploy Hugo output to gh-pages
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
