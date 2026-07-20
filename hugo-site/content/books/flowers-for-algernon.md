@@ -9,7 +9,7 @@ tags:
 draft: false
 ---
 
-![](https://abhiwrites.com/wp-content/uploads/2020/04/564a761a2f569.image_.jpg?w=300)
+![Flowers for Algernon book cover](/img/books/reviews/flowers-for-algernon.jpg)
 
 **_Author : Daniel Keyes_**
 

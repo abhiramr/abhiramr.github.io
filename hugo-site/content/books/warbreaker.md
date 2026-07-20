@@ -11,7 +11,7 @@ draft: false
 
 **_Author : Brandon Sanderson_**
 
-![](images/warbreaker.jpg)
+![Warbreaker book cover](/img/books/reviews/warbreaker.jpg)
 
 **_"My life to yours, my Breath become yours."_  
 **Breath and colors. That's what this book uses as tools in an articulate game of War. The central characters are Siri, Vivenna, Susebron, Vasher, Nightblood, LightSong and Denth. None of these names mean anything to you if you haven't read the book yet. Anyway, the book starts off with the attempt of a treaty fulfilment between Idris and Hallandren, the two cities at the center of this story, the former a minor kingdom desiring to appease the latter. To this end, a princess is to be sent from Idris to Hallandren so a royal heir can be obtained to take over and continue the current God King's rule. But the king of Idris sends the youngest of his daughters Siri as opposed to the eldest, Vivenna who should have rightfully been sent. This in itself wouldn't have been a problem, but the political unrest that is already present in Hallandren as a result of resident Idrian rebels is what kickstarts the rest of the drama that unfolds.   

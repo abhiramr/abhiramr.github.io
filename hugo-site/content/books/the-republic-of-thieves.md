@@ -14,7 +14,7 @@ _**Succeeded by**_ : The Thorn of Emberlain (Not yet released)
 
 **Disclaimer** \- SPOILER ALERT
 
-![](images/screenshot-2019-07-20-at-12.41.44-pm.png)
+![The Republic of Thieves book cover](/img/books/reviews/the-republic-of-thieves.png)
 
 If "Red Seas under Red Skies" was a series of waves on a stormy day at sea, "The Republic of Thieves" was nothing short of earthquakes, one after another - some mild tremors, some that make you stand up with a start and a couple that jolt you out of your being and rip apart the very ground you're standing on.   
 The story starts off where its predecessor stops - with a very ill Locke and an extremely patient Jean (Locke doesn't seem to want to end books in a healthy state). They try to get physiker after physiker to examine and possibly provide Locke an antidote for the poison the Archon left them with, but with consistent failure. When all hope seems lost, they're approached by the one person they'd hoped they'd washed their hands off of - a Bondsmage. Patience, as she called herself, proposed a deal with the last remaining Gentlemen Bastards; an election fixture at Karthain in exchange for Locke's revival to health. With no real options, they begrudgingly find themselves accepting the deal with no real idea of what they were getting themselves into.  

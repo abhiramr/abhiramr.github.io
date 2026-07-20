@@ -11,7 +11,7 @@ draft: false
 
 **_Author : Scott Lynch_**
 
-![](images/40604556.jpg)
+![Red Seas Under Red Skies book cover](/img/books/reviews/red-seas-under-red-skies.jpg)
 
 Disclaimer 1 - **SPOILER ALERT**  
 Disclaimer 2 - I had no frame of reference for comparison in the previous book. This time I do. And I intend to make full use of the privilege. There will be multiple references to "The Lies of Locke Lamora", hereby abbreviated TLoLL.

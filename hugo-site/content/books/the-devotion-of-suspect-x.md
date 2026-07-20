@@ -8,7 +8,7 @@ tags:
 draft: false
 ---
 
-![](images/devotion.png)
+![The Devotion of Suspect X book cover](/img/books/reviews/the-devotion-of-suspect-x.png)
 
 **_Author : Keigo Higashino_**
 

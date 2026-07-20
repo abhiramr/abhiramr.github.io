@@ -9,7 +9,7 @@ draft: false
 
 **_Author : Fredrik Backman_**
 
-![](images/a_man_called_ove.png)
+![A Man Called Ove book cover](/img/books/reviews/a-man-called-ove.png)
 
 Yes, there are spoilers.
 

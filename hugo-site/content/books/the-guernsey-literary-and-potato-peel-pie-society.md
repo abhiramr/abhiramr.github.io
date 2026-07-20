@@ -14,7 +14,7 @@ The Reader of this Review
 
 Date : 5th June 2019
 
-![](images/2728527-1.jpg)
+![The Guernsey Literary and Potato Peel Pie Society book cover](/img/books/reviews/guernsey.jpg)
 
 Dear reader,  
 Please be warned that there are some spoilers ahead.  

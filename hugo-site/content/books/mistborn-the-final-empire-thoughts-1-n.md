@@ -16,7 +16,7 @@ I’ve been putting off starting a fantasy fiction saga like this for a long tim
 
 But earlier today, after finishing yet another standalone work — “Bad Blood” about the infamous scandal that was Theranos, I decided to start with one among the many options in fantasy fiction series available. My shortlist consisted of Malazan, The Kingkiller Chronicles, Mistborn and The Dark Tower series. When I posed this “dilemma” to my book club, two of my trusted friends independently and almost simultaneously suggested I start with Mistborn and the decision was made.
 
-![](https://abhiwrites.com/wp-content/uploads/2021/07/1_achpljtpx0wsrn7aw91btw.jpeg?w=627)
+![Mistborn: The Final Empire book cover](/img/books/mistborn1.png)
 
 I started reading it with some residual apprehensions and was pleased to see them gradually fading away with every passing page. So far I’ve finished 15% of the book and these are my thoughts along with a summary of what has happened so far —
 

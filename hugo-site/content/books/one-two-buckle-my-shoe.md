@@ -8,7 +8,7 @@ tags:
 draft: false
 ---
 
-> ![](images/download-1.jpg)
+> ![One, Two, Buckle My Shoe book cover](/img/books/reviews/one-two-buckle-my-shoe.jpg)
 > 
 > **_AUTHOR : AGATHA CHRISTIE_**
 

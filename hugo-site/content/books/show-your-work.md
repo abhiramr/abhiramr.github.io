@@ -7,7 +7,7 @@ tags:
 draft: false
 ---
 
-[![](https://abhiwrites.com/wp-content/uploads/2022/01/ss.png?w=683)](https://abhiwrites.com/wp-content/uploads/2022/01/ss.png)
+![Show Your Work book cover](/img/books/reviews/show-your-work.jpg)
 
 _**Author** : Austin Kleon_
 

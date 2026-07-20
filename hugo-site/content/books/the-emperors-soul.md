@@ -9,7 +9,7 @@ tags:
 draft: false
 ---
 
-![](images/1616960922-2.jpg)
+![The Emperor's Soul book cover](/img/books/reviews/the-emperors-soul.jpg)
 
 **_Author : Brandon Sanderson_**
 

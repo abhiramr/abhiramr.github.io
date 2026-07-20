@@ -8,7 +8,7 @@ tags:
 draft: false
 ---
 
-![](https://abhiwrites.com/wp-content/uploads/2021/07/12278689.jpg?w=293)
+![Dumb Witness book cover](/img/books/reviews/dumb-witness.jpg)
 
 _**Author** : Agatha Christie_
 

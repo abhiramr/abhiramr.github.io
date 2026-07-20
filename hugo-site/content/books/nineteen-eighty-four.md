@@ -10,7 +10,7 @@ tags:
 draft: false
 ---
 
-![](images/1984.jpeg)
+![Nineteen Eighty-Four book cover](/img/books/reviews/nineteen-eighty-four.jpeg)
 
 **_Author : George Orwell_**
 

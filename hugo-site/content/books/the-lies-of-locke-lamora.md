@@ -12,7 +12,7 @@ draft: false
 
 **_Author : Scott Lynch_**
 
-![](images/the_lies_of_locke_lamora.jpg)
+![The Lies of Locke Lamora book cover](/img/books/reviews/the-lies-of-locke-lamora.jpg)
 
 I find myself shaking my head in amazement, shuddering as I write this. This was one hell of a journey. I started this having finished a few Sanderson books and my head was full of magic systems and I somehow led myself to believe that this book was along those same lines. But as I started reading and finding no hints of any visible sorcery (atleast in the first half), I thought I would be disappointed, but the disappointment never came. I just felt more and more sucked in with each passing page.  
 Right from the get-go in fact, when "Father" Chains is introduced to the would-be Thorn of Camorr, the grasp of a promised-roller coaster held on tight and never let go. Locke's weaving in and out of disguises as Lucas Fehrwright, a Midnighter and everything in between, and his camaraderie with the Gentleman Bastards - Calo, Galdo, Bug and Jean was everything I could have wanted in a book if not more. All the minor and "boss" antagonists (Conte, the _Capas_ )are given a believable amount of power and matched well against the protagonists which is more than I can say for many other books which leave you feeling a sense of disbelief at the protagonist's sudden victory or his/her unfair ease.  

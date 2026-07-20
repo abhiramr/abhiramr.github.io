@@ -7,7 +7,7 @@ tags:
 draft: false
 ---
 
-> ![](images/egcem5luyaia-ie.jpg)
+> ![The Travelling Cat Chronicles book cover](/img/books/reviews/the-travelling-cat-chronicles.jpg)
 > 
 > **_Author : Hiro Arikawa_**
 
@@ -19,7 +19,7 @@ Hiro Arikawa does not shy away from wilfully taking time to describe the sights 
 And then there is the moment where there is the equivalent of a series of plates crashing where you don't see it coming or rather, I didn't see it coming and before I knew it, I was sobbing like a little baby. And even though I've said what I said and you've read what you've read, you will forget my words and you won't know when to expect the tug at the heartstrings. It will happen when it does and I hope you can find your way back to this post to tell me it did.  
 And you are right, Nana :') Humans can never claim to be as smart as a cat :)
 
-> ![](images/pages.png)
+> ![Reading progress chart for The Travelling Cat Chronicles](/img/books/reviews/the-travelling-cat-chronicles-pages.png)
 > 
 > _My pace of reading the book over time_
 

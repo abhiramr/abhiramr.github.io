@@ -14,7 +14,7 @@ draft: false
 **_Preceded by_** : Alloys of Law  
 _**Succeeded by**_ : Bands of Mourning
 
-![](https://abhiwrites.com/wp-content/uploads/2019/08/16065004-1.jpg?w=315)
+![Shadows of Self book cover](/img/books/reviews/shadows-of-self.jpg)
 
 The second book in the Wax and Wayne trilogy (Not sure if there's a fourth book to come?) is titled "Shadows of Self" and is titled so, in my opinion, because there's some heavy introspection that goes on in this book - both on Wax and Wayne's part. We get some deeper insights into what makes these characters tick in this book. The plot revolves around a rogue murderer that's going around creating all sorts of mayhem in the city, shaking its very political pillars in the process, starting with the killing of the governor's brother and it's upto Wax, Wayne and Marasi to get to the bottom of it. Brandon Sanderson's magic system itself is somewhat diminished in its use here and the book seems to revolve more around the characters' interpersonal relationships and how they grow in the process.
 
