@@ -308,6 +308,15 @@ code, pre, kbd {
     padding: 0;
 }
 
+.post-content img[alt$="book cover"] {
+    width: auto;
+    max-width: min(100%, 340px);
+    max-height: 520px;
+    margin: 28px auto;
+    border-radius: 6px;
+    box-shadow: 0 10px 28px rgb(0 0 0 / 10%);
+}
+
 .post-content blockquote {
     border-left: 3px solid var(--tertiary);
     padding-left: 16px;
