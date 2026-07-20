@@ -53,6 +53,7 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+{{- if not .IsHome }}
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 
@@ -95,16 +96,6 @@
 </article>
 {{- end }}
 
-{{- if .IsHome }}
-<footer class="page-footer">
-  <nav class="pagination">
-    <a class="next" href="{{ "/blog/" | absURL }}">
-      More&nbsp;»
-    </a>
-  </nav>
-</footer>
-{{- end }}
-
 {{- if and (not .IsHome) (gt $paginator.TotalPages 1) }}
 <footer class="page-footer">
   <nav class="pagination">
@@ -126,6 +117,7 @@
     {{- end }}
   </nav>
 </footer>
+{{- end }}
 {{- end }}
 
 {{- end }}{{/* end profileMode */}}

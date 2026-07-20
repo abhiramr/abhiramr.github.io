@@ -35,13 +35,15 @@ require_cmd() {
 require_cmd hugo
 require_cmd python3
 
-echo "Building Hugo site..."
-(cd "$HUGO_DIR" && hugo --minify)
-
 if [ "$BUILD_ONLY" = true ]; then
+  echo "Building Hugo site..."
+  (cd "$HUGO_DIR" && hugo --minify)
   echo "Site built at $PUBLIC_DIR"
   exit 0
 fi
+
+echo "Building Hugo site for local preview..."
+(cd "$HUGO_DIR" && hugo --minify --baseURL "http://localhost:$PORT/")
 
 echo "Serving site at http://localhost:$PORT"
 cd "$PUBLIC_DIR"
