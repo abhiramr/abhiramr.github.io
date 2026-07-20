@@ -1,0 +1,5 @@
+hugo-site/public/
+hugo-site/.hugo_build.lock
+bbbevents/node_modules/
+bbbevents/build/
+bbbevents/.env

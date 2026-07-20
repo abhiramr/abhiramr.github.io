@@ -1,0 +1,31 @@
+<script>
+(function () {
+  // Perceptually distinct hues, well-spread across the wheel.
+  // Gaps at muddy yellow (55-80°) and near-yellow lime intentionally avoided.
+  var HUES = [211, 155, 262, 336, 20, 142, 188, 291, 352, 38, 168, 243];
+  //          blue teal  purp pink org  grn  cyan viol red  amb  jade indigo
+
+  function tagHue(str) {
+    var h = 5381;
+    for (var i = 0; i < str.length; i++) {
+      h = ((h << 5) + h) ^ str.charCodeAt(i);
+      h = h & h; // keep 32-bit
+    }
+    return HUES[Math.abs(h) % HUES.length];
+  }
+
+  function colorize() {
+    var els = document.querySelectorAll('.post-tags a, .terms-tags a');
+    for (var i = 0; i < els.length; i++) {
+      var tag = els[i].textContent.trim().toLowerCase();
+      els[i].style.setProperty('--tag-h', tagHue(tag));
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', colorize);
+  } else {
+    colorize();
+  }
+})();
+</script>

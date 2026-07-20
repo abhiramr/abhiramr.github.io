@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/bbbevents/static/js/main.f8b7ee78.js",
+    "static/media/banner.jpg": "/bbbevents/static/media/bbb_g.png",
+    "index.html": "/bbbevents/index.html",
+    "main.f8b7ee78.js.map": "/bbbevents/static/js/main.f8b7ee78.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f8b7ee78.js"
+  ]
+}
